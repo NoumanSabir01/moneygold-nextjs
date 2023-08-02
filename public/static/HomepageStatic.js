@@ -4,7 +4,11 @@ import UberGoldIngots from "@/public/assets/img/homepage/uber_gold-ingots.png";
 import UberPayment from "@/public/assets/img/homepage/uber_payment.png";
 import UberQuality from "@/public/assets/img/homepage/uber_quality.png";
 import UberSatisfaction from "@/public/assets/img/homepage/uber_satisfaction.png";
+import DiamondWir from "/public/assets/img/homepage/wir_ankaufen_diamanten_mg.png";
+import GoldschmuckWir from "/public/assets/img/homepage/wir_ankaufen_goldshmuck.png";
+import LuxuryWir from "/public/assets/img/homepage/wir_ankaufen_luxusuhren_mg.png";
 import Silber from "/public/assets/img/homepage/wir_ankaufun_silber.png";
+import Zahngold from "/public/assets/img/homepage/wir_ankaufun_zahngold.png";
 
 export const homePageVideoArray = [
   {
@@ -360,6 +364,45 @@ export const review2CardArray = [
     ),
     reviewDate: "19.04.2023",
   },
+  {
+    reviewNum: "5.00/5.0",
+    reviewStar: (
+      <>
+        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+      </>
+    ),
+    reviewDate: "19.04.2023",
+  },
+  {
+    reviewNum: "5.00/5.0",
+    reviewStar: (
+      <>
+        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+      </>
+    ),
+    reviewDate: "19.04.2023",
+  },
+  {
+    reviewNum: "5.00/5.0",
+    reviewStar: (
+      <>
+        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+      </>
+    ),
+    reviewDate: "19.04.2023",
+  },
 ];
 
 export const review2StarArray = [
@@ -386,7 +429,7 @@ export const review2StarArray = [
 ];
 export const WirAnkafunArray = [
   {
-    src: Silber,
+    src: GoldschmuckWir,
     name: "Goldschmuck",
     text: "verkaufen",
   },
@@ -397,22 +440,22 @@ export const WirAnkafunArray = [
   },
   {
     src: Silber,
-    name: "Silber",
+    name: "Tafelsilber",
     text: "verkaufen",
   },
   {
-    src: Silber,
-    name: "Silber",
+    src: Zahngold,
+    name: "Zahngold",
     text: "verkaufen",
   },
   {
-    src: Silber,
-    name: "Silber",
+    src: DiamondWir,
+    name: "Diamanten",
     text: "verkaufen",
   },
   {
-    src: Silber,
-    name: "Silber",
+    src: LuxuryWir,
+    name: "Luxusuhren",
     text: "verkaufen",
   },
 ];

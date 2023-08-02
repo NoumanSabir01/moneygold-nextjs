@@ -13,6 +13,7 @@ import MeltingFacilities from "./MeltingFacilities";
 import Professionalsection from "./Professionalsection";
 import Ubersection from "./Ubersection";
 import Unseresection from "./Unseresection";
+import Versandarten from "./Versandarten";
 import WirAnkafun from "./WirAnkafun";
 
 const MainPage = () => {
@@ -38,6 +39,7 @@ const MainPage = () => {
           </button>
         </div>
       </section>
+      <Versandarten />
       <MeltingFacilities />
     </div>
   );

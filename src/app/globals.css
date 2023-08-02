@@ -90,6 +90,7 @@ h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
+
 .call-btn {
   background: #2a83d1;
   padding: 5px 15px;
@@ -1353,6 +1354,31 @@ span.navbar-toggler-icon img {
 .slider3_text {
   font-size: 25.82px;
 }
+
+.herobg4 {
+  background-image: url("/assets/img/homepage/herobg4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 115vh;
+}
+.slide4_ankauf {
+  font-family: "Amithen";
+  font-size: 97px;
+  color: #c5b062;
+  text-align: center;
+}
+.slide4_h2_mehr {
+  font-size: 67.72px;
+  font-weight: 900;
+  margin-top: -20px;
+  text-align: center;
+}
+.slider4_para {
+  font-size: 23.22px;
+  max-width: 375px;
+  width: 375px;
+}
 .golden-fauf-wrapper {
   background-image: url("/assets/img/homepage/mainpage-goldenkauf.png");
   background-repeat: no-repeat;
@@ -1824,6 +1850,9 @@ span.navbar-toggler-icon img {
   padding: 15px;
   margin-top: 35px;
 }
+.reviewDate2 {
+  font-size: 11.97px;
+}
 .review2_triangle_down {
   display: none;
   width: 0;
@@ -2083,6 +2112,13 @@ span.navbar-toggler-icon img {
 .wir_ankaufun_wrapper .wir_ankaufun_h3 {
   font-size: 27.21px;
   text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.wir_ankaufun_link {
+  cursor: pointer;
+  color: #d9c26c;
+  text-decoration: underline;
 }
 .wir_ankaufun_card {
   border: 1px solid #bcbec0;
@@ -2139,10 +2175,114 @@ span.navbar-toggler-icon img {
   padding-left: 50px;
   padding-top: 30px;
 }
-.swiper-pagination-bullet-active {
-  background-color: #d9c26c;
-}
 
+.versandarten_wrapper {
+  background-color: #f1f2f2;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.versandarten_h2 {
+  font-size: 30px;
+  color: #3a3a3c;
+}
+.versandarten_card {
+  border: 1px solid #3a3a3c;
+  border-radius: 20px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  margin-top: 55px;
+}
+.versandarten2_card {
+  border: 1px solid #3a3a3c;
+  border-radius: 20px;
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+.versandarten3_card {
+  border: 1px solid #3a3a3c;
+  border-radius: 20px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  margin-top: 55px;
+}
+.versandarten_card_header {
+  background-color: #3a3a3c;
+  color: #ffffff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 18px;
+  padding-bottom: 30px;
+}
+.versandarten_card_header p {
+  margin-top: 10px;
+}
+.versandarten_card_body_card {
+  border: 1px solid #3a3a3c;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #fff7da;
+  margin: 20px;
+}
+.versandarten_card_img img {
+  object-fit: cover !important;
+  width: 100%;
+}
+.versandarten_card_body_para1 {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+.versandarten_card_body_para2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.versandarten_card3_body_para1 {
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+.versandarten_card3_body_para2 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.versand_last_section_circle {
+  width: 25px;
+  height: 25px;
+  border: 2px solid #2180d1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 12px;
+  margin-right: 10px;
+}
+.versand_last_section_step {
+  display: flex;
+  align-items: baseline;
+  margin: 10px;
+  position: relative;
+}
+.versand_last_section_dashed_line {
+  border: 1px dashed #2180d1;
+  position: absolute;
+  height: 90%;
+  top: 35px;
+  bottom: 100%;
+  left: 12px;
+  margin-bottom: 10px;
+}
+.versand_last_section_text {
+  padding: 10px;
+  width: 300px;
+}
+.versandarten_card_para2 {
+  margin-bottom: 10px;
+}
 @media screen and (min-width: 993px) and (max-width: 1180px) {
   .paidOut {
     font-size: 26px;
@@ -2404,6 +2544,7 @@ span.navbar-toggler-icon img {
   .reviewDate {
     font-size: 10.71px;
   }
+
   .review_card .Bewertung h2 {
     font-size: 20px;
   }
@@ -2469,12 +2610,14 @@ span.navbar-toggler-icon img {
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
   border-right: 7px solid #3a3a3c;
-  color: #ffffff !important;
+  color: transparent !important;
 }
 .review_slider_column .swiper-button-prev,
 .review_slider2_column .swiper-button-prev,
 .review_slider_column .swiper-button-next,
 .review_slider2_column .swiper-button-next {
   color: transparent !important;
+  background-color: transparent !important;
 }
+
 /* Home Page Css ends here */

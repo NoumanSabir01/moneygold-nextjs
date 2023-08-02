@@ -14,7 +14,8 @@ const WirAnkafun = () => {
           Hier sehen Sie eine Übersicht der Edelmetalle, die wir ankaufen
         </h2>
         <h3 className="wir_ankaufun_h3">
-          Detaillierte Informationen finden Sie <span>hier</span>
+          Detaillierte Informationen finden Sie{" "}
+          <span className="wir_ankaufun_link">hier</span>
         </h3>
         <div className="wir_ankaufun_slider">
           <Swiper

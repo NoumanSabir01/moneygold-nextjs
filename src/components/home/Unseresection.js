@@ -19,7 +19,25 @@ const Unseresection = () => {
 
         <Swiper
           modules={[Navigation]}
-          slidesPerView={window.innerWidth <= 992 ? 3 : 5}
+          slidesPerView={5}
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            480: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            993: {
+              slidesPerView: 5,
+              spaceBetween: 30,
+            },
+          }}
           navigation
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}

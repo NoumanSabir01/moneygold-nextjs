@@ -122,13 +122,25 @@ const CustomerReviewsSection = () => {
               <Swiper
                 className="review_slider_slides pt-md-4"
                 modules={[Navigation]}
-                slidesPerView={
-                  window.innerWidth > 767 && window.innerWidth <= 992
-                    ? 2
-                    : window.innerWidth <= 767
-                    ? 1
-                    : 3
-                }
+                slidesPerView={3}
+                breakpoints={{
+                  320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  480: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                  },
+                  993: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                  },
+                }}
                 navigation
                 onSlideChange={() => console.log("slide change")}
                 onSwiper={(swiper) => console.log(swiper)}
