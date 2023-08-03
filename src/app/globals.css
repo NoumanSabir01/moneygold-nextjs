@@ -1440,7 +1440,7 @@ span.navbar-toggler-icon img {
   background-color: #2180d1 !important;
   border-radius: 30px !important;
   border: none;
-  height: 53px;
+  height: 45px;
   padding: 1px 10px !important;
   width: 351px;
   font-size: 25px;
@@ -1599,9 +1599,9 @@ span.navbar-toggler-icon img {
   flex: 1;
 }
 
-.unsere_section_slide1_img img:last-child {
+/* .unsere_section_slide1_img img:last-child {
   margin-right: 0px;
-}
+} */
 .unsere_section_wrapper .swiper-button-prev,
 .unsere_section_wrapper .swiper-button-next {
   color: #d9c26c;
@@ -1938,6 +1938,7 @@ span.navbar-toggler-icon img {
 }
 .review_slider2_column {
   margin-top: 0px;
+  margin-left: -20px;
 }
 .review2_slider2_card {
   background-color: #ffffff;
@@ -2103,7 +2104,7 @@ span.navbar-toggler-icon img {
 }
 .wir_ankaufun_wrapper {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 .wir_ankaufun_wrapper .wir_ankaufun_h2 {
   font-size: 30px;
@@ -2124,6 +2125,7 @@ span.navbar-toggler-icon img {
   border: 1px solid #bcbec0;
   border-radius: 20px;
   margin-top: 10px;
+  width: 350px;
 }
 .wir_ankaufun_card:hover {
   border: 1px solid #dbc675;
@@ -2203,7 +2205,7 @@ span.navbar-toggler-icon img {
   border-radius: 20px;
   margin-top: 20px;
   background-color: #ffffff;
-  margin-top: 55px;
+  margin-top: 60px;
 }
 .versandarten_card_header {
   background-color: #3a3a3c;
@@ -2618,6 +2620,7 @@ span.navbar-toggler-icon img {
 .review_slider2_column .swiper-button-next {
   color: transparent !important;
   background-color: transparent !important;
+  top: 60%;
 }
 
 /* Home Page Css ends here */
