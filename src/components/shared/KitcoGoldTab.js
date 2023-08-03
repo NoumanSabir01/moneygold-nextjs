@@ -51,7 +51,14 @@ const KitcoGoldTab = () => {
           <TabList>
             {GoldankaufKotenloserArray.map((tabs, index) => {
               return (
-                <Tab className="tab_pill " key={index}>
+                <Tab
+                  className="tab_pill "
+                  key={index}
+                  style={{
+                    width: tabs.width,
+                    height: tabs.height,
+                  }}
+                >
                   {tabs.tabText}
                 </Tab>
               );

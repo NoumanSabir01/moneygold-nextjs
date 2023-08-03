@@ -44,7 +44,8 @@ const Versandarten = () => {
                 <Button
                   btnText="Versandart auswählen"
                   borderRadius="30px"
-                  margin="-50px 0px 0px 0px"
+                  margin="-25px 0px 0px 0px"
+                  width="275px"
                 />
               </div>
               <div className="versand_last_section">
@@ -106,18 +107,19 @@ const Versandarten = () => {
                   backgroundColor="transparent"
                   color="#D9C26C"
                   margin="10px 0xp 0px 0px"
+                  width="275px"
                 />
               </div>
               <div className="versandarten_card_img">
                 <Image src={VersandMoneyGold} alt="" />
               </div>
               <div className="versandarten_card_body_card">
-                <p className="versandarten_card_body_para1">
+                <p className="versandarten_card2_body_para1">
                   Bestellen Sie kostenlos Ihre persönliche Versandtasche. Sie
                   erhalten in wenigen Tagen alle benötigten Unterlagen per Post
                   zugeschickt.
                 </p>
-                <p className="versandarten_card_body_para2">
+                <p className="versandarten_card2_body_para2">
                   Abwicklungsdauer: 4-5 Tage Sendung versichert bis zu 1.000€
                 </p>
               </div>
@@ -125,11 +127,12 @@ const Versandarten = () => {
                 <Button
                   btnText="Versandart auswählen"
                   borderRadius="30px"
-                  margin="-50px 0px 0px 0px"
+                  margin="-25px 0px 0px 0px"
+                  width="275px"
                 />
               </div>
               <div className="versand_last_section">
-                <div className="versand_last_section_step">
+                <div className="versand_last_section2_step">
                   <div className="versand_last_section_circle ">
                     1.
                     <div className="versand_last_section_dashed_line"></div>
@@ -140,7 +143,7 @@ const Versandarten = () => {
                     zugeschickt.
                   </div>
                 </div>
-                <div className="versand_last_section_step">
+                <div className="versand_last_section2_step">
                   <div className="versand_last_section_circle ">
                     2.
                     <div className="versand_last_section_dashed_line"></div>
@@ -151,7 +154,7 @@ const Versandarten = () => {
                     kostenlos ab.
                   </div>
                 </div>
-                <div className="versand_last_section_step">
+                <div className="versand_last_section2_step">
                   <div className="versand_last_section_circle ">3.</div>
                   <div className="versand_last_section_text">
                     Innerhalb von nur 48 Stunden nach Eingang erhalten Sie das
@@ -196,11 +199,12 @@ const Versandarten = () => {
                 <Button
                   btnText="Versandart auswählen"
                   borderRadius="30px"
-                  margin="-50px 0px 0px 0px"
+                  margin="-25px 0px 0px 0px"
+                  width="275px"
                 />
               </div>
               <div className="versand_last_section">
-                <div className="versand_last_section_step">
+                <div className="versand_last_section3_step">
                   <div className="versand_last_section_circle ">
                     1.
                     <div className="versand_last_section_dashed_line"></div>
@@ -210,7 +214,7 @@ const Versandarten = () => {
                     bestimmen den Versicherungswert sowie das Abholdatum.
                   </div>
                 </div>
-                <div className="versand_last_section_step">
+                <div className="versand_last_section3_step">
                   <div className="versand_last_section_circle ">
                     2.
                     <div className="versand_last_section_dashed_line"></div>
@@ -221,7 +225,7 @@ const Versandarten = () => {
                     Sicherheitskurier.
                   </div>
                 </div>
-                <div className="versand_last_section_step">
+                <div className="versand_last_section3_step">
                   <div className="versand_last_section_circle ">3.</div>
                   <div className="versand_last_section_text">
                     Innerhalb von nur 48 Stunden nach Eingang erhalten Sie das

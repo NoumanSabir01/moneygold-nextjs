@@ -77,7 +77,7 @@ const CustomerReview2 = () => {
               </div>
 
               <Swiper
-                className="review2_slider2_slides pt-md-4"
+                className="review2_slider2_slides"
                 modules={[Navigation]}
                 slidesPerView={3}
                 breakpoints={{
@@ -124,7 +124,7 @@ const CustomerReview2 = () => {
               </Swiper>
             </div>
           </div>
-          <div className="col-6 col-md-6 col-lg-3 ">
+          <div className="col-6 col-md-6 col-lg-3 review2_card_column">
             <div className="review2_card">
               <div className="d-flex align-items-center Bewertung2">
                 <h2>5.00</h2>
@@ -145,10 +145,7 @@ const CustomerReview2 = () => {
                   >
                     <div className="positive">
                       {item.starNum}{" "}
-                      <i
-                        className="fa fa-star"
-                        style={{ fontSize: "13px" }}
-                      ></i>
+                      <i className="fa fa-star" style={{ fontSize: "9px" }}></i>
                     </div>
                     <div className="percentage2-bar">
                       <div

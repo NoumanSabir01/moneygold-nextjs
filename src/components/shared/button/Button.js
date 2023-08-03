@@ -1,6 +1,7 @@
 const Button = ({
   btnText = "",
   height = "40px",
+  width = "150px",
   borderRadius = "",
   backgroundColor = "#2080D1",
   color = "#ffffff",
@@ -24,6 +25,7 @@ const Button = ({
         fontWeight: fontWeight,
         border: border,
         padding: padding,
+        width: width,
       }}
     >
       {btnText}

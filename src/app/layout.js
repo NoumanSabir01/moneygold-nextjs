@@ -1,10 +1,11 @@
-"use client";
+// "use client";
 import "bootstrap/dist/css/bootstrap.css";
 import "font-awesome/css/font-awesome.css";
 import { Inter } from "next/font/google";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import "react-tabs/style/react-tabs.css";
 import "./globals.css";
+import("bootstrap/dist/js/bootstrap");
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,9 +15,9 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  useEffect(() => {
-    import("bootstrap/dist/js/bootstrap");
-  }, []);
+  // useEffect(() => {
+
+  // }, []);
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>

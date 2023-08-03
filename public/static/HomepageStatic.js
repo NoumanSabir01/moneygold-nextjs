@@ -7,6 +7,7 @@ import UberSatisfaction from "@/public/assets/img/homepage/uber_satisfaction.png
 import DiamondWir from "/public/assets/img/homepage/wir_ankaufen_diamanten_mg.png";
 import GoldschmuckWir from "/public/assets/img/homepage/wir_ankaufen_goldshmuck.png";
 import LuxuryWir from "/public/assets/img/homepage/wir_ankaufen_luxusuhren_mg.png";
+import Tafelsilber from "/public/assets/img/homepage/wir_ankaufen_tafelsilber.png";
 import Silber from "/public/assets/img/homepage/wir_ankaufun_silber.png";
 import Zahngold from "/public/assets/img/homepage/wir_ankaufun_zahngold.png";
 
@@ -39,8 +40,8 @@ export const UberSectionArray = [
     h2: "70 Mio €",
     paidOut: "ausbezahlt",
     sinceInception: "seit Gründung",
-    width: "55",
-    height: "31",
+    width: "67",
+    height: "75",
   },
   {
     src: UberSatisfaction,
@@ -49,8 +50,8 @@ export const UberSectionArray = [
     h2: "150.000",
     paidOut: "zufriedene Kunden",
     sinceInception: "vertauen auf moneygold.de",
-    width: "55",
-    height: "31",
+    width: "67",
+    height: "75",
   },
   {
     src: UberGoldIngots,
@@ -59,8 +60,8 @@ export const UberSectionArray = [
     h2: "5.000 kg gold",
     paidOut: "angekauft",
     sinceInception: "seit Gründung",
-    width: "55",
-    height: "31",
+    width: "67",
+    height: "75",
   },
   {
     src: UberQuality,
@@ -69,23 +70,31 @@ export const UberSectionArray = [
     h2: "12 Jahre",
     paidOut: "online",
     sinceInception: "seit Gründung",
-    width: "55",
-    height: "31",
+    width: "67",
+    height: "75",
   },
 ];
 
 export const GoldankaufKotenloserArray = [
   {
     tabText: "Gold",
+    width: "63px",
+    height: "46",
   },
   {
     tabText: "Zahngold",
+    width: "90.99px",
+    height: "46",
   },
   {
     tabText: "Silber",
+    width: "57.19px",
+    height: "46",
   },
   {
     tabText: "Platin & Palladium",
+    width: "95.99px",
+    height: "46",
   },
 ];
 export const KitcoGoldTabArrayGold = [
@@ -439,7 +448,7 @@ export const WirAnkafunArray = [
     text: "verkaufen",
   },
   {
-    src: Silber,
+    src: Tafelsilber,
     name: "Tafelsilber",
     text: "verkaufen",
   },

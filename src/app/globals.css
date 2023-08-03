@@ -1200,7 +1200,7 @@ span.navbar-toggler-icon img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 115vh;
+  height: 700px;
 }
 .slide1-row {
   padding-top: 16px;
@@ -1303,7 +1303,7 @@ span.navbar-toggler-icon img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 115vh;
+  height: 700px;
 }
 .hero_slide2 {
   margin-left: 118px;
@@ -1332,7 +1332,7 @@ span.navbar-toggler-icon img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 115vh;
+  height: 700px;
 }
 .slide3_ankauf {
   font-family: "Amithen";
@@ -1360,7 +1360,7 @@ span.navbar-toggler-icon img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 115vh;
+  height: 700px;
 }
 .slide4_ankauf {
   font-family: "Amithen";
@@ -1456,7 +1456,7 @@ span.navbar-toggler-icon img {
   background-position: center;
   background-size: cover;
   padding-top: 26px;
-  padding-bottom: 28px;
+  padding-bottom: 0px;
 }
 
 .goldankauf-onine {
@@ -1508,11 +1508,10 @@ span.navbar-toggler-icon img {
   background-color: #2180d1 !important;
   border-radius: 30px !important;
   border: none;
-  height: 45px;
+  height: 41px;
   padding: 1px 20px !important;
   font-size: 25px;
   font-weight: 700;
-  text-transform: uppercase;
 }
 .video-row {
   width: 100%;
@@ -1527,7 +1526,11 @@ span.navbar-toggler-icon img {
 }
 .uber_sec_img {
   border: 1px solid #fad07c;
-  padding: 10px 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 115px;
 }
 .uber_section_wrapper h2 {
   font-size: 30px;
@@ -1737,7 +1740,7 @@ span.navbar-toggler-icon img {
   align-items: center;
 }
 .review_slider_column {
-  margin-top: 35px;
+  margin-top: 20px;
 }
 .review_slider_card {
   background-color: #ffffff;
@@ -1803,8 +1806,8 @@ span.navbar-toggler-icon img {
 .customer_review2_text p {
   color: #000000;
   font-size: 28px;
-  line-height: 43.29px;
-  font-weight: 300;
+  line-height: 43px;
+  font-weight: 500;
   margin-left: 10px;
 }
 .customer_review2_trusted_shops {
@@ -1814,11 +1817,12 @@ span.navbar-toggler-icon img {
 .customer_review2_trusted_shops .trusted_img {
   position: absolute;
   z-index: 3;
+  left: 20px;
 }
 .ekomi_trusted_shops {
   background-color: #ffffff;
-  height: 124px;
-  width: 100%;
+  height: 123.02px;
+  width: 574.99px;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -1826,32 +1830,49 @@ span.navbar-toggler-icon img {
   color: #000000;
   z-index: 2;
   margin-left: 100px;
+  padding: 20px;
 }
 .ekomi_trusted_shops ul {
-  flex: 2;
+  flex: auto;
   margin-left: 75px;
 }
+.ekomi_trusted_shops ul li {
+  font-size: 18.42px;
+}
 .review2_trusted_shops {
-  flex: 1;
+  flex: auto;
   border-left: 1px solid #000000;
-  height: 66px;
+  height: 95px;
+  display: flex;
+  align-items: center;
+  margin-left: -10px;
 }
 .review2_trusted_shops img {
-  margin-top: 12px;
+  width: 148px;
+  height: 61px;
+  flex: 1;
 }
 .review2_trusted_shops p {
   font-size: 11.53px;
   line-height: 30.09px;
 }
+.review2_slider_col {
+  padding-right: 0px !important;
+}
+.review2_card_column {
+  display: flex;
+  justify-content: flex-end;
+}
 .review2_card {
   border-radius: 20px;
-  background-color: rgba(166, 140, 31, 0.5);
-  width: 221.39px;
-  padding: 15px;
-  margin-top: 35px;
+  background-color: rgb(166, 140, 31);
+  width: 220px;
+  padding: 10px 20px 5px 20px;
+  margin-top: 15px;
 }
 .reviewDate2 {
   font-size: 11.97px;
+  color: #000000;
 }
 .review2_triangle_down {
   display: none;
@@ -1887,7 +1908,7 @@ span.navbar-toggler-icon img {
   font-size: 17.73px;
   font-weight: bold;
   color: #ffffff;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .review2_uber {
   font-size: 9.07px;
@@ -1901,7 +1922,7 @@ span.navbar-toggler-icon img {
   font-weight: bold;
 }
 .review2_card .Bewertung2 p {
-  font-size: 12.37px;
+  font-size: 11.11px;
   font-weight: 500;
   color: #ffffff;
   margin-left: 10px;
@@ -1937,8 +1958,7 @@ span.navbar-toggler-icon img {
   align-items: center;
 }
 .review_slider2_column {
-  margin-top: 0px;
-  margin-left: -20px;
+  margin-top: 17px;
 }
 .review2_slider2_card {
   background-color: #ffffff;
@@ -1947,6 +1967,7 @@ span.navbar-toggler-icon img {
   margin-right: 5px;
   padding: 20px 10px 40px 10px;
   width: 262px;
+  height: 180px;
 }
 
 .reviewStar2 {
@@ -1954,6 +1975,7 @@ span.navbar-toggler-icon img {
 }
 .review2_slider2_slides {
   border-top: 2px solid #000000;
+  padding-top: 40px !important;
 }
 .review_slider2_column .review2_heading2 {
   display: flex;
@@ -1982,6 +2004,7 @@ span.navbar-toggler-icon img {
   font-size: 11.86px;
   line-height: 18.64px;
   width: 195px;
+  color: #000000;
 }
 
 .goldenfauf_wrapper {
@@ -2013,7 +2036,7 @@ span.navbar-toggler-icon img {
 .Kitco_gold_tab_wrapper .headline {
   font-size: 23px;
   font-weight: 700;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .Kitco_gold_tab_wrapper .paragraph {
   font-size: 12px;
@@ -2080,7 +2103,7 @@ span.navbar-toggler-icon img {
   font-size: 12px;
 }
 .Kitco_gold_tab_wrapper .tabpanel_lastdiv {
-  padding: 17px 30px 20px 20px;
+  padding: 13px;
   background-color: #3a3a3c;
   color: #ffffff;
   border-bottom-left-radius: 10px;
@@ -2140,6 +2163,10 @@ span.navbar-toggler-icon img {
 .wir_ankaufun_card_img {
   position: relative;
 }
+.wir_ankaufun_card_img img {
+  width: 245px;
+}
+
 .wir_verkaufer_btn {
   display: flex;
   justify-content: center;
@@ -2221,13 +2248,17 @@ span.navbar-toggler-icon img {
 }
 .versandarten_card_header p {
   margin-top: 10px;
+  font-weight: bold;
 }
 .versandarten_card_body_card {
   border: 1px solid #3a3a3c;
   border-radius: 20px;
-  padding: 20px;
+  padding: 15px;
   background-color: #fff7da;
-  margin: 20px;
+  margin: 14px;
+  height: 270px;
+  margin-bottom: 0px;
+  padding-top: 29px;
 }
 .versandarten_card_img img {
   object-fit: cover !important;
@@ -2235,25 +2266,31 @@ span.navbar-toggler-icon img {
 }
 .versandarten_card_body_para1 {
   font-size: 16px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 .versandarten_card_body_para2 {
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 20px;
+}
+.versandarten_card2_body_para1 {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+.versandarten_card2_body_para2 {
+  font-size: 16px;
+  font-weight: bold;
 }
 .versandarten_card3_body_para1 {
-  font-size: 15px;
-  margin-bottom: 40px;
+  font-size: 16px;
+  margin-bottom: 25px;
 }
 .versandarten_card3_body_para2 {
   font-size: 15px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
 .versand_last_section_circle {
   width: 25px;
-  height: 25px;
+  height: 23px;
   border: 2px solid #2180d1;
   border-radius: 50%;
   display: flex;
@@ -2261,21 +2298,33 @@ span.navbar-toggler-icon img {
   justify-content: center;
   font-weight: bold;
   font-size: 12px;
-  margin-right: 10px;
+  margin-right: 0px;
 }
 .versand_last_section_step {
   display: flex;
   align-items: baseline;
-  margin: 10px;
+  margin: 1px 30px;
+  position: relative;
+}
+.versand_last_section2_step {
+  display: flex;
+  align-items: baseline;
+  margin: 1px 14px 1px 30px;
+  position: relative;
+}
+.versand_last_section3_step {
+  display: flex;
+  align-items: baseline;
+  margin: 1px 20px 1px 30px;
   position: relative;
 }
 .versand_last_section_dashed_line {
   border: 1px dashed #2180d1;
   position: absolute;
-  height: 90%;
+  height: 83%;
   top: 35px;
   bottom: 100%;
-  left: 12px;
+  left: 11px;
   margin-bottom: 10px;
 }
 .versand_last_section_text {
