@@ -1317,10 +1317,14 @@ span.navbar-toggler-icon img {
   font-family: "Amithen";
   font-size: 97.2px;
   color: #c5b062;
+  padding-top: 70px;
+  padding-left: 80px;
 }
 .hero_slide2 .slide2_h2_mehr {
   font-size: 58.35px;
   font-weight: bold;
+  padding-left: 30px;
+  margin-bottom: 10px;
 }
 .hero_slide2 .card_img {
   max-width: 745px;
@@ -1344,6 +1348,7 @@ span.navbar-toggler-icon img {
   font-size: 97px;
   color: #c5b062;
   margin-left: 190px;
+  padding-top: 70px;
 }
 .slide3_h2_mehr {
   font-size: 49.93px;
@@ -1372,6 +1377,7 @@ span.navbar-toggler-icon img {
   font-size: 97px;
   color: #c5b062;
   text-align: center;
+  padding-top: 80px;
 }
 .slide4_h2_mehr {
   font-size: 67.72px;
@@ -2146,6 +2152,7 @@ span.navbar-toggler-icon img {
 }
 .wir_ankaufun_wrapper .wir_ankaufun_h2 {
   font-size: 30px;
+  font-weight: bold;
   text-align: center;
   color: #000000;
 }
@@ -2411,12 +2418,18 @@ span.navbar-toggler-icon img {
     width: 60px !important;
     height: 60px;
   }
+  .hero_slide2 {
+    margin-left: 0px;
+  }
   .hero_slide2 .slide2_ankauf {
     font-size: 60px;
+    padding-top: 80px;
+    padding-left: 0px;
   }
   .hero_slide2 .slide2_h2_mehr {
-    font-size: 26px;
+    font-size: 22px;
     margin-bottom: 5px;
+    padding-left: 0px;
   }
   .hero_slide2 .card_img img {
     width: 100px;
@@ -2437,6 +2450,7 @@ span.navbar-toggler-icon img {
     margin-top: 0px;
     margin-bottom: 20px;
   }
+
   .uber_section_wrapper h2 {
     font-size: 24px;
     line-height: 28.7px;
@@ -2584,7 +2598,8 @@ span.navbar-toggler-icon img {
   }
   .review_slider_slides {
     border-top: none;
-    margin-top: 20px;
+    margin-top: 10px;
+    padding-top: 15px !important;
   }
   .review_slider_column .review_heading2 {
     display: flex;
@@ -2607,7 +2622,7 @@ span.navbar-toggler-icon img {
     margin-top: 15px;
   }
   .review_slider_column {
-    margin-top: 1px;
+    margin-top: 20px;
   }
   .reviewNum {
     font-size: 11.36px;
@@ -2667,6 +2682,171 @@ span.navbar-toggler-icon img {
     font-size: 14.74px;
     width: auto;
     height: 35px;
+  }
+
+  .customer_review2_trusted_shops .trusted_img {
+    left: 0px;
+    width: 90px;
+    height: 90px;
+  }
+  .ekomi_trusted_shops {
+    width: 387.01px;
+    height: 80.02px;
+    margin-left: 15px;
+  }
+  .ekomi_trusted_shops ul {
+    margin-left: 60px;
+  }
+  .ekomi_trusted_shops ul li {
+    font-size: 14px;
+  }
+  .review2_trusted_shops {
+    height: 65px;
+    margin-left: 0px;
+    padding-left: 10px;
+  }
+  .review_slider2_column .review2_heading2 {
+    margin-bottom: 0px;
+  }
+  .review2_trusted_shops img {
+    width: 87px;
+    height: 36px;
+  }
+  .review2_slider2_slides {
+    border-top: none;
+    padding-top: 15px !important;
+  }
+  .review2_card {
+    border-radius: 5px;
+    padding: 10px 10px 5px 10px;
+  }
+  .review_slider2_column .review2_heading2 p {
+    background: none;
+    width: auto;
+    font-size: 19px;
+  }
+  .review2_slider2_card {
+    width: auto;
+  }
+  .review2_card .Bewertung2 p {
+    font-size: 13px;
+  }
+  .review2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .review2 i {
+    width: auto;
+    margin-right: 10px;
+    height: 22px;
+    font-size: 22px !important;
+  }
+  .review2 i:last-child {
+    margin-right: 0px;
+  }
+  .customer_review2_text p {
+    font-size: 18px;
+  }
+  .customer_review_section2_wrapper h2 {
+    line-height: 40px;
+    text-align: center;
+  }
+  .tab_pill0,
+  .tab_pill1,
+  .tab_pill2,
+  .tab_pill3 {
+    flex-basis: 100% !important;
+  }
+  .versandarten_card,
+  .versandarten3_card {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 430px) {
+  .customer_review2_trusted_shops .trusted_img {
+    left: 0px;
+    width: 90px;
+    height: 90px;
+  }
+  .ekomi_trusted_shops {
+    width: 387.01px;
+    height: 80.02px;
+    margin-left: 15px;
+  }
+  .ekomi_trusted_shops ul {
+    margin-left: 60px;
+  }
+  .ekomi_trusted_shops ul li {
+    font-size: 14px;
+  }
+  .review2_trusted_shops {
+    height: 65px;
+    margin-left: 0px;
+    padding-left: 10px;
+  }
+  .review2_trusted_shops img {
+    width: 87px;
+    height: 36px;
+  }
+  .review2_card {
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .review2_slider2_slides {
+    border-top: none;
+    padding-top: 15px !important;
+  }
+  .review_slider2_column .review2_heading2 p {
+    background: none;
+    width: auto;
+    font-size: 15px;
+  }
+  .review2_slider2_card {
+    width: auto;
+  }
+  .review_slider2_column .review2_heading2 {
+    margin-bottom: 0px;
+  }
+  .review2_card .Bewertung2 h2 {
+    font-size: 20px;
+    line-height: 48.72px;
+  }
+  .review2_card .Bewertung2 p {
+    font-size: 13px;
+  }
+  .review2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .review2 i {
+    width: auto;
+    margin-right: 10px;
+    height: 22px;
+    font-size: 22px !important;
+  }
+  .review2 i:last-child {
+    margin-right: 0px;
+  }
+  .pwered_by {
+    padding-left: 5px;
+    margin-left: 5px;
+  }
+  .pwered_by p {
+    font-size: 9px;
+    line-height: normal;
+  }
+  .ekomi_powered_by ul li {
+    font-size: 10px;
+  }
+  .ekomi_powered_by {
+    height: 70px;
+    margin-left: 35px;
+  }
+  .customer_review_ekomi_powered_by img {
+    width: 82px;
+    height: 82px;
   }
 }
 .review_slider_column .swiper-button-next:after,

@@ -23,15 +23,15 @@ const Unseresection = () => {
           breakpoints={{
             320: {
               slidesPerView: 1,
-              spaceBetween: 20,
+              spaceBetween: 10,
             },
             480: {
-              slidesPerView: 3,
-              spaceBetween: 30,
+              slidesPerView: 2,
+              spaceBetween: 10,
             },
             768: {
               slidesPerView: 3,
-              spaceBetween: 30,
+              spaceBetween: 10,
             },
             993: {
               slidesPerView: 5,

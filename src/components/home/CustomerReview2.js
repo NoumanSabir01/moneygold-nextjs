@@ -15,7 +15,7 @@ const CustomerReview2 = () => {
   return (
     <section className="customer_review_section2_wrapper">
       <div className="container">
-        <h2>100% Sicherheit durch echte Kundenbewertungen</h2>
+        <h2>100% echte und vertrauenswürdige Kundenbewertungen</h2>
         <div className="row ">
           <div className="col-12 col-md-5">
             <div className="d-flex align-items-center customer_review2_text">
@@ -83,11 +83,11 @@ const CustomerReview2 = () => {
                 breakpoints={{
                   320: {
                     slidesPerView: 1,
-                    spaceBetween: 20,
+                    spaceBetween: 10,
                   },
                   480: {
                     slidesPerView: 1,
-                    spaceBetween: 30,
+                    spaceBetween: 10,
                   },
                   768: {
                     slidesPerView: 2,
@@ -95,7 +95,7 @@ const CustomerReview2 = () => {
                   },
                   993: {
                     slidesPerView: 3,
-                    spaceBetween: 20,
+                    spaceBetween: 30,
                   },
                 }}
                 navigation
