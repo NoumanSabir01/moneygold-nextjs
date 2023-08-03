@@ -78,23 +78,15 @@ export const UberSectionArray = [
 export const GoldankaufKotenloserArray = [
   {
     tabText: "Gold",
-    width: "63px",
-    height: "46",
   },
   {
     tabText: "Zahngold",
-    width: "90.99px",
-    height: "46",
   },
   {
     tabText: "Silber",
-    width: "57.19px",
-    height: "46",
   },
   {
     tabText: "Platin & Palladium",
-    width: "95.99px",
-    height: "46",
   },
 ];
 export const KitcoGoldTabArrayGold = [

@@ -2065,6 +2065,18 @@ span.navbar-toggler-icon img {
   border-color: #ffffff !important;
   cursor: pointer;
 }
+.tab_pill0 {
+  flex-basis: 63px !important;
+}
+.tab_pill1 {
+  flex-basis: 90.99px !important;
+}
+.tab_pill2 {
+  flex-basis: 63px !important;
+}
+.tab_pill3 {
+  flex-basis: 90.99px !important;
+}
 .Kitco_gold_tab_wrapper .tab_pill.react-tabs__tab--selected:last-child {
   border-right: 0;
   margin-right: 2px;
