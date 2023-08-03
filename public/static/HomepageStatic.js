@@ -40,8 +40,6 @@ export const UberSectionArray = [
     h2: "70 Mio €",
     paidOut: "ausbezahlt",
     sinceInception: "seit Gründung",
-    width: "67",
-    height: "75",
   },
   {
     src: UberSatisfaction,
@@ -50,8 +48,6 @@ export const UberSectionArray = [
     h2: "150.000",
     paidOut: "zufriedene Kunden",
     sinceInception: "vertauen auf moneygold.de",
-    width: "67",
-    height: "75",
   },
   {
     src: UberGoldIngots,
@@ -60,8 +56,6 @@ export const UberSectionArray = [
     h2: "5.000 kg gold",
     paidOut: "angekauft",
     sinceInception: "seit Gründung",
-    width: "67",
-    height: "75",
   },
   {
     src: UberQuality,
@@ -70,8 +64,6 @@ export const UberSectionArray = [
     h2: "12 Jahre",
     paidOut: "online",
     sinceInception: "seit Gründung",
-    width: "67",
-    height: "75",
   },
 ];
 
@@ -263,11 +255,11 @@ export const reviewCardArray = [
     reviewNum: "5.00/5.0",
     reviewStar: (
       <>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
       </>
     ),
     reviewDate: "19.04.2023",
@@ -276,11 +268,11 @@ export const reviewCardArray = [
     reviewNum: "5.00/5.0",
     reviewStar: (
       <>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
       </>
     ),
     reviewDate: "19.04.2023",
@@ -289,11 +281,11 @@ export const reviewCardArray = [
     reviewNum: "5.00/5.0",
     reviewStar: (
       <>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
       </>
     ),
     reviewDate: "19.04.2023",
@@ -302,11 +294,11 @@ export const reviewCardArray = [
     reviewNum: "5.00/5.0",
     reviewStar: (
       <>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
       </>
     ),
     reviewDate: "19.04.2023",
@@ -315,11 +307,11 @@ export const reviewCardArray = [
     reviewNum: "5.00/5.0",
     reviewStar: (
       <>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
       </>
     ),
     reviewDate: "19.04.2023",
@@ -330,11 +322,11 @@ export const review2CardArray = [
     reviewNum: "5.00/5.0",
     reviewStar: (
       <>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
       </>
     ),
     reviewDate: "19.04.2023",
@@ -343,11 +335,11 @@ export const review2CardArray = [
     reviewNum: "5.00/5.0",
     reviewStar: (
       <>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
       </>
     ),
     reviewDate: "19.04.2023",
@@ -356,11 +348,11 @@ export const review2CardArray = [
     reviewNum: "5.00/5.0",
     reviewStar: (
       <>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
       </>
     ),
     reviewDate: "19.04.2023",
@@ -369,11 +361,11 @@ export const review2CardArray = [
     reviewNum: "5.00/5.0",
     reviewStar: (
       <>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
       </>
     ),
     reviewDate: "19.04.2023",
@@ -382,11 +374,11 @@ export const review2CardArray = [
     reviewNum: "5.00/5.0",
     reviewStar: (
       <>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
       </>
     ),
     reviewDate: "19.04.2023",
@@ -395,11 +387,11 @@ export const review2CardArray = [
     reviewNum: "5.00/5.0",
     reviewStar: (
       <>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
-        <i class="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
+        <i className="fa fa-star" style={{ fontSize: "13px" }}></i>
       </>
     ),
     reviewDate: "19.04.2023",

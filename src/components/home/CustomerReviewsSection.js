@@ -120,7 +120,7 @@ const CustomerReviewsSection = () => {
                 <p>KUNDENBEWERTUNGEN</p>
               </div>
               <Swiper
-                className="review_slider_slides pt-md-4"
+                className="review_slider_slides"
                 modules={[Navigation]}
                 slidesPerView={3}
                 breakpoints={{

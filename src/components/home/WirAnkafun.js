@@ -46,7 +46,7 @@ const WirAnkafun = () => {
                         </div>
                         <div className="wir_verkaufer">
                           <div>
-                            <p>{item.name}</p>
+                            <p className="wir_verkaufer_name">{item.name}</p>
                             <p className="wir_verkaufer_text">{item.text}</p>
                           </div>
                           <div className="wir_verkaufer_btn">
@@ -80,7 +80,7 @@ const WirAnkafun = () => {
                         </div>
                         <div className="wir_verkaufer">
                           <div>
-                            <p>{item.name}</p>
+                            <p className="wir_verkaufer_name">{item.name}</p>
                             <p className="wir_verkaufer_text">{item.text}</p>
                           </div>
                           <div className="wir_verkaufer_btn">

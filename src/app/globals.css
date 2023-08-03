@@ -1268,7 +1268,12 @@ span.navbar-toggler-icon img {
   margin-right: 15px;
   margin-left: 0px;
 }
-
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background-color: #ffffff !important;
+  width: 17.91px !important;
+  height: 17.91px !important;
+}
 .slider1-garanty p {
   font-size: 23.37px;
   font-weight: 700;
@@ -1525,17 +1530,15 @@ span.navbar-toggler-icon img {
   padding-bottom: 30px;
 }
 .uber_sec_img {
-  border: 1px solid #fad07c;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px;
-  height: 115px;
 }
 .uber_section_wrapper h2 {
   font-size: 30px;
   line-height: 38.07px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 .uberText {
   font-size: 16px;
@@ -1593,27 +1596,17 @@ span.navbar-toggler-icon img {
   font-weight: 700;
   margin-bottom: 35px;
 }
-.unsere_section_slide1_img {
+/* .unsere_section_slide1_img {
   margin-left: 50px;
   margin-right: 50px;
-}
-.unsere_section_slide1_img img {
-  margin-right: 30px;
-  flex: 1;
-}
-
-/* .unsere_section_slide1_img img:last-child {
-  margin-right: 0px;
 } */
+/* .unsere_section_slide1_img img {
+  margin-right: 30px;
+} */
+
 .unsere_section_wrapper .swiper-button-prev,
 .unsere_section_wrapper .swiper-button-next {
   color: #d9c26c;
-}
-.swiper-pagination-bullet,
-.swiper-pagination-bullet-active {
-  background-color: #ffffff !important;
-  width: 17.91px !important;
-  height: 17.91px !important;
 }
 
 .customer_review_section_wrapper {
@@ -1648,24 +1641,25 @@ span.navbar-toggler-icon img {
 }
 .ekomi_powered_by {
   background-color: rgb(125, 74, 8);
-  height: 124px;
-  width: 100%;
+  height: 122.92px;
+  width: 583.4px;
   border-radius: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   color: #ffffff;
   z-index: 2;
   margin-left: 120px;
 }
 .ekomi_powered_by ul {
-  flex: 2;
   margin-left: 60px;
 }
+.ekomi_powered_by ul li {
+  font-size: 21.14px;
+}
 .pwered_by {
-  flex: 1;
   border-left: 1px solid #ffffff;
-  padding-left: 10px;
+  padding-left: 20px;
+  margin-left: 10px;
   height: 66px;
 }
 .pwered_by p {
@@ -1734,7 +1728,6 @@ span.navbar-toggler-icon img {
   font-size: 8.35px;
   color: #ffffff;
   margin-top: 15px;
-  margin-bottom: 5px;
 }
 .review_slider_row {
   align-items: center;
@@ -1752,12 +1745,22 @@ span.navbar-toggler-icon img {
 .reviewNum {
   font-size: 13.82px;
   font-weight: bold;
+  color: #000000;
 }
 .reviewStar {
   color: #ffea00;
 }
+.reviewDate {
+  font-size: 11.97px;
+  color: #000000;
+}
+.review_para p {
+  font-size: 11.86px;
+  color: #000000;
+}
 .review_slider_slides {
   border-top: 2px solid #ffffff;
+  padding-top: 40px !important;
 }
 .review_slider_column .review_heading2 {
   display: flex;
@@ -1768,9 +1771,9 @@ span.navbar-toggler-icon img {
 .review_slider_column .review_heading2 p {
   background: linear-gradient(
     90deg,
-    rgba(54, 128, 62, 1) 0%,
-    rgba(79, 148, 68, 1) 35%,
-    rgba(102, 168, 72, 1) 100%
+    rgba(50, 124, 63, 1) 0%,
+    rgba(79, 148, 67, 1) 35%,
+    rgba(100, 165, 73, 1) 100%
   );
   color: #ffffff;
   font-size: 27.04px;
@@ -2144,6 +2147,7 @@ span.navbar-toggler-icon img {
 .wir_ankaufun_wrapper .wir_ankaufun_h2 {
   font-size: 30px;
   text-align: center;
+  color: #000000;
 }
 .wir_ankaufun_wrapper .wir_ankaufun_h3 {
   font-size: 27.21px;
@@ -2160,7 +2164,9 @@ span.navbar-toggler-icon img {
   border: 1px solid #bcbec0;
   border-radius: 20px;
   margin-top: 10px;
-  width: 350px;
+  margin-bottom: 10px;
+  width: 342.93px;
+  height: 342.93px;
 }
 .wir_ankaufun_card:hover {
   border: 1px solid #dbc675;
@@ -2176,7 +2182,7 @@ span.navbar-toggler-icon img {
   position: relative;
 }
 .wir_ankaufun_card_img img {
-  width: 245px;
+  width: 320px;
 }
 
 .wir_verkaufer_btn {
@@ -2190,6 +2196,11 @@ span.navbar-toggler-icon img {
 }
 .wir_verkaufer_text {
   color: #ceab66;
+  font-size: 16.91px;
+}
+.wir_verkaufer_name {
+  font-size: 20.78px;
+  color: #000000;
 }
 .wir_ankaufun_card:hover .wir_verkaufer_btn {
   background-color: #d9c26c;
@@ -2231,7 +2242,7 @@ span.navbar-toggler-icon img {
   border-radius: 20px;
   margin-top: 20px;
   background-color: #ffffff;
-  margin-top: 55px;
+  margin-top: 81px;
 }
 .versandarten2_card {
   border: 1px solid #3a3a3c;
@@ -2244,7 +2255,7 @@ span.navbar-toggler-icon img {
   border-radius: 20px;
   margin-top: 20px;
   background-color: #ffffff;
-  margin-top: 60px;
+  margin-top: 82px;
 }
 .versandarten_card_header {
   background-color: #3a3a3c;
