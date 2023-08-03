@@ -1972,9 +1972,9 @@ span.navbar-toggler-icon img {
 .review2_slider2_card {
   background-color: #ffffff;
   border-radius: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 20px 10px 40px 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 20px 20px 40px 20px;
   width: 262px;
   height: 180px;
 }
