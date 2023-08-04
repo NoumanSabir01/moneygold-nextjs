@@ -1315,6 +1315,7 @@ span.navbar-toggler-icon img {
 }
 .hero_slide2 .slide2_ankauf {
   font-family: "Amithen";
+  line-height: 110.66px;
   font-size: 97.2px;
   color: #c5b062;
   padding-top: 70px;
@@ -1346,12 +1347,14 @@ span.navbar-toggler-icon img {
 .slide3_ankauf {
   font-family: "Amithen";
   font-size: 97px;
+  line-height: 100.22px;
   color: #c5b062;
   margin-left: 190px;
   padding-top: 70px;
 }
 .slide3_h2_mehr {
   font-size: 49.93px;
+  line-height: 54.04px;
   font-weight: bold;
   margin-top: -20px;
   margin-bottom: 10px;
@@ -1374,21 +1377,25 @@ span.navbar-toggler-icon img {
 }
 .slide4_ankauf {
   font-family: "Amithen";
-  font-size: 97px;
+  font-size: 108.11px;
+  line-height: 100.22px;
   color: #c5b062;
   text-align: center;
   padding-top: 80px;
 }
 .slide4_h2_mehr {
   font-size: 67.72px;
+  line-height: 62.77px;
   font-weight: 900;
   margin-top: -20px;
   text-align: center;
 }
 .slider4_para {
   font-size: 23.22px;
+  line-height: 28.9px;
   max-width: 375px;
   width: 375px;
+  margin-top: 10px;
 }
 .golden-fauf-wrapper {
   background-image: url("/assets/img/homepage/mainpage-goldenkauf.png");

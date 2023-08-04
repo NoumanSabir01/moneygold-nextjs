@@ -210,42 +210,42 @@ export const KitcoGoldTabArraySilber = [
 export const KitcoGoldTabArrayPlatin = [
   {
     quantity: "999er Feingold",
-    price: "57,28 €/g",
+    price: "56,28 €/g",
     backgroundColor: "#F4EED6",
   },
   {
     quantity: "986er Gold",
-    price: "56,62 €/g",
+    price: "57,62 €/g",
     backgroundColor: "#FFFFFF",
   },
   {
     quantity: "916er Gold",
-    price: "52,53 €/g",
+    price: "54,53 €/g",
     backgroundColor: "#F4EED6",
   },
   {
     quantity: "900er Gold",
-    price: "51,02 €/g",
+    price: "52,02 €/g",
     backgroundColor: "#FFFFFF",
   },
   {
     quantity: "750er Gold",
-    price: "42,94 €/g",
+    price: "44,94 €/g",
     backgroundColor: "#F4EED6",
   },
   {
     quantity: "585er Gold",
-    price: "33,55 €/g",
+    price: "38,55 €/g",
     backgroundColor: "#FFFFFF",
   },
   {
     quantity: "375er Gold",
-    price: "20,91 €/g",
+    price: "26,91 €/g",
     backgroundColor: "#F4EED6",
   },
   {
     quantity: "333er Gold",
-    price: "19,17 €/g",
+    price: "14,17 €/g",
     backgroundColor: "#FFFFFF",
   },
 ];

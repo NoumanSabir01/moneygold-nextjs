@@ -192,7 +192,7 @@ const Herosection = () => {
           <div className="container">
             <h2 className="slide4_ankauf">Ankauf von</h2>
             <h2 className="slide4_h2_mehr">
-              Diamanten & <br /> Luxusuhren
+              DIAMANTEN & <br /> LUXUSUHREN
             </h2>
             <div className="d-flex justify-content-center">
               <p className="text-center slider4_para">
