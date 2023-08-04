@@ -17,24 +17,24 @@ const CustomerReview2 = () => {
       <div className="container">
         <h2>100% echte und vertrauenswürdige Kundenbewertungen</h2>
         <div className="row ">
-          <div className="col-12 col-md-5">
+          <div className="col-12 col-md-5 customer_review2_column1">
             <div className="d-flex align-items-center customer_review2_text">
               <div>
                 <Arrow2Svg />
               </div>
-              <p>Bereits über 150.000 Kunden </p>
+              <p>4.000 Trusted Shops Bewertungen </p>
             </div>
             <div className="d-flex align-items-center customer_review2_text">
               <div>
                 <Arrow2Svg />
               </div>
-              <p>über 8.000 eKomi Bewertungen</p>
+              <p>Hohe Ankaufspreise</p>
             </div>
             <div className="d-flex align-items-center customer_review2_text">
               <div>
                 <Arrow2Svg />
               </div>
-              <p>Keine Gebühren und Abzüge</p>
+              <p>Sichere und seriöse Abwicklung</p>
             </div>
             <div className="d-flex align-items-center customer_review2_text">
               <div>
@@ -43,7 +43,7 @@ const CustomerReview2 = () => {
               <p>Keine Versandkosten</p>
             </div>
           </div>
-          <div className="col-12 col-md-7">
+          <div className="col-12 col-md-7 customer_review2_column2">
             <div className="d-flex align-items-center customer_review2_trusted_shops">
               <Image
                 src={TrustedShop}

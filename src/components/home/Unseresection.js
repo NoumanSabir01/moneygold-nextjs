@@ -35,7 +35,7 @@ const Unseresection = () => {
             },
             993: {
               slidesPerView: 5,
-              spaceBetween: 10,
+              spaceBetween: 5,
             },
           }}
           navigation
@@ -79,7 +79,7 @@ const Unseresection = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="d-flex align-items-center justify-content-center unsere_section_slide1_img">
-              <Image src={ProvenExperts} alt="" width={166} height={166} />
+              <Image src={ProvenExperts} alt="" width={215} height={166} />
             </div>
           </SwiperSlide>
           <SwiperSlide>

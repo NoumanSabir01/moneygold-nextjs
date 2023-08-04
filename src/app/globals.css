@@ -1411,6 +1411,10 @@ span.navbar-toggler-icon img {
   text-transform: uppercase;
   margin-bottom: 17px;
 }
+.golden-fauf .para span {
+  text-decoration: underline;
+  font-weight: 600;
+}
 .para {
   color: #ffffff;
   margin-bottom: 17px;
@@ -1428,6 +1432,7 @@ span.navbar-toggler-icon img {
   margin-top: 13px;
   padding-bottom: 30px;
   text-align: center;
+  text-transform: uppercase;
 }
 .melting-facilities-wrapper {
   background-image: url("/assets/img/homepage/gold_schmelzen_bg.png");
@@ -1455,7 +1460,7 @@ span.navbar-toggler-icon img {
   padding: 1px 10px !important;
   width: 351px;
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   margin-top: 20px;
   line-height: 32px;
@@ -1522,7 +1527,7 @@ span.navbar-toggler-icon img {
   height: 41px;
   padding: 1px 20px !important;
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 600;
 }
 .video-row {
   width: 100%;
@@ -1805,6 +1810,9 @@ span.navbar-toggler-icon img {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.customer_review_section2_wrapper .container {
+  padding: 0px 20px;
+}
 .customer_review_section2_wrapper h2 {
   font-size: 30px;
   line-height: 59.79px;
@@ -1843,10 +1851,18 @@ span.navbar-toggler-icon img {
 }
 .ekomi_trusted_shops ul {
   flex: auto;
-  margin-left: 75px;
+  margin-left: 63px;
 }
 .ekomi_trusted_shops ul li {
   font-size: 18.42px;
+}
+.customer_review2_column1 {
+  width: 43.666667% !important;
+  padding: 0px !important;
+}
+.customer_review2_column2 {
+  width: 56.333333% !important;
+  padding: 0px !important;
 }
 .review2_trusted_shops {
   flex: auto;
@@ -1854,7 +1870,7 @@ span.navbar-toggler-icon img {
   height: 95px;
   display: flex;
   align-items: center;
-  margin-left: -10px;
+  padding-left: 10px;
 }
 .review2_trusted_shops img {
   width: 148px;
@@ -1867,10 +1883,13 @@ span.navbar-toggler-icon img {
 }
 .review2_slider_col {
   padding-right: 0px !important;
+  width: 78% !important;
 }
 .review2_card_column {
   display: flex;
   justify-content: flex-end;
+  padding-right: 0px !important;
+  width: 22% !important;
 }
 .review2_card {
   border-radius: 20px;
@@ -2247,22 +2266,21 @@ span.navbar-toggler-icon img {
 .versandarten_card {
   border: 1px solid #3a3a3c;
   border-radius: 20px;
-  margin-top: 20px;
   background-color: #ffffff;
-  margin-top: 81px;
+  min-height: 1000px;
 }
 .versandarten2_card {
   border: 1px solid #3a3a3c;
   border-radius: 20px;
-  margin-top: 20px;
+  margin-top: -20px;
   background-color: #ffffff;
+  min-height: 1000px;
 }
 .versandarten3_card {
   border: 1px solid #3a3a3c;
   border-radius: 20px;
   margin-top: 20px;
   background-color: #ffffff;
-  margin-top: 82px;
 }
 .versandarten_card_header {
   background-color: #3a3a3c;
@@ -2304,7 +2322,7 @@ span.navbar-toggler-icon img {
 }
 .versandarten_card2_body_para1 {
   font-size: 16px;
-  margin-bottom: 50px;
+  margin-bottom: 22px;
 }
 .versandarten_card2_body_para2 {
   font-size: 16px;
@@ -2333,7 +2351,7 @@ span.navbar-toggler-icon img {
 .versand_last_section_step {
   display: flex;
   align-items: baseline;
-  margin: 1px 30px;
+  margin: 1px 35px;
   position: relative;
 }
 .versand_last_section2_step {
@@ -2865,6 +2883,16 @@ span.navbar-toggler-icon img {
   border-bottom: 7px solid transparent;
   border-right: 7px solid #3a3a3c;
   color: transparent !important;
+}
+.review_slider_column .swiper-button-prev,
+.review_slider2_column .swiper-button-prev {
+  left: 1px;
+}
+.review_slider_column .swiper-button-next {
+  right: 1px;
+}
+.review_slider2_column .swiper-button-next {
+  right: 5px;
 }
 .review_slider_column .swiper-button-prev,
 .review_slider2_column .swiper-button-prev,
