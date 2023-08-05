@@ -29,7 +29,7 @@ const WirAnkafun = () => {
               <div className="row">
                 {WirAnkafunArray.map((item, index) => {
                   return (
-                    <div className="col-6 col-md-4" key={index}>
+                    <div className="col-12 col-md-6 col-lg-4" key={index}>
                       <div className="wir_ankaufun_card">
                         <div className="d-flex justify-content-center align-items-center wir_ankaufun_card_img">
                           <Image src={item.src} alt="" />
@@ -63,7 +63,7 @@ const WirAnkafun = () => {
               <div className="row">
                 {WirAnkafunArray.map((item, index) => {
                   return (
-                    <div className="col-6 col-md-4" key={index}>
+                    <div className="col-12 col-md-6 col-lg-4" key={index}>
                       <div className="wir_ankaufun_card">
                         <div className="d-flex justify-content-center align-items-center wir_ankaufun_card_img">
                           <Image src={item.src} alt="" />

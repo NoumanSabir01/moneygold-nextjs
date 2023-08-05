@@ -10,7 +10,7 @@ const Versandarten = () => {
         <div className="d-flex justify-content-center align-items-center versandarten_h2">
           <h2>Unsere Versandarten</h2>
         </div>
-        <div className="row align-items-end mt-5">
+        <div className="row align-items-end mt-md-5">
           <div className="col-12 col-md-6 col-lg-4">
             <div className="versandarten_card">
               <div className="versandarten_card_header">

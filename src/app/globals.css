@@ -710,16 +710,32 @@ span.navbar-toggler-icon img {
   .golden-fauf-wrapper {
     padding-top: 20px;
   }
-  .golden_fauf_wrapper_pricing .kostenlos {
+  /* .golden_fauf_wrapper_pricing .kostenlos {
     max-width: max-content;
     width: auto;
-  }
+  } */
   .golden-fauf {
     padding-top: 10px;
   }
   .golden_fauf_wrapper_pricing {
-    display: block !important;
-    margin-top: 20px;
+    display: flex !important;
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .herobg1,
+  .herobg2,
+  .herobg3,
+  .herobg4 {
+    height: 580px !important;
+  }
+  .herobg1 .slider1-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .slide1-text {
+    align-items: flex-start !important;
   }
 }
 .golden_fauf_wrapper_pricing {
@@ -2453,18 +2469,19 @@ span.navbar-toggler-icon img {
   }
   .hero_slide2 .slide2_ankauf {
     font-size: 60px;
-    padding-top: 80px;
+    padding-top: 20px;
     padding-left: 0px;
+    line-height: 70.66px;
   }
   .hero_slide2 .slide2_h2_mehr {
-    font-size: 22px;
+    font-size: 32px;
     margin-bottom: 5px;
     padding-left: 0px;
   }
-  .hero_slide2 .card_img img {
+  /* .hero_slide2 .card_img img {
     width: 100px;
     height: 100px;
-  }
+  } */
   .golden-kauf-img {
     justify-content: center;
   }
@@ -2477,8 +2494,7 @@ span.navbar-toggler-icon img {
   }
 
   .pricing-btn {
-    margin-top: 0px;
-    margin-bottom: 20px;
+    margin-top: 10px;
   }
 
   .uber_section_wrapper h2 {
@@ -2521,8 +2537,7 @@ span.navbar-toggler-icon img {
     margin-bottom: 18px;
   }
   .Kitco_gold_tab_wrapper {
-    width: auto;
-    margin-top: 35px;
+    margin-top: 30px;
   }
   .Kitco_gold_tab_wrapper .tab_pill,
   .tabpanel_ul p,
@@ -2535,6 +2550,16 @@ span.navbar-toggler-icon img {
   }
   .tabpanel_lastdiv .para4 {
     font-size: 24px;
+  }
+  .goldenfauf_wrapper .GoldankaufKotenloser_ {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .goldenfauf_wrapper .Kitco_gold {
+    display: flex;
+    justify-content: center;
   }
   .customer_review_section_wrapper h2 {
     text-align: center;
@@ -2561,6 +2586,54 @@ span.navbar-toggler-icon img {
     width: auto;
     height: auto;
   }
+  .review_slider_column .swiper-button-prev {
+    left: -2px !important;
+  }
+  .customer_review_section2_wrapper h2 {
+    line-height: 40px;
+    text-align: center;
+  }
+  .customer_review2_text p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .customer_review2_column2 {
+    padding: 10px !important;
+  }
+  .customer_review2_trusted_shops .trusted_img {
+    left: -19px;
+    width: 92px;
+    height: 92px;
+  }
+  .ekomi_trusted_shops {
+    margin-left: 10px;
+    height: 80px;
+  }
+  .ekomi_trusted_shops ul {
+    margin-left: 52px;
+  }
+  .ekomi_trusted_shops ul li {
+    font-size: 14px;
+  }
+  .review2_trusted_shops {
+    height: 65px;
+  }
+  .review2_trusted_shops .trusted_img_logo {
+    width: 96px;
+    flex: auto;
+  }
+  .review2_slider2_card {
+    width: auto;
+  }
+  .review2_slider_col {
+    width: 66.66666667% !important;
+    padding-right: 15px !important;
+  }
+  .review2_card_column {
+    width: 33.33333333% !important;
+    display: flex;
+    padding-right: 15px !important;
+  }
   .professional_section {
     flex-direction: column;
   }
@@ -2585,10 +2658,6 @@ span.navbar-toggler-icon img {
     font-size: 18px;
     line-height: 26px;
   }
-  .ekomi_trusted_shops {
-    margin-left: 45px;
-    height: 80px;
-  }
 }
 @media screen and (max-width: 767px) {
   .video-row .col-6:last-child {
@@ -2602,8 +2671,9 @@ span.navbar-toggler-icon img {
     height: 130px;
   }
   .melting-facilities-img img {
-    width: 210px;
+    width: 185px;
     height: 130px;
+    max-width: 185px;
   }
   .unsere_section_wrapper h2 {
     font-size: 20px;
@@ -2712,6 +2782,8 @@ span.navbar-toggler-icon img {
     font-size: 14.74px;
     width: auto;
     height: 35px;
+    margin-top: 0px;
+    margin-bottom: 20px;
   }
 
   .customer_review2_trusted_shops .trusted_img {
@@ -2792,8 +2864,17 @@ span.navbar-toggler-icon img {
   .versandarten3_card {
     margin-top: 20px;
   }
+  .customer_review2_column1 {
+    width: 100% !important;
+  }
+  .customer_review2_column2 {
+    width: 100% !important;
+  }
+  .versandarten2_card {
+    margin-top: 20px;
+  }
 }
-@media screen and (min-width: 320px) and (max-width: 430px) {
+@media screen and (min-width: 380px) and (max-width: 767px) {
   .customer_review2_trusted_shops .trusted_img {
     left: 0px;
     width: 90px;
@@ -2808,7 +2889,7 @@ span.navbar-toggler-icon img {
     margin-left: 60px;
   }
   .ekomi_trusted_shops ul li {
-    font-size: 14px;
+    font-size: 12px;
   }
   .review2_trusted_shops {
     height: 65px;
@@ -2833,22 +2914,34 @@ span.navbar-toggler-icon img {
     font-size: 15px;
   }
   .review2_slider2_card {
-    width: auto;
+    width: 180px;
+    height: 192px;
   }
+
   .review_slider2_column .review2_heading2 {
     margin-bottom: 0px;
+    justify-content: flex-start;
   }
   .review2_card .Bewertung2 h2 {
     font-size: 20px;
-    line-height: 48.72px;
+    line-height: 20px;
   }
   .review2_card .Bewertung2 p {
     font-size: 13px;
+    line-height: 13px;
   }
   .review2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5px;
+  }
+  .review2_card .review2_date {
+    margin-bottom: 0px;
+  }
+  .review2_gut {
+    font-size: 16px;
+    margin-top: 1px;
   }
   .review2 i {
     width: auto;
@@ -2860,23 +2953,43 @@ span.navbar-toggler-icon img {
     margin-right: 0px;
   }
   .pwered_by {
-    padding-left: 5px;
-    margin-left: 5px;
+    padding-left: 15px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -12px;
   }
   .pwered_by p {
     font-size: 9px;
     line-height: normal;
   }
   .ekomi_powered_by ul li {
-    font-size: 10px;
+    font-size: 12px;
   }
   .ekomi_powered_by {
     height: 70px;
     margin-left: 35px;
   }
-  .customer_review_ekomi_powered_by img {
+  .customer_review2_column2 {
+    padding: unset !important;
+  }
+  .customer_review_ekomi_powered_by .customer_review_ekomi_powered_by_img {
     width: 82px;
     height: 82px;
+  }
+  .review_slider2_column .swiper-button-next {
+    right: 55px !important;
+  }
+  .wir_ankaufun_card {
+    width: auto;
+  }
+  .review2_trusted_shops .trusted_img_logo {
+    width: 70px;
+  }
+  .Kitco_gold_tab_wrapper {
+    width: auto;
   }
 }
 .review_slider_column .swiper-button-next:after,

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import PriceValueForm from "../shared/PriceValueForm";
 import GoldenKauf1 from "/public/assets/img/homepage/gold-kauf-circle1.png";
+import GoldenKaufMobile from "/public/assets/img/homepage/gold-kauf-circle2-mobile.png";
 import GoldenKauf2 from "/public/assets/img/homepage/gold-kauf-circle2.png";
 import GoldenKauf3 from "/public/assets/img/homepage/gold-kauf-circle3.png";
 import GoldenKauf4 from "/public/assets/img/homepage/gold-kauf-circle4.png";
@@ -31,9 +32,18 @@ const GoldenKauf = () => {
               </p>
             </div>
           </div>
-          <div className="col-6 col-lg-3">
+          <div className="d-none d-lg-block col-lg-3">
             <div className="golden-kauf-img">
               <Image src={GoldenKauf2} alt="" />
+              <p className="color-gold">
+                Gold <br />
+                versenden
+              </p>
+            </div>
+          </div>
+          <div className="d-block col-6 d-lg-none">
+            <div className="golden-kauf-img">
+              <Image src={GoldenKaufMobile} alt="" />
               <p className="color-gold">
                 Gold <br />
                 versenden

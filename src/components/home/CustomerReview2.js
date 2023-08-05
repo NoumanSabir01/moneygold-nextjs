@@ -63,6 +63,7 @@ const CustomerReview2 = () => {
                     alt=""
                     width={139}
                     height={37}
+                    className="trusted_img_logo"
                   />
                 </div>
               </div>

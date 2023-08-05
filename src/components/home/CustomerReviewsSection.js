@@ -45,7 +45,13 @@ const CustomerReviewsSection = () => {
           </div>
           <div className="col-12 col-md-7">
             <div className="d-flex align-items-center customer_review_ekomi_powered_by">
-              <Image src={EkomiVector} alt="" width={165} height={165} />
+              <Image
+                src={EkomiVector}
+                alt=""
+                width={165}
+                height={165}
+                className="customer_review_ekomi_powered_by_img"
+              />
               <div className="ekomi_powered_by">
                 <ul>
                   <li> • eKomi Siegel Gold</li>
@@ -54,7 +60,13 @@ const CustomerReviewsSection = () => {
                 <div className="pwered_by">
                   <div>
                     <p>Powered by</p>
-                    <Image src={PowerBy} alt="" width={139} height={37} />
+                    <Image
+                      src={PowerBy}
+                      alt=""
+                      width={139}
+                      height={37}
+                      className="pwered_by_img"
+                    />
                   </div>
                 </div>
               </div>
@@ -62,7 +74,7 @@ const CustomerReviewsSection = () => {
           </div>
         </div>
         <div className="row review_slider_row">
-          <div className="col-6 col-md-6 col-lg-3 ">
+          <div className="col-6 col-md-4 col-lg-3 ">
             <div className="review_card">
               <div className="d-flex align-items-center Bewertung">
                 <h2>4.9</h2>
@@ -114,7 +126,7 @@ const CustomerReviewsSection = () => {
               </div>
             </div>
           </div>
-          <div className="col-6 col-md-6 col-lg-9 review_slider_col">
+          <div className="col-6 col-md-8 col-lg-9 review_slider_col">
             <div className="review_slider_column">
               <div className="review_heading2">
                 <p>KUNDENBEWERTUNGEN</p>
@@ -137,7 +149,7 @@ const CustomerReviewsSection = () => {
                     spaceBetween: 30,
                   },
                   993: {
-                    slidesPerView: 3,
+                    slidesPerView: 2,
                     spaceBetween: 30,
                   },
                 }}

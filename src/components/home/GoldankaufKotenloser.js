@@ -7,8 +7,8 @@ const GoldankaufKotenloser = () => {
     <section className="goldenfauf_wrapper">
       <div className="wrapper text content">
         <div className="container">
-          <div className="row">
-            <div className="col-md-8">
+          <div className="row GoldankaufKotenloser_">
+            <div className="col-12 col-md-8 ">
               <h2 className="text-left GoldankaufKotenloser-heading">
                 Goldankauf - kostenloser &amp; versicherter Versand
               </h2>
@@ -46,7 +46,7 @@ const GoldankaufKotenloser = () => {
                 Selbstverständlichkeit.
               </p>
             </div>
-            <div className="col-md-4">
+            <div className="col-12 col-md-12 col-lg-4 Kitco_gold">
               <KitcoGoldTab />
             </div>
           </div>
