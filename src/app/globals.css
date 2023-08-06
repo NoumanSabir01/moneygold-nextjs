@@ -3225,7 +3225,11 @@ span.navbar-toggler-icon img {
     line-height: 20px;
   }
   .wir_ankaufun_card {
-    width: 170px;
+    width: 160px;
+  }
+  .wir_ankaufun_card_img img {
+    width: 150px;
+    height: 160px;
   }
 }
 .review_slider_column .swiper-button-next:after,
