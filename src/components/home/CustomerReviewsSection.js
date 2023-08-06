@@ -149,7 +149,7 @@ const CustomerReviewsSection = () => {
                     spaceBetween: 30,
                   },
                   993: {
-                    slidesPerView: 2,
+                    slidesPerView: 3,
                     spaceBetween: 30,
                   },
                 }}

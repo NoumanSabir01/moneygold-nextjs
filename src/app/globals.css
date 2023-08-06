@@ -2418,7 +2418,62 @@ span.navbar-toggler-icon img {
     width: 230px;
     height: 160px;
   }
+  .customer_review_text p {
+    font-size: 24px;
+  }
+  .customer_review_ekomi_powered_by {
+    margin-top: 40px;
+  }
+  .customer_review_ekomi_powered_by .customer_review_ekomi_powered_by_img {
+    width: 130px;
+    left: 32px;
+  }
+  .ekomi_powered_by {
+    height: 100px;
+  }
+  .ekomi_powered_by ul li {
+    font-size: 18px;
+  }
+  .pwered_by p {
+    line-height: 20px;
+  }
+  .pwered_by_img {
+    width: 113px;
+  }
+  .customer_review2_text p {
+    font-size: 24px;
+  }
+  .customer_review2_trusted_shops .trusted_img {
+    width: 135px;
+  }
+  .ekomi_trusted_shops ul li {
+    font-size: 16px;
+  }
+  .ekomi_trusted_shops {
+    margin-left: 80px;
+    height: 105px;
+  }
+  .review2_trusted_shops {
+    height: 90px;
+  }
+  .review2_slider2_card {
+    width: auto;
+  }
+  .review2_slider_col {
+    padding-right: 10px !important;
+  }
+  .wir_ankaufun_card {
+    width: 315px;
+  }
+  .wir_ankaufun_card_img img {
+    width: 300px;
+  }
+  .unsere_section_slide1_img {
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+  }
 }
+
 @media screen and (max-width: 992px) {
   .slide1-h2,
   .slide1-Warum {
@@ -2478,10 +2533,6 @@ span.navbar-toggler-icon img {
     margin-bottom: 5px;
     padding-left: 0px;
   }
-  /* .hero_slide2 .card_img img {
-    width: 100px;
-    height: 100px;
-  } */
   .golden-kauf-img {
     justify-content: center;
   }
@@ -2492,7 +2543,10 @@ span.navbar-toggler-icon img {
     flex-direction: column;
     margin-bottom: 10px;
   }
-
+  .melting-facilities-img img {
+    width: 100%;
+    height: 100%;
+  }
   .pricing-btn {
     margin-top: 10px;
   }
@@ -2560,6 +2614,9 @@ span.navbar-toggler-icon img {
   .goldenfauf_wrapper .Kitco_gold {
     display: flex;
     justify-content: center;
+  }
+  .wir_ankaufun_card {
+    width: auto;
   }
   .customer_review_section_wrapper h2 {
     text-align: center;
@@ -2659,7 +2716,29 @@ span.navbar-toggler-icon img {
     line-height: 26px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 800px) and (max-width: 900px) {
+  .pwered_by img {
+    width: 92px;
+  }
+  .pricing-btn {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 992px) {
+  .pwered_by img {
+    width: 111px;
+  }
+  .ekomi_powered_by ul li {
+    font-size: 16px;
+  }
+  .pwered_by {
+    margin-left: 20px;
+  }
+  .pricing-btn {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 460px) {
   .video-row .col-6:last-child {
     display: none;
   }
@@ -2720,6 +2799,33 @@ span.navbar-toggler-icon img {
     padding: 10px;
     border-radius: 5px;
     margin-top: 15px;
+  }
+  .pwered_by {
+    padding-left: 15px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .pwered_by img {
+    width: 90px;
+    height: 29px;
+  }
+  .pwered_by > div {
+    margin-top: -15px;
+  }
+  .pwered_by p {
+    font-size: 10.38px;
+    line-height: normal;
+    text-align: center;
+  }
+  .ekomi_powered_by ul li {
+    font-size: 13px;
+  }
+  .ekomi_powered_by {
+    height: 70px;
+    margin-left: 35px;
   }
   .review_slider_column {
     margin-top: 20px;
@@ -2873,8 +2979,75 @@ span.navbar-toggler-icon img {
   .versandarten2_card {
     margin-top: 20px;
   }
+  .hero_slide2 .card_img img {
+    width: 175px;
+  }
+  .hero_slide2 .slide2_ankauf {
+    text-align: center;
+    font-size: 75px;
+  }
+  .hero_slide2 .slide2_h2_mehr {
+    text-align: center;
+  }
+  .slide3_ankauf {
+    font-size: 75px;
+    margin-left: 0px;
+  }
+  .slide3_h2_mehr {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: -10px;
+    margin-left: 0px;
+  }
+  .slide3_tick_img {
+    margin-left: 0px;
+  }
+  .slider3_text {
+    font-size: 16px;
+    line-height: 34px;
+  }
+  .slide4_ankauf {
+    font-size: 85px;
+  }
+  .slide4_h2_mehr {
+    font-size: 50px;
+    line-height: 62.77px;
+  }
+  .slider4_para {
+    font-size: 20px;
+  }
+  .wir_ankaufun_card_img img {
+    width: 170px;
+    height: 170px;
+  }
+  .wir_ankaufun_card {
+    width: 185px;
+    height: 230px;
+    border-radius: 10px;
+  }
+  .wir_verkaufer_name {
+    font-size: 18px;
+    line-height: 16.53px;
+  }
+  .wir_ankaufun_card:hover .text_list_container {
+    padding-left: 30px;
+  }
+  .text_list_container li {
+    font-size: 13px;
+    margin-bottom: 0px;
+  }
+  .wir_verkaufer_btn {
+    width: 35px;
+    height: 35px;
+  }
+  .wir_ankaufun_wrapper .wir_ankaufun_h3 {
+    font-size: 18px;
+  }
+  .wir_verkaufer {
+    padding: 10px;
+  }
 }
-@media screen and (min-width: 380px) and (max-width: 767px) {
+@media screen and (min-width: 400px) and (max-width: 460px) {
   .customer_review2_trusted_shops .trusted_img {
     left: 0px;
     width: 90px;
@@ -2952,26 +3125,7 @@ span.navbar-toggler-icon img {
   .review2 i:last-child {
     margin-right: 0px;
   }
-  .pwered_by {
-    padding-left: 15px;
-    margin-left: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: -12px;
-  }
-  .pwered_by p {
-    font-size: 9px;
-    line-height: normal;
-  }
-  .ekomi_powered_by ul li {
-    font-size: 12px;
-  }
-  .ekomi_powered_by {
-    height: 70px;
-    margin-left: 35px;
-  }
+
   .customer_review2_column2 {
     padding: unset !important;
   }
@@ -2982,14 +3136,96 @@ span.navbar-toggler-icon img {
   .review_slider2_column .swiper-button-next {
     right: 55px !important;
   }
-  .wir_ankaufun_card {
-    width: auto;
-  }
+
   .review2_trusted_shops .trusted_img_logo {
     width: 70px;
   }
   .Kitco_gold_tab_wrapper {
     width: auto;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 399px) {
+  .slide4_h2_mehr {
+    font-size: 45px;
+    line-height: 56px;
+  }
+  .hero-ntv {
+    margin-right: 20px;
+  }
+  .hero-arrowimg {
+    right: 96px;
+  }
+  .Kitco_gold_tab_wrapper .tab_pill {
+    font-size: 13px;
+  }
+  .review_card {
+    padding: 5px;
+  }
+  .review_slider_column .review_heading2 p {
+    font-size: 14px;
+  }
+  .ekomi_powered_by ul li {
+    font-size: 12px;
+  }
+  .review2_card {
+    width: 160px;
+  }
+  .review2_card .Bewertung2 p {
+    font-size: 11px;
+  }
+  .review2_card .Bewertung2 h2 {
+    font-size: 22px;
+  }
+  .review2_slider2_card {
+    width: 166px;
+    height: 190px;
+  }
+  .review_slider2_column .review2_heading2 p {
+    font-size: 13px;
+  }
+  .slider1-garanty {
+    width: 350px;
+  }
+
+  .pwered_by img {
+    width: 50px;
+    height: auto;
+  }
+  .pwered_by p {
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .review_slider_slides {
+    padding-top: 5px !important;
+  }
+  .review_slider2_column .swiper-button-next {
+    right: 45px !important;
+  }
+  .ekomi_trusted_shops {
+    width: 324px;
+  }
+  .review2_trusted_shops .trusted_img_logo {
+    width: 80px;
+  }
+  .ekomi_trusted_shops ul li {
+    font-size: 10px;
+  }
+  .customer_review2_trusted_shops .trusted_img {
+    left: -5px;
+  }
+  .review_slider2_column .review2_heading2 {
+    justify-content: flex-start;
+  }
+  .unsere_section_wrapper h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .pricing h3 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .wir_ankaufun_card {
+    width: 170px;
   }
 }
 .review_slider_column .swiper-button-next:after,

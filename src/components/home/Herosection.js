@@ -13,7 +13,11 @@ import TrustAmi from "/public/assets/img/homepage/hero-trustami.png";
 import Diamond from "/public/assets/img/homepage/slider2_diamond.png";
 import GoldBar from "/public/assets/img/homepage/slider2_goldbar.png";
 import Goldmunzen from "/public/assets/img/homepage/slider2_goldmunzen.png";
+import Industries from "/public/assets/img/homepage/slider2_industries.png";
 import Luxury from "/public/assets/img/homepage/slider2_luxury.png";
+import Pladium from "/public/assets/img/homepage/slider2_pladium.png";
+import Platin from "/public/assets/img/homepage/slider2_platin.png";
+import Rhodium from "/public/assets/img/homepage/slider2_rhodium.png";
 import TafelSilber from "/public/assets/img/homepage/slider2_tafelsilber.png";
 import Zahngold from "/public/assets/img/homepage/slider2_zahngold.png";
 import Silber from "/public/assets/img/homepage/slider2silber.png";
@@ -129,17 +133,41 @@ const Herosection = () => {
 
                 <Image src={Luxury} alt="" />
 
-                <Image src={GoldBar} alt="" />
+                <Image
+                  src={GoldBar}
+                  alt=""
+                  className="d-none d-md-block d-lg-block"
+                />
 
-                <Image src={Goldmunzen} alt="" />
+                <Image
+                  src={Goldmunzen}
+                  alt=""
+                  className="d-none d-md-block d-lg-block"
+                />
 
-                <Image src={Silber} alt="" />
+                <Image
+                  src={Industries}
+                  alt=""
+                  className="d-none d-md-block d-lg-block"
+                />
 
-                <Image src={Silber} alt="" />
+                <Image
+                  src={Platin}
+                  alt=""
+                  className="d-none d-md-block d-lg-block"
+                />
 
-                <Image src={Silber} alt="" />
+                <Image
+                  src={Pladium}
+                  alt=""
+                  className="d-none d-md-block d-lg-block"
+                />
 
-                <Image src={Silber} alt="" />
+                <Image
+                  src={Rhodium}
+                  alt=""
+                  className="d-none d-md-block d-lg-block"
+                />
               </div>
             </div>
           </div>
