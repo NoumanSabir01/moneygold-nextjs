@@ -2322,6 +2322,7 @@ span.navbar-toggler-icon img {
   border-radius: 20px;
   margin-top: 20px;
   background-color: #ffffff;
+  min-height: 1000px;
 }
 .versandarten_card_header {
   background-color: #3a3a3c;
