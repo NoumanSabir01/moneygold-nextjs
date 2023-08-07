@@ -35,7 +35,7 @@ const Unseresection = () => {
             },
             993: {
               slidesPerView: 5,
-              spaceBetween: 5,
+              spaceBetween: 10,
             },
           }}
           navigation
@@ -44,52 +44,52 @@ const Unseresection = () => {
         >
           <SwiperSlide>
             <div className="d-flex align-items-center justify-content-center unsere_section_slide1_img">
-              <Image src={EkomiVector} alt="" width={166} height={166} />
+              <Image src={EkomiVector} alt="" width={130} height={130} />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="d-flex align-items-center justify-content-center unsere_section_slide1_img">
-              <Image src={TrustedShops} alt="" width={166} height={166} />
+              <Image src={TrustedShops} alt="" width={130} height={130} />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="d-flex align-items-center justify-content-center unsere_section_slide1_img">
-              <Image src={ProvenExperts} alt="" width={215} height={166} />
+              <Image src={ProvenExperts} alt="" width={215} height={130} />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="d-flex align-items-center justify-content-center unsere_section_slide1_img">
-              <Image src={TopDienstleiester} alt="" width={166} height={166} />
+              <Image src={TopDienstleiester} alt="" width={130} height={130} />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="d-flex align-items-center justify-content-center unsere_section_slide1_img">
-              <Image src={Ntv} alt="" width={166} height={166} />
+              <Image src={Ntv} alt="" width={130} height={130} />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="d-flex align-items-center justify-content-center unsere_section_slide1_img">
-              <Image src={EkomiVector} alt="" width={166} height={166} />
+              <Image src={EkomiVector} alt="" width={130} height={130} />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="d-flex align-items-center justify-content-center unsere_section_slide1_img">
-              <Image src={TrustedShops} alt="" width={166} height={166} />
+              <Image src={TrustedShops} alt="" width={130} height={130} />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="d-flex align-items-center justify-content-center unsere_section_slide1_img">
-              <Image src={ProvenExperts} alt="" width={215} height={166} />
+              <Image src={ProvenExperts} alt="" width={175} height={130} />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="d-flex align-items-center justify-content-center unsere_section_slide1_img">
-              <Image src={TopDienstleiester} alt="" width={166} height={166} />
+              <Image src={TopDienstleiester} alt="" width={130} height={130} />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="d-flex align-items-center justify-content-center unsere_section_slide1_img">
-              <Image src={Ntv} alt="" width={166} height={166} />
+              <Image src={Ntv} alt="" width={130} height={130} />
             </div>
           </SwiperSlide>
         </Swiper>

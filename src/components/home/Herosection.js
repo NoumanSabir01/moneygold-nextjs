@@ -30,6 +30,7 @@ import TrustedShops from "/public/assets/img/trusted-shops.png";
 const Herosection = () => {
   return (
     <Swiper
+      className="hero_slider"
       modules={[Pagination]}
       slidesPerView={1}
       pagination={{ clickable: true }}

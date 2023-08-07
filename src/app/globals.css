@@ -732,7 +732,6 @@ span.navbar-toggler-icon img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
   .slide1-text {
     align-items: flex-start !important;
@@ -1285,11 +1284,13 @@ span.navbar-toggler-icon img {
   margin-right: 15px;
   margin-left: 0px;
 }
-.swiper-pagination-bullet,
-.swiper-pagination-bullet-active {
+.hero_slider .swiper-pagination-bullet {
   background-color: #ffffff !important;
   width: 17.91px !important;
   height: 17.91px !important;
+}
+.hero_slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #fff7da !important;
 }
 .slider1-garanty p {
   font-size: 23.37px;
@@ -2259,6 +2260,18 @@ span.navbar-toggler-icon img {
 .wir_ankaufun_card:hover .wir_verkaufer_btn {
   background-color: #d9c26c;
 }
+.wir_ankaufun_swiper_wrapper .swiper-pagination-bullet {
+  background-color: #a9a9a9 !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+.wir_ankaufun_swiper_wrapper
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #d9c26c !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
 .text_list_container {
   display: none;
   position: absolute;
@@ -2490,8 +2503,8 @@ span.navbar-toggler-icon img {
   }
 
   .hero-ntv img {
-    width: 150px;
-    height: 150px;
+    width: 135px;
+    height: 135px;
   }
   .hero-arrowimg {
     right: 115px;
@@ -2738,7 +2751,7 @@ span.navbar-toggler-icon img {
     margin-top: 20px;
   }
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 767px) {
   .video-row .col-6:last-child {
     display: none;
   }
@@ -2868,6 +2881,10 @@ span.navbar-toggler-icon img {
   }
   .review_slider_card {
     padding: 20px 10px 20px 10px;
+    height: 165px;
+  }
+  .review_slider_card i {
+    font-size: 10px;
   }
   .review_slider_column .swiper-button-prev,
   .review_slider2_column .swiper-button-prev {
@@ -3026,7 +3043,7 @@ span.navbar-toggler-icon img {
     border-radius: 10px;
   }
   .wir_verkaufer_name {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 16.53px;
   }
   .wir_ankaufun_card:hover .text_list_container {
@@ -3046,8 +3063,11 @@ span.navbar-toggler-icon img {
   .wir_verkaufer {
     padding: 10px;
   }
+  .GoldankaufKotenloser-img img {
+    margin-bottom: 15px;
+  }
 }
-@media screen and (min-width: 400px) and (max-width: 460px) {
+@media screen and (min-width: 400px) and (max-width: 767px) {
   .customer_review2_trusted_shops .trusted_img {
     left: 0px;
     width: 90px;
@@ -3266,6 +3286,12 @@ span.navbar-toggler-icon img {
   color: transparent !important;
   background-color: transparent !important;
   top: 60%;
+}
+.unsere_section_wrapper .swiper-button-next {
+  right: -2px;
+}
+.unsere_section_wrapper .swiper-button-prev {
+  left: -2px;
 }
 
 /* Home Page Css ends here */
