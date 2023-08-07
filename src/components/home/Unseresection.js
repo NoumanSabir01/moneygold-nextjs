@@ -54,7 +54,13 @@ const Unseresection = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="d-flex align-items-center justify-content-center unsere_section_slide1_img">
-              <Image src={ProvenExperts} alt="" width={215} height={130} />
+              <Image
+                src={ProvenExperts}
+                alt=""
+                width={175}
+                height={130}
+                className="unsere_proven_expert"
+              />
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -79,7 +85,13 @@ const Unseresection = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="d-flex align-items-center justify-content-center unsere_section_slide1_img">
-              <Image src={ProvenExperts} alt="" width={175} height={130} />
+              <Image
+                src={ProvenExperts}
+                alt=""
+                width={175}
+                height={130}
+                className="unsere_proven_expert"
+              />
             </div>
           </SwiperSlide>
           <SwiperSlide>
