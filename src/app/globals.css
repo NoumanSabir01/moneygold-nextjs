@@ -2997,6 +2997,9 @@ span.navbar-toggler-icon img {
   .customer_review2_column2 {
     width: 100% !important;
   }
+  .uber_section_wrapper h2 {
+    text-align: center;
+  }
   .versandarten2_card {
     margin-top: 20px;
   }
@@ -3158,7 +3161,7 @@ span.navbar-toggler-icon img {
     height: 82px;
   }
   .review_slider2_column .swiper-button-next {
-    right: 55px !important;
+    right: 60px !important;
   }
 
   .review2_trusted_shops .trusted_img_logo {
@@ -3202,7 +3205,7 @@ span.navbar-toggler-icon img {
   }
   .review2_slider2_card {
     width: 166px;
-    height: 190px;
+    height: 213px;
   }
   .review_slider2_column .review2_heading2 p {
     font-size: 13px;
@@ -3223,13 +3226,16 @@ span.navbar-toggler-icon img {
     padding-top: 5px !important;
   }
   .review_slider2_column .swiper-button-next {
-    right: 45px !important;
+    right: 50px !important;
+  }
+  .review_slider2_column .swiper-button-prev {
+    left: -5px !important;
   }
   .ekomi_trusted_shops {
     width: 324px;
   }
   .review2_trusted_shops .trusted_img_logo {
-    width: 80px;
+    width: 70px;
   }
   .ekomi_trusted_shops ul li {
     font-size: 10px;
