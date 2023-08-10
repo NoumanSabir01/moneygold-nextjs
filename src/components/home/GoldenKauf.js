@@ -10,7 +10,7 @@ const GoldenKauf = () => {
   return (
     <div className="golden-fauf-wrapper">
       <div className="container">
-        <div class="golden_fauf_wrapper_pricing">
+        <div className="golden_fauf_wrapper_pricing">
           <PriceValueForm />
         </div>
         <div className="golden-fauf">

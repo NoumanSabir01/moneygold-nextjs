@@ -1224,24 +1224,28 @@ span.navbar-toggler-icon img {
   font-size: 34px;
   line-height: 37px;
   font-weight: 700;
-  margin-bottom: 26px;
+  margin-bottom: 15px;
+  color: #000000;
 }
 .slide1-Warum {
   font-size: 34px;
   font-weight: 400;
   line-height: 37px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
+  color: #000000;
 }
 .slide1-text i {
   margin-right: 10px;
   font-size: 20px;
   font-weight: 300 !important;
+  color: #000000;
 }
 .slide1-text p {
   margin-bottom: 5px;
   line-height: 30px;
   font-size: 20px;
   font-weight: 600;
+  color: #000000;
 }
 .hero-ntv {
   margin-right: 50px;
@@ -1275,10 +1279,10 @@ span.navbar-toggler-icon img {
   box-shadow: -0.087px 4.999px 10px 0px rgba(6, 0, 14, 0.32);
   width: 733px;
   height: 137px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 30px;
   margin-right: 15px;
   margin-left: 0px;
+  padding: 5px 20px;
 }
 .hero_slider .swiper-pagination-bullet {
   background-color: #ffffff !important;
@@ -1295,18 +1299,15 @@ span.navbar-toggler-icon img {
   width: 284px;
   position: relative;
   padding-left: 9px;
+  color: #000000;
 }
 .garanty-img {
-  padding-left: 22px;
-  padding-right: 22px;
   padding-bottom: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: -20px;
   border-top: 3px solid #3a3a3c !important;
-  margin-left: 22px;
-  margin-right: 22px;
 }
 .garanty-img img {
   width: 82px;
@@ -1528,7 +1529,6 @@ span.navbar-toggler-icon img {
 .video_section_wrapper {
   background-image: url("/assets/img/homepage/video_section_bg.png");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1753,6 +1753,7 @@ span.navbar-toggler-icon img {
 .review_card .p2 p {
   font-size: 10.09px;
   color: #ffffff;
+  margin: 3px 0px;
 }
 .review_card .positive {
   color: #ffffff;
@@ -1766,7 +1767,7 @@ span.navbar-toggler-icon img {
   margin-top: 15px;
 }
 .review_slider_row {
-  align-items: center;
+  align-items: flex-end;
 }
 .review_slider_column {
   margin-top: 20px;
@@ -1774,8 +1775,6 @@ span.navbar-toggler-icon img {
 .review_slider_card {
   background-color: #ffffff;
   border-radius: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
   padding: 20px 10px 40px 10px;
 }
 .reviewNum {
@@ -1794,29 +1793,25 @@ span.navbar-toggler-icon img {
   font-size: 11.86px;
   color: #000000;
 }
-.review_slider_slides {
-  border-top: 2px solid #ffffff;
-  padding-top: 40px !important;
-}
+
 .review_slider_column .review_heading2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: -20px;
+  margin-bottom: 20px;
+}
+.review_heading2_line {
+  width: 100%;
+  border: 2px solid #ffffff;
 }
 .review_slider_column .review_heading2 p {
-  background: linear-gradient(
-    90deg,
-    rgba(50, 124, 63, 1) 0%,
-    rgba(79, 148, 67, 1) 35%,
-    rgba(100, 165, 73, 1) 100%
-  );
   color: #ffffff;
   font-size: 27.04px;
   font-weight: bold;
   width: 350px;
   z-index: 99;
   text-align: center;
+  margin: 0 5px;
 }
 .review_slider_card .review_para {
   margin-top: 20px;
@@ -2026,29 +2021,25 @@ span.navbar-toggler-icon img {
 .reviewStar2 {
   color: #ffea00;
 }
-.review2_slider2_slides {
-  border-top: 2px solid #000000;
-  padding-top: 40px !important;
-}
+
 .review_slider2_column .review2_heading2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: -20px;
+  margin-bottom: 20px;
+}
+.review2_heading2_line {
+  width: 100%;
+  border: 2px solid #000000;
 }
 .review_slider2_column .review2_heading2 p {
-  background: linear-gradient(
-    90deg,
-    rgba(250, 211, 48, 1) 0%,
-    rgba(241, 205, 45, 1) 35%,
-    rgba(245, 207, 47, 1) 100%
-  );
   color: #000000;
   font-size: 27.04px;
   font-weight: bold;
   width: 350px;
   z-index: 99;
   text-align: center;
+  margin: 0px 5px;
 }
 .review2_slider2_card .review2_para {
   margin-top: 20px;
@@ -2068,18 +2059,28 @@ span.navbar-toggler-icon img {
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 15px;
+  color: #3a3a3c;
 }
 .GoldankaufKotenloser-heading2 {
   margin-top: 50px;
   font-size: 30px;
   font-weight: bold;
+  color: #3a3a3c;
 }
 .GoldankaufKotenloser-img img {
   margin-right: 20px;
   width: 251px;
   height: 253px;
 }
-
+.Goldankauf_para1_,
+.Goldankauf_para2_ {
+  color: #000000;
+  font-size: 16px;
+  line-height: 24px;
+}
+.Goldankauf_para2_ {
+  margin-top: 10px;
+}
 /*Goldankauf Kotenloser tabs css */
 .Kitco_gold_tab_wrapper {
   border: 1px solid #939598;
@@ -2117,6 +2118,8 @@ span.navbar-toggler-icon img {
   border-bottom: 0 !important;
   border-color: #ffffff !important;
   cursor: pointer;
+  line-height: 18px;
+  padding: 5px 0px;
 }
 .tab_pill0 {
   flex-basis: 63px !important;
@@ -2212,7 +2215,7 @@ span.navbar-toggler-icon img {
   text-decoration: underline;
 }
 .wir_ankaufun_card {
-  border: 1px solid #bcbec0;
+  border: 2px solid #bcbec0;
   border-radius: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -2220,13 +2223,13 @@ span.navbar-toggler-icon img {
   height: 342.93px;
 }
 .wir_ankaufun_card:hover {
-  border: 1px solid #dbc675;
+  border: 2px solid #dbc675;
   cursor: pointer;
 }
 .wir_verkaufer {
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid #bcbec0;
+  border-top: 2px solid #bcbec0;
   padding: 20px;
 }
 .wir_ankaufun_card_img {
@@ -2296,9 +2299,10 @@ span.navbar-toggler-icon img {
   padding-top: 35px;
   padding-bottom: 35px;
 }
-.versandarten_h2 {
+.versandarten_h2 h2 {
   font-size: 30px;
   color: #3a3a3c;
+  font-weight: bold;
 }
 .versandarten_card {
   border: 1px solid #3a3a3c;
@@ -3291,7 +3295,7 @@ span.navbar-toggler-icon img {
 .review_slider2_column .swiper-button-next {
   color: transparent !important;
   background-color: transparent !important;
-  top: 60%;
+  top: 50%;
 }
 .unsere_section_wrapper .swiper-button-next {
   right: -2px;
@@ -3487,6 +3491,12 @@ span.navbar-toggler-icon img {
   line-height: 49.45px;
   font-weight: bold;
   text-align: center;
+  display: flex;
+  align-items: center;
+}
+.gold_card_img_heading3 i {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .e_trusted_shops_card {
   background-image: url("/assets/img/homepage/customer2_review_bg.png");
@@ -3602,3 +3612,24 @@ span.navbar-toggler-icon img {
   }
 }
 /* Eigenes Versandmaterial end here */
+
+/* sind unterwegs css starts here*/
+.sind_unterwegs_heading {
+  font-size: 30px;
+  line-height: 32.87px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.sind_unterwegs_para ul li {
+  list-style: disc;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+.bestellen_select {
+  border-radius: 10px !important;
+  border: 1px solid #a39f90 !important;
+  background-color: #fff7da !important;
+  height: 36.29px;
+}

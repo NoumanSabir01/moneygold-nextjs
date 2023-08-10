@@ -39,7 +39,7 @@ const EtrusredShop = ({ marginTop = "20px" }) => {
                 19.04.2023
               </p>
 
-              <i class="fa fa-caret-down" style={{ fontSize: "13px" }}></i>
+              <i className="fa fa-caret-down" style={{ fontSize: "13px" }}></i>
             </div>
           </div>
           <div className="review2_para d-flex justify-content-center align-items-center">

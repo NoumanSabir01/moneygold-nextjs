@@ -74,7 +74,9 @@ const CustomerReview2 = () => {
           <div className="col-6 col-md-6 col-lg-9 review2_slider_col">
             <div className="review_slider2_column">
               <div className="review2_heading2">
+                <div className="review2_heading2_line" />
                 <p>KUNDENBEWERTUNGEN</p>
+                <div className="review2_heading2_line" />
               </div>
 
               <Swiper
@@ -131,12 +133,12 @@ const CustomerReview2 = () => {
                 <h2>5.00</h2>
                 <p>Durchschnittliche Bewertung</p>
               </div>
-              <div class="review2">
-                <i class="fa fa-star" style={{ fontSize: "30px" }}></i>
-                <i class="fa fa-star" style={{ fontSize: "30px" }}></i>
-                <i class="fa fa-star" style={{ fontSize: "30px" }}></i>
-                <i class="fa fa-star" style={{ fontSize: "30px" }}></i>
-                <i class="fa fa-star" style={{ fontSize: "30px" }}></i>
+              <div className="review2">
+                <i className="fa fa-star" style={{ fontSize: "30px" }}></i>
+                <i className="fa fa-star" style={{ fontSize: "30px" }}></i>
+                <i className="fa fa-star" style={{ fontSize: "30px" }}></i>
+                <i className="fa fa-star" style={{ fontSize: "30px" }}></i>
+                <i className="fa fa-star" style={{ fontSize: "30px" }}></i>
               </div>
               {review2StarArray.map((item, index) => {
                 return (

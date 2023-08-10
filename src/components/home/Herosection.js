@@ -47,26 +47,26 @@ const Herosection = () => {
                   <h2 className="slide1-Warum">Warum moneyGold?</h2>
                   <div className="d-flex align-items-center slide1-text">
                     <div>
-                      <i class="fa fa-check" aria-hidden="true"></i>
+                      <i className="fa fa-check" aria-hidden="true"></i>
                     </div>
 
                     <p>Schnelle Online-Abwicklung</p>
                   </div>
                   <div className="d-flex align-items-center slide1-text">
                     <div>
-                      <i class="fa fa-check" aria-hidden="true"></i>
+                      <i className="fa fa-check" aria-hidden="true"></i>
                     </div>
                     <p>Kostenloser & versicherter Versand</p>
                   </div>
                   <div className="d-flex align-items-center slide1-text">
                     <div>
-                      <i class="fa fa-check" aria-hidden="true"></i>
+                      <i className="fa fa-check" aria-hidden="true"></i>
                     </div>
                     <p>Sehr hohe Ankaufspreise</p>
                   </div>
                   <div className="d-flex align-items-center slide1-text">
                     <div>
-                      <i class="fa fa-check" aria-hidden="true"></i>
+                      <i className="fa fa-check" aria-hidden="true"></i>
                     </div>
                     <p>Gold-zurück-Garantie</p>
                   </div>
@@ -93,7 +93,7 @@ const Herosection = () => {
                     <div className="d-flex justify-content-center">
                       <p>Garantierte Sicherheit:</p>
                     </div>
-                    <div className="d-flex justify-content-evenly  border-2 gap-1 pt-4 garanty-img">
+                    <div className="d-flex justify-content-between  border-2 gap-1 pt-4 garanty-img">
                       <Image src={TrustAmi} alt="" />
                       <Image src={TrustedShops} alt="" />
                       <Image src={FourNine} alt="" />
@@ -108,7 +108,7 @@ const Herosection = () => {
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 hero_slider1 kostenlos-wrapper">
+              <div className="col-lg-4 hero_slider1 kostenlos-wrapper">
                 <PriceValueForm />
               </div>
             </div>

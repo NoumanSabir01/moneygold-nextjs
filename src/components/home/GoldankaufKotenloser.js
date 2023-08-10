@@ -18,7 +18,7 @@ const GoldankaufKotenloser = () => {
                   alt="Goldankauf bei moneyGold.de"
                   title="Goldankauf bei moneyGold.de"
                 />
-                <p className="text-left">
+                <p className="text-left Goldankauf_para1_">
                   Bevor Sie von unserem attraktiven Ankaufspreis beim Goldankauf
                   profitieren können, steht Ihnen auf unserer Website ein
                   Edelmetall-/Goldrechner zur Verfügung, der die aktuellen Werte
@@ -33,7 +33,7 @@ const GoldankaufKotenloser = () => {
               <h2 className="GoldankaufKotenloser-heading2">
                 Bereits über 150.000 zufriedene Kunden
               </h2>
-              <p className="text-left">
+              <p className="text-left Goldankauf_para2_">
                 Über 150.000 zufriedene Kunden können nicht irren! Lassen Sie
                 uns einfach Ihr Zahngold, Ihre Silber- und Goldbarren sowie
                 Goldmünzen zukommen und wir werden Ihre Wertgegenstände

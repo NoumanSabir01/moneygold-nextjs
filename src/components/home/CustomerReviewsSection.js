@@ -80,12 +80,12 @@ const CustomerReviewsSection = () => {
                 <h2>4.9</h2>
                 <p>Durchschnittliche Bewertung</p>
               </div>
-              <div class="review">
-                <i class="fa fa-star" style={{ fontSize: "30px" }}></i>
-                <i class="fa fa-star" style={{ fontSize: "30px" }}></i>
-                <i class="fa fa-star" style={{ fontSize: "30px" }}></i>
-                <i class="fa fa-star" style={{ fontSize: "30px" }}></i>
-                <i class="fa fa-star" style={{ fontSize: "30px" }}></i>
+              <div className="review">
+                <i className="fa fa-star" style={{ fontSize: "30px" }}></i>
+                <i className="fa fa-star" style={{ fontSize: "30px" }}></i>
+                <i className="fa fa-star" style={{ fontSize: "30px" }}></i>
+                <i className="fa fa-star" style={{ fontSize: "30px" }}></i>
+                <i className="fa fa-star" style={{ fontSize: "30px" }}></i>
               </div>
               <div className="p2">
                 <p>Basierend aus über 8.000 Bewertungen</p>
@@ -129,7 +129,9 @@ const CustomerReviewsSection = () => {
           <div className="col-6 col-md-8 col-lg-9 review_slider_col">
             <div className="review_slider_column">
               <div className="review_heading2">
+                <div className="review_heading2_line" />
                 <p>KUNDENBEWERTUNGEN</p>
+                <div className="review_heading2_line" />
               </div>
               <Swiper
                 className="review_slider_slides"
