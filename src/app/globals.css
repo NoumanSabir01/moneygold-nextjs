@@ -710,10 +710,6 @@ span.navbar-toggler-icon img {
   .golden-fauf-wrapper {
     padding-top: 20px;
   }
-  /* .golden_fauf_wrapper_pricing .kostenlos {
-    max-width: max-content;
-    width: auto;
-  } */
   .golden-fauf {
     padding-top: 10px;
   }
@@ -3305,3 +3301,304 @@ span.navbar-toggler-icon img {
 }
 
 /* Home Page Css ends here */
+
+/* Eigenes Versandmaterial */
+
+.eigenes_versandmaterial_heading {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 32.87px;
+  margin-bottom: 10px;
+  color: #000000;
+  margin-top: 25px;
+}
+.eigenes_versandmaterial_para {
+  font-size: 18px;
+  line-height: 26px;
+}
+.eigenes_versandmaterial_service {
+  background-color: #fff7da;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.eigenes_versandmaterial_h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.87px;
+  margin-bottom: 15px;
+}
+.eigenes_versandmaterial_service ul li {
+  font-size: 18px;
+  line-height: 26px;
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.price_value_form2 {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #3a3a3c;
+  border-radius: 20px;
+  padding: 15px 20px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  margin-right: 4px;
+}
+.price_value_form2-heading {
+  margin-bottom: 10px;
+  font-size: 18.92px;
+  line-height: 26.17px;
+}
+.price_value_form2 .sold_out {
+  color: #fff;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: inherit;
+  background-color: #2a83d1;
+  padding: unset;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  width: 200px;
+  -webkit-transform: rotate(48deg);
+  transform: rotate(48deg);
+  position: absolute;
+  right: -70px;
+  top: 25px;
+  text-transform: uppercase;
+}
+
+.price_value_form2 input {
+  background-color: #fff7da !important;
+  border-radius: 10px;
+  height: 36px;
+  font-size: 14.14px;
+  font-family: "Open Sans", sans-serif;
+}
+.price_value_form2_submit_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+  margin-bottom: 15px;
+}
+.price_value_form2 .btn-bg {
+  background-color: #2180d1;
+  color: #ffffff;
+  height: 28px;
+  border: none;
+  width: 349.98px;
+  height: 31px;
+  font-size: 15.92px;
+  line-height: 19.9px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.price_value_form2 .garantierte {
+  background-color: #3a3a3c;
+  margin-bottom: -11px;
+  width: 68% !important;
+  z-index: 11;
+  position: relative;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 400;
+  margin-top: 0px;
+}
+
+.price_value_form2 .trusted-shops {
+  border-color: #d9c26c !important;
+}
+
+.price_value_form2 .trusted-shops h5 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 16.69px;
+  line-height: 16.69px;
+}
+
+.price_value_form2 .trusted-shops h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16.52px;
+  line-height: 19.09px;
+}
+
+.price_value_form2 .star-clr {
+  color: #f2b724;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.price_value2_textarea textarea {
+  border-radius: 10px;
+  background-color: #fff7da;
+}
+.price_value2_textarea textarea:focus {
+  background-color: #fff7da;
+}
+.eigenes_versandmaterial_note {
+  font-size: 11px;
+  margin-bottom: 30px;
+}
+.gold_card {
+  background: rgb(206, 186, 87);
+  background: -moz-linear-gradient(
+    177deg,
+    rgba(206, 186, 87, 1) 0%,
+    rgba(246, 242, 189, 1) 35%,
+    rgba(142, 124, 44, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    177deg,
+    rgba(206, 186, 87, 1) 0%,
+    rgba(246, 242, 189, 1) 35%,
+    rgba(142, 124, 44, 1) 100%
+  );
+  background: linear-gradient(
+    177deg,
+    rgba(206, 186, 87, 1) 0%,
+    rgba(246, 242, 189, 1) 35%,
+    rgba(142, 124, 44, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ceba57",endColorstr="#8e7c2c",GradientType=1);
+  width: 349.98px;
+  height: 334px;
+}
+.gold_card_img {
+  margin-top: 28px;
+  margin-bottom: 22px;
+}
+.gold_card_img_heading2 {
+  color: #ffffff;
+  font-size: 20.36px;
+  line-height: 24px;
+  font-weight: bold;
+  max-width: 230px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.gold_card_img_heading3 {
+  color: #ffffff;
+  font-size: 31.32px;
+  line-height: 49.45px;
+  font-weight: bold;
+  text-align: center;
+}
+.e_trusted_shops_card {
+  background-image: url("/assets/img/homepage/customer2_review_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 15px 10px;
+  border-radius: 10px;
+  width: 350px;
+  height: 445px;
+}
+.e_trusted_shops_card_img {
+  z-index: 10;
+}
+.e_trusted_shops_card_list {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  height: 72.8px;
+  width: 308px;
+  margin-left: -30px;
+  border-radius: 10px;
+}
+.e_trusted_shops_card_list ul li {
+  margin-left: 40px;
+  color: #000000;
+}
+.e_trusted_shops_card_subcard {
+  background-color: #a68c1f;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 325px;
+  height: 250px;
+}
+.e_trusted_shops_card_subcard_innercard {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 291px;
+  height: 122px;
+}
+.e_trusted_shops_card_subcard_innercard_star2 {
+  margin-top: -10px;
+  margin-bottom: 3px;
+}
+.price_value_form2_rating i {
+  margin-left: 6px;
+}
+.e_trusted_shops_card_subcard_innercard_star i {
+  color: #ffe800;
+}
+.e_trusted_shops_card_subcard_innercard_para {
+  font-size: 10.68px;
+  line-height: 32.15px;
+  margin-right: 20px;
+}
+.e_trusted_shops_card_subcard_innercard_para2 {
+  font-size: 13px;
+  line-height: 18px;
+}
+.e_trusted_shop_value {
+  font-size: 20.4px;
+  line-height: 49.69px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.e_trusted_shop_text {
+  font-size: 17.49px;
+  line-height: 21.22px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.e_trusted_shops_card_subcard_innercard_star2 i {
+  color: #ffe800;
+  margin-left: 5px;
+}
+.e_trusted_shop_uber {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 16.93px;
+}
+.e_trusted_shop_date {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16.93px;
+  color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .eigenes_versandmaterial_note {
+    font-size: 11px;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .eigenes_versandmaterial_heading {
+    font-size: 24px;
+  }
+  .eigenes_versandmaterial_para {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .eigenes_versandmaterial_h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .eigenes_versandmaterial_service ul li {
+    font-size: 14px;
+  }
+  .price_value_form2 .garantierte {
+    width: 76% !important;
+  }
+}
+/* Eigenes Versandmaterial end here */

@@ -14,9 +14,9 @@ const Header = () => {
       <div className="container">
         <div className="row py-2 align-items-center header-top-wrapper">
           <div className="col-md-4 col-lg-4 col-5 d-flex align-items-center">
-            <a className="navbar-brand" href="index.html">
+            <Link href="/" className="navbar-brand">
               <Image className="Image-fluid" src={Logo} alt="Money Gold Logo" />
-            </a>
+            </Link>
           </div>
           <div className="col-md-5 col-lg-4 col-4 d-flex align-items-center justify-content-center gap-md-4 header-imgs">
             <Image

@@ -1,4 +1,6 @@
 "use client";
+import Footer from "@/components/shared/footer/Footer";
+import Header from "@/components/shared/header/Header";
 import "bootstrap/dist/css/bootstrap.css";
 import "font-awesome/css/font-awesome.css";
 import { Inter } from "next/font/google";
@@ -26,7 +28,11 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
