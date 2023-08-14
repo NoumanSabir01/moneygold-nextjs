@@ -127,8 +127,11 @@ h2 {
 }
 .navbar-nav .nav-link.active,
 .nav-link:hover,
-.nav-link:focus {
+.nav-link:focus,
+.dropdown-item:hover {
   color: #d9c26c !important;
+  background: #3a3a3c;
+  background-color: #3a3a3c !important;
 }
 header nav .collapse ul li a {
   color: #fff;
@@ -728,6 +731,7 @@ span.navbar-toggler-icon img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
   }
   .slide1-text {
     align-items: flex-start !important;
@@ -1036,80 +1040,6 @@ span.navbar-toggler-icon img {
     margin-bottom: 0px;
   }
 }
-@media screen and (min-width: 801px) and (max-width: 992px) {
-  .header-top-wrapper {
-    padding-right: 0px !important;
-  }
-  .header-top-wrapper .navbar-brand img {
-    width: 200px;
-  }
-  .header-top-wrapper .header-imgs img {
-    width: 55px;
-  }
-  .proven-expert-Image {
-    width: 66px !important;
-  }
-  span.navbar-toggler-icon {
-    margin-right: 40px;
-  }
-
-  .select-line {
-    right: 13%;
-  }
-  .lbl {
-    width: 70px !important;
-    margin-right: 5px !important;
-  }
-  .value-calculate input {
-    width: 200px;
-  }
-  .value-calculate select {
-    width: 260px;
-  }
-  .value-calculate .btn-calculate {
-    width: 220px;
-  }
-  .header-top-wrapper {
-    padding-right: 25px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 800px) {
-  .header-top-wrapper {
-    padding-right: 0px !important;
-  }
-  .header-top-wrapper .navbar-brand img {
-    width: 200px;
-  }
-  span.navbar-toggler-icon {
-    margin-right: 40px;
-  }
-  .header-top-wrapper .header-imgs img {
-    width: 55px;
-  }
-  .proven-expert-Image {
-    width: 66px !important;
-  }
-  .select-line {
-    position: absolute;
-    right: 13%;
-  }
-  .lbl {
-    width: 65px !important;
-    margin-right: 5px !important;
-  }
-  .value-calculate input {
-    width: 180px;
-  }
-  .value-calculate select {
-    width: 300px;
-  }
-  .value-calculate button {
-    width: 210px;
-  }
-  .header-top-wrapper {
-    padding-right: 25px;
-  }
-}
 
 @media screen and (max-width: 992px) {
   .header-top-wrapper {
@@ -1295,7 +1225,6 @@ span.navbar-toggler-icon img {
 .slider1-garanty p {
   font-size: 23.37px;
   font-weight: 700;
-  background-color: #fff7da;
   width: 284px;
   position: relative;
   padding-left: 9px;
@@ -1306,8 +1235,16 @@ span.navbar-toggler-icon img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: -20px;
-  border-top: 3px solid #3a3a3c !important;
+}
+.slider1_img_section {
+  display: flex;
+  align-items: center;
+}
+.slider1_heading2_line {
+  width: 25%;
+  height: 2px;
+  border: 2px solid #000000;
+  flex: 1;
 }
 .garanty-img img {
   width: 82px;
@@ -2487,7 +2424,88 @@ span.navbar-toggler-icon img {
     margin-right: 50px !important;
   }
 }
+@media screen and (min-width: 801px) and (max-width: 992px) {
+  .header-top-wrapper {
+    padding-right: 0px !important;
+  }
+  .header-top-wrapper .navbar-brand img {
+    width: 200px;
+  }
+  .header-top-wrapper .header-imgs img {
+    width: 55px;
+  }
+  .proven-expert-Image {
+    width: 66px !important;
+  }
+  span.navbar-toggler-icon {
+    margin-right: 40px;
+  }
 
+  .select-line {
+    right: 13%;
+  }
+  .lbl {
+    width: 70px !important;
+    margin-right: 5px !important;
+  }
+  .value-calculate input {
+    width: 200px;
+  }
+  .value-calculate select {
+    width: 260px;
+  }
+  .value-calculate .btn-calculate {
+    width: 220px;
+  }
+  .header-top-wrapper {
+    padding-right: 25px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 800px) {
+  .header-top-wrapper {
+    padding-right: 0px !important;
+  }
+  .header-top-wrapper .navbar-brand img {
+    width: 200px;
+  }
+  span.navbar-toggler-icon {
+    margin-right: 40px;
+  }
+  .header-top-wrapper .header-imgs img {
+    width: 55px;
+  }
+  .proven-expert-Image {
+    width: 66px !important;
+  }
+  .select-line {
+    position: absolute;
+    right: 13%;
+  }
+  .lbl {
+    width: 65px !important;
+    margin-right: 5px !important;
+  }
+  .value-calculate input {
+    width: 180px;
+  }
+  .value-calculate select {
+    width: 300px;
+  }
+  .value-calculate button {
+    width: 210px;
+  }
+  .header-top-wrapper {
+    padding-right: 25px;
+  }
+  .customer_review2_column1 {
+    padding-left: 10px !important;
+    width: 41.66666667% !important;
+  }
+  .customer_review2_column2 {
+    width: 58.33333333% !important;
+    padding-right: 15px !important;
+  }
+}
 @media screen and (max-width: 992px) {
   .slide1-h2,
   .slide1-Warum {
@@ -2496,7 +2514,7 @@ span.navbar-toggler-icon img {
   }
   .slider1-garanty {
     height: auto;
-    width: 375px;
+    width: 100%;
   }
   .slide1-text p {
     font-size: 16px;
@@ -2522,16 +2540,16 @@ span.navbar-toggler-icon img {
     padding-right: 1px;
   }
   .garanty-img img {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
   }
   .slider1-garanty p {
     font-size: 20px;
-    width: 245px;
+    width: auto;
   }
   .hero-proven {
-    width: 60px !important;
-    height: 60px;
+    width: 90px !important;
+    height: 90px;
   }
   .hero_slide2 {
     margin-left: 0px;
@@ -2564,7 +2582,9 @@ span.navbar-toggler-icon img {
   .pricing-btn {
     margin-top: 10px;
   }
-
+  .kostenlos {
+    border: 1px solid #fff7da;
+  }
   .uber_section_wrapper h2 {
     font-size: 24px;
     line-height: 28.7px;
@@ -2601,16 +2621,32 @@ span.navbar-toggler-icon img {
     font-size: 30px;
     font-weight: 700;
     line-height: 40px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 18px;
+  }
+  .Goldankauf_para1_ {
+    margin-top: 20px;
   }
   .Kitco_gold_tab_wrapper {
     margin-top: 30px;
+    width: 350px;
   }
   .Kitco_gold_tab_wrapper .tab_pill,
   .tabpanel_ul p,
   .Kitco_gold_tab_wrapper .para2 {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .tab_pill0 {
+    flex-basis: 65px !important;
+  }
+  .tab_pill1 {
+    flex-basis: 100px !important;
+  }
+  .tab_pill2 {
+    flex-basis: 75px !important;
+  }
+  .tab_pill3 {
+    flex-basis: 106px !important;
   }
   .tabpanel_lastdiv .para3 {
     font-size: 18px;
@@ -2729,13 +2765,17 @@ span.navbar-toggler-icon img {
     font-size: 18px;
     line-height: 26px;
   }
-}
-@media screen and (min-width: 800px) and (max-width: 900px) {
-  .pwered_by img {
-    width: 92px;
+  .golden-fauf-wrapper {
+    background-image: url(/assets/img/homepage/golden_fauf_mobile_bg.png);
+    background-repeat: repeat;
+    background-position: inherit;
+    background-size: contain;
   }
-  .pricing-btn {
-    margin-top: 20px;
+  .uber_section_wrapper {
+    background-image: url(/assets/img/homepage/uber_mobile_bg.png);
+    background-repeat: repeat-y;
+    background-position: inherit;
+    background-size: cover;
   }
 }
 @media screen and (min-width: 901px) and (max-width: 992px) {
@@ -2752,16 +2792,92 @@ span.navbar-toggler-icon img {
     margin-top: 20px;
   }
 }
+@media screen and (min-width: 800px) and (max-width: 900px) {
+  .pwered_by img {
+    width: 92px;
+  }
+  .pricing-btn {
+    margin-top: 20px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .video-row .col-6:last-child {
     display: none;
   }
+  .herobg1 .slider1-left {
+    align-items: flex-start;
+  }
+  .slider1-garanty {
+    width: 100%;
+    padding: 5px 12px;
+  }
+  .hero-ntv {
+    margin-left: 0px;
+  }
+  .slider1-garanty p {
+    font-size: 18px;
+    width: auto;
+    padding-right: 9px;
+  }
+  .slider1_heading2_line {
+    border: 1px solid #000000;
+    height: 1px;
+    flex: 1;
+  }
+  .garanty-img img {
+    width: 50px;
+    height: 50px;
+  }
+  .hero-proven {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .herobg1,
+  .herobg2,
+  .herobg3,
+  .herobg4 {
+    height: 550px !important;
+  }
+  .review_heading2_line,
+  .review2_heading2_line {
+    display: none;
+  }
+  .garanty-img {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .slider1_heading2_line {
+    width: 15%;
+  }
   .para {
     font-size: 18px;
+  }
+  .golden-fauf-wrapper {
+    background-image: url(/assets/img/homepage/golden_fauf_mobile_bg.png);
+    background-repeat: repeat;
+    background-position: inherit;
+    background-size: contain;
+  }
+  .uber_section_wrapper {
+    background-image: url(/assets/img/homepage/uber_mobile_bg.png);
+    background-repeat: repeat-y;
+    background-position: inherit;
+    background-size: cover;
+  }
+  .golden-fauf {
+    padding-top: 10px;
+  }
+  .golden-fauf h2 {
+    font-size: 30px;
+    line-height: 30px;
   }
   .golden-kauf-img img {
     width: 160px;
     height: 130px;
+  }
+  .kostenlos {
+    border: 1px solid #fff7da;
   }
   .melting-facilities-img img {
     width: 185px;

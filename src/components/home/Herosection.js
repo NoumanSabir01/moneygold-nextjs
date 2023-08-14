@@ -90,10 +90,12 @@ const Herosection = () => {
                     </div>
                   </div>
                   <div className="slider1-garanty">
-                    <div className="d-flex justify-content-center">
+                    <div className="slider1_img_section">
+                      <div className="slider1_heading2_line" />
                       <p>Garantierte Sicherheit:</p>
+                      <div className="slider1_heading2_line" />
                     </div>
-                    <div className="d-flex justify-content-between  border-2 gap-1 pt-4 garanty-img">
+                    <div className="d-flex justify-content-between  border-2 gap-1 garanty-img">
                       <Image src={TrustAmi} alt="" />
                       <Image src={TrustedShops} alt="" />
                       <Image src={FourNine} alt="" />

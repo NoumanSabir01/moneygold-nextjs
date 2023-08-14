@@ -1,5 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import PhoneSvg from "./PhoneSvg";
 import BurgerIcon from "/public/assets/img/burger-icon.png";
 import EkomiVektor from "/public/assets/img/ekomi-vektor.png";
@@ -9,12 +13,80 @@ import ProvenExpert from "/public/assets/img/proven-expert.png";
 import TrustedShops from "/public/assets/img/trusted-shops.png";
 
 const Header = () => {
+  const [selectedNavItem, setSelectedNavItem] = useState("");
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isDropdown2Open, setIsDropdown2Open] = useState(false);
+  const [activeDropdownItem, setActiveDropdownItem] = useState("");
+  const [activeDropdown2Item, setActiveDropdown2Item] = useState("");
+  const router = useRouter();
+  useEffect(() => {
+    const currentPath = router.pathname;
+    if (currentPath === "/") {
+      setSelectedNavItem("home");
+    } else if (currentPath === "/calculator") {
+      setSelectedNavItem("calculator");
+    } else if (currentPath === "/wir-kaufen") {
+      setSelectedNavItem("wir-kaufen");
+    } else if (currentPath === "/dropdown") {
+      setSelectedNavItem("dropdown");
+      if (currentPath === "/eigenes-versandmaterial") {
+        setSelectedNavItem("eigenes-versandmaterial");
+        setActiveDropdownItem("eigenes-versandmaterial");
+      } else if (currentPath === "/sind-unterwegs") {
+        setSelectedNavItem("sind-unterwegs");
+        setActiveDropdownItem("sind-unterwegs");
+      } else if (currentPath === "/versandtasche-bestellen") {
+        setSelectedNavItem("versandtasche-bestellen");
+        setActiveDropdownItem("versandtasche-bestellen");
+      }
+    } else if (currentPath === "/dropdown2") {
+      setSelectedNavItem("dropdow2");
+      if (currentPath === "/submenu1") {
+        setSelectedNavItem("submenu1");
+        setActiveDropdownItem("submenu1l");
+      } else if (currentPath === "/submenu2") {
+        setSelectedNavItem("submenu2");
+        setActiveDropdownItem("submenu2");
+      } else if (currentPath === "/submenu3") {
+        setSelectedNavItem("submenu3");
+        setActiveDropdownItem("submenu3");
+      }
+    } else {
+      setSelectedNavItem("");
+    }
+  }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        event.target.closest(".dropdown-menu") === null &&
+        event.target.closest(".dropdown-toggle") === null
+      ) {
+        setIsDropdownOpen(false);
+        setIsDropdown2Open(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   return (
     <header className="gold-header">
       <div className="container">
         <div className="row py-2 align-items-center header-top-wrapper">
           <div className="col-md-4 col-lg-4 col-5 d-flex align-items-center">
-            <Link href="/" className="navbar-brand">
+            <Link
+              className={`navbar-brand ${
+                selectedNavItem === "home" ? "active" : ""
+              }`}
+              onClick={() => setSelectedNavItem("home")}
+              href="/"
+              passHref
+            >
               <Image className="Image-fluid" src={Logo} alt="Money Gold Logo" />
             </Link>
           </div>
@@ -60,7 +132,7 @@ const Header = () => {
             >
               <PhoneSvg />
               <div className="line"></div>
-              <di className="fnt-bld">040 76118501</di>
+              <span className="fnt-bld">040 76118501</span>
             </a>
           </div>
           <div className="col-2 col-md-3 d-block d-lg-none text-md-end">
@@ -105,72 +177,181 @@ const Header = () => {
           <div className="navbar-collapse collapse" id="navbarText">
             <ul className="navbar-nav mb-2 mb-lg-0 w-100 justify-content-evenly">
               <li className="nav-item">
-                <Link className="nav-link active" href="/">
+                <Link
+                  className={`nav-link ${
+                    selectedNavItem === "home" ? "active" : ""
+                  }`}
+                  onClick={() => setSelectedNavItem("home")}
+                  href="/"
+                  passHref
+                >
                   SO FUNKTIONIERT´S
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/calculator">
+                <Link
+                  className={`nav-link ${
+                    selectedNavItem === "calculator" ? "active" : ""
+                  }`}
+                  onClick={() => setSelectedNavItem("calculator")}
+                  href="/calculator"
+                  passHref
+                >
                   GOLDRECHNER
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="#">
+                <Link
+                  className={`nav-link ${
+                    selectedNavItem === "wir-kaufen" ? "active" : ""
+                  }`}
+                  onClick={() => setSelectedNavItem("wir-kaufen")}
+                  href="/wir-kaufen"
+                  passHref
+                >
                   WIR KAUFEN
                 </Link>
               </li>
 
               <li className="nav-item dropdown">
                 <Link
-                  className="nav-link dropdown-toggle"
+                  className={`nav-link dropdown-toggle ${
+                    selectedNavItem === "dropdown" ? "active" : ""
+                  }`}
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="true"
+                  aria-expanded={isDropdownOpen}
+                  onClick={() => {
+                    setIsDropdownOpen(!isDropdownOpen);
+                  }}
                 >
                   VERSANDARTEN
                 </Link>
-                <ul className="dropdown-menu bg-dark sh">
+                <ul
+                  className={`dropdown-menu bg-dark sh ${
+                    isDropdownOpen ? "show" : ""
+                  }`}
+                >
                   <li>
-                    <Link className="dropdown-item" href="#">
-                      SUBMENU1
+                    <Link
+                      className={`nav-link dropdown-item ${
+                        activeDropdownItem === "versandtasche-bestellen"
+                          ? "active"
+                          : ""
+                      }`}
+                      onClick={() => {
+                        setActiveDropdownItem("versandtasche-bestellen");
+                        setIsDropdownOpen(false); // Close the dropdown
+                        setSelectedNavItem("versandtasche-bestellen");
+                      }}
+                      href="/versandtasche-bestellen"
+                      passHref
+                    >
+                      Versandtasche Bestellen
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" href="#">
-                      SUBMENU2
+                    <Link
+                      className={`nav-link dropdown-item ${
+                        activeDropdownItem === "eigenes-versandmaterial"
+                          ? "active"
+                          : ""
+                      }`}
+                      onClick={() => {
+                        setActiveDropdownItem("eigenes-versandmaterial");
+                        setIsDropdownOpen(false); // Close the dropdown
+                        setSelectedNavItem("eigenes-versandmaterial");
+                      }}
+                      href="/eigenes-versandmaterial"
+                      passHref
+                    >
+                      Eigenes Versandmaterial
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" href="#">
-                      SUBMENU3
+                    <Link
+                      className={`nav-link dropdown-item ${
+                        activeDropdownItem === "sind-unterwegs" ? "active" : ""
+                      }`}
+                      onClick={() => {
+                        setActiveDropdownItem("sind-unterwegs");
+                        setIsDropdownOpen(false); // Close the dropdown
+                        setSelectedNavItem("sind-unterwegs");
+                      }}
+                      href="/sind-unterwegs"
+                      passHref
+                    >
+                      Sind Unterwegs
                     </Link>
                   </li>
                 </ul>
               </li>
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown drodown2">
                 <Link
-                  className="nav-link dropdown-toggle"
+                  className={`nav-link dropdown-toggle ${
+                    selectedNavItem === "dropdown2" ? "active" : ""
+                  }`}
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="true"
+                  aria-expanded={isDropdown2Open}
+                  onClick={() => {
+                    setIsDropdown2Open(!isDropdown2Open);
+                  }}
                 >
                   SICHERHEIT
                 </Link>
-                <ul className="dropdown-menu bg-dark sh">
+                <ul
+                  className={`dropdown-menu bg-dark sh ${
+                    isDropdownOpen ? "show" : ""
+                  }`}
+                >
                   <li>
-                    <Link className="dropdown-item" href="#">
+                    <Link
+                      className={`dropdown-item ${
+                        setSelectedNavItem === "submenu1" ? "active" : ""
+                      }`}
+                      href="#"
+                      passHref
+                      onClick={() => {
+                        setActiveDropdownItem("submenu1");
+                        setIsDropdownOpen(false); // Close the dropdown
+                        setSelectedNavItem("submenu1");
+                      }}
+                    >
                       SUBMENU1
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" href="#">
+                    <Link
+                      className={`dropdown-item ${
+                        setSelectedNavItem === "submenu2" ? "active" : ""
+                      }`}
+                      href="#"
+                      passHref
+                      onClick={() => {
+                        setActiveDropdownItem("submenu2");
+                        setIsDropdownOpen(false); // Close the dropdown
+                        setSelectedNavItem("submenu2");
+                      }}
+                    >
                       SUBMENU2
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" href="#">
+                    <Link
+                      className={`dropdown-item ${
+                        setSelectedNavItem === "submenu3" ? "active" : ""
+                      }`}
+                      href="#"
+                      passHref
+                      onClick={() => {
+                        setActiveDropdownItem("submenu3");
+                        setIsDropdownOpen(false); // Close the dropdown
+                        setSelectedNavItem("submenu3");
+                      }}
+                    >
                       SUBMENU3
                     </Link>
                   </li>
