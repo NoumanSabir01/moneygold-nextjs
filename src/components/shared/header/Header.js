@@ -304,7 +304,7 @@ const Header = () => {
                 </Link>
                 <ul
                   className={`dropdown-menu bg-dark sh ${
-                    isDropdownOpen ? "show" : ""
+                    isDropdown2Open ? "show" : ""
                   }`}
                 >
                   <li>
