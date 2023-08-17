@@ -12,6 +12,7 @@
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.0.2",
     "font-awesome": "^4.7.0",
+    "lru-cache": "^10.0.1",
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0",

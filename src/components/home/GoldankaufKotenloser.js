@@ -33,6 +33,9 @@ const GoldankaufKotenloser = () => {
               <h2 className="GoldankaufKotenloser-heading2">
                 Bereits über 150.000 zufriedene Kunden
               </h2>
+              <h2 className="GoldankaufKotenloser-heading2-mobile">
+                Bereits über <br /> 150.000 zufriedene Kunden
+              </h2>
               <p className="text-left Goldankauf_para2_">
                 Über 150.000 zufriedene Kunden können nicht irren! Lassen Sie
                 uns einfach Ihr Zahngold, Ihre Silber- und Goldbarren sowie

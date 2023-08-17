@@ -13,7 +13,7 @@ import ProvenExpert from "/public/assets/img/proven-expert.png";
 import TrustedShops from "/public/assets/img/trusted-shops.png";
 
 const Header = () => {
-  const [selectedNavItem, setSelectedNavItem] = useState("");
+  const [selectedNavItem, setSelectedNavItem] = useState("SO FUNKTIONIERT´S");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isDropdown2Open, setIsDropdown2Open] = useState(false);
   const [activeDropdownItem, setActiveDropdownItem] = useState("");
@@ -54,7 +54,7 @@ const Header = () => {
     } else {
       setSelectedNavItem("");
     }
-  }, []);
+  }, [router.pathname]);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -156,17 +156,32 @@ const Header = () => {
       <div className="d-lg-none mob-navigation">
         <ul className="container d-flex justify-content-around mb-2 mb-lg-0 w-100">
           <li className="nav-item">
-            <Link href="/" className="nav-link active">
+            <Link
+              href="/"
+              className={`nav-link ${
+                selectedNavItem === "SO FUNKTIONIERT´S" ? "active" : ""
+              }`}
+            >
               SO FUNKTIONIERT´S
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="/calculator" className="nav-link">
+            <Link
+              href="/calculator"
+              className={`nav-link ${
+                selectedNavItem === "calculator" ? "active" : ""
+              }`}
+            >
               GOLDRECHNER
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="/kaufen" className="nav-link">
+            <Link
+              href="/kaufen"
+              className={`nav-link ${
+                selectedNavItem === "wir-kaufen" ? "active" : ""
+              }`}
+            >
               WIR KAUFEN
             </Link>
           </li>
@@ -316,7 +331,7 @@ const Header = () => {
                       passHref
                       onClick={() => {
                         setActiveDropdownItem("submenu1");
-                        setIsDropdownOpen(false); // Close the dropdown
+                        setIsDropdown2Open(false); // Close the dropdown
                         setSelectedNavItem("submenu1");
                       }}
                     >
@@ -332,7 +347,7 @@ const Header = () => {
                       passHref
                       onClick={() => {
                         setActiveDropdownItem("submenu2");
-                        setIsDropdownOpen(false); // Close the dropdown
+                        setIsDropdown2Open(false); // Close the dropdown
                         setSelectedNavItem("submenu2");
                       }}
                     >
@@ -348,7 +363,7 @@ const Header = () => {
                       passHref
                       onClick={() => {
                         setActiveDropdownItem("submenu3");
-                        setIsDropdownOpen(false); // Close the dropdown
+                        setIsDropdown2Open(false); // Close the dropdown
                         setSelectedNavItem("submenu3");
                       }}
                     >

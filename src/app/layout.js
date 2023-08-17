@@ -1,14 +1,11 @@
 "use client";
 import Footer from "@/components/shared/footer/Footer";
 import Header from "@/components/shared/header/Header";
-import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.css";
-import { Inter } from "next/font/google";
 import { useEffect } from "react";
 import "react-tabs/style/react-tabs.css";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 const metadata = {
   title: "Money Gold",
@@ -18,7 +15,7 @@ const metadata = {
 export default function RootLayout({ children }) {
   useEffect(() => {
     typeof document !== undefined
-      ? require("bootstrap/dist/js/bootstrap")
+      ? require("bootstrap/dist/js/bootstrap.min.js")
       : null;
   }, []);
 
@@ -28,7 +25,7 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
       </head>
-      <body className={inter.className}>
+      <body>
         <Header />
         <main>{children}</main>
         <Footer />

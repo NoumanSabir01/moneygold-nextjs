@@ -92,7 +92,7 @@ const CustomerReviewsSection = () => {
               </div>
               <div className="d-flex align-items-center justify-content-between">
                 <div className="positive">Positive</div>
-                <div className="">
+                <div className="positive_icon">
                   <Image src={Positive} alt="" />
                 </div>
                 <div className="percentage-bar">
@@ -103,7 +103,7 @@ const CustomerReviewsSection = () => {
               </div>
               <div className="d-flex align-items-center justify-content-between">
                 <div className="positive">Neutral</div>
-                <div className="">
+                <div className="positive_icon">
                   <Image src={Neutral} alt="" />
                 </div>
                 <div className="percentage-bar">
@@ -113,7 +113,7 @@ const CustomerReviewsSection = () => {
               </div>
               <div className="d-flex align-items-center justify-content-between">
                 <div className="positive">Negativ</div>
-                <div className="">
+                <div className="positive_icon">
                   <Image src={Negative} alt="" />
                 </div>
                 <div className="percentage-bar">

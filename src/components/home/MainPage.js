@@ -18,7 +18,7 @@ import WirAnkafun from "./WirAnkafun";
 
 const MainPage = () => {
   return (
-    <div className="">
+    <div className="site_home_page">
       <Herosection />
       <GoldenKauf />
       <ValueCalc />

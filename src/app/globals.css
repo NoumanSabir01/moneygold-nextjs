@@ -731,7 +731,7 @@ span.navbar-toggler-icon img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
   .slide1-text {
     align-items: flex-start !important;
@@ -952,14 +952,17 @@ span.navbar-toggler-icon img {
   border-top: 25px solid #eecd56;
 }
 
-@media screen and (min-width: 280px) and (max-width: 370px) {
+@media screen and (min-width: 280px) and (max-width: 399px) {
+  .gold-header .navbar-brand {
+    margin-right: 5px !important;
+  }
   .navbar-brand img {
     max-width: unset !important;
-    width: 95px;
-    height: 18px;
+    width: 115px;
+    height: 28px;
   }
   .header-top-wrapper {
-    padding-right: 40px;
+    padding-right: 25px;
   }
   span.navbar-toggler-icon {
     font-size: 18px;
@@ -967,6 +970,7 @@ span.navbar-toggler-icon img {
   }
   .header-top-wrapper .header-imgs img {
     width: 47px;
+    height: 46px;
   }
   .mob-navigation ul li .nav-link {
     padding: 5px 1px !important;
@@ -2003,6 +2007,10 @@ span.navbar-toggler-icon img {
   font-size: 30px;
   font-weight: bold;
   color: #3a3a3c;
+  display: block;
+}
+.GoldankaufKotenloser-heading2-mobile {
+  display: none;
 }
 .GoldankaufKotenloser-img img {
   margin-right: 20px;
@@ -2361,6 +2369,49 @@ span.navbar-toggler-icon img {
 .versandarten_card_para2 {
   margin-bottom: 10px;
 }
+
+.review_slider_column .swiper-button-next:after,
+.review_slider2_column .swiper-button-next:after {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #3a3a3c;
+}
+.review_slider_column .swiper-button-prev:after,
+.review_slider2_column .swiper-button-prev:after {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid #3a3a3c;
+  color: transparent !important;
+}
+.review_slider_column .swiper-button-prev,
+.review_slider2_column .swiper-button-prev {
+  left: 1px;
+}
+.review_slider_column .swiper-button-next {
+  right: 1px;
+}
+.review_slider2_column .swiper-button-next {
+  right: 5px;
+}
+.review_slider_column .swiper-button-prev,
+.review_slider2_column .swiper-button-prev,
+.review_slider_column .swiper-button-next,
+.review_slider2_column .swiper-button-next {
+  color: transparent !important;
+  background-color: transparent !important;
+  top: 50%;
+}
+.unsere_section_wrapper .swiper-button-next {
+  right: -2px;
+}
+.unsere_section_wrapper .swiper-button-prev {
+  left: -2px;
+}
+
 @media screen and (min-width: 993px) and (max-width: 1180px) {
   .paidOut {
     font-size: 26px;
@@ -2424,88 +2475,7 @@ span.navbar-toggler-icon img {
     margin-right: 50px !important;
   }
 }
-@media screen and (min-width: 801px) and (max-width: 992px) {
-  .header-top-wrapper {
-    padding-right: 0px !important;
-  }
-  .header-top-wrapper .navbar-brand img {
-    width: 200px;
-  }
-  .header-top-wrapper .header-imgs img {
-    width: 55px;
-  }
-  .proven-expert-Image {
-    width: 66px !important;
-  }
-  span.navbar-toggler-icon {
-    margin-right: 40px;
-  }
 
-  .select-line {
-    right: 13%;
-  }
-  .lbl {
-    width: 70px !important;
-    margin-right: 5px !important;
-  }
-  .value-calculate input {
-    width: 200px;
-  }
-  .value-calculate select {
-    width: 260px;
-  }
-  .value-calculate .btn-calculate {
-    width: 220px;
-  }
-  .header-top-wrapper {
-    padding-right: 25px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 800px) {
-  .header-top-wrapper {
-    padding-right: 0px !important;
-  }
-  .header-top-wrapper .navbar-brand img {
-    width: 200px;
-  }
-  span.navbar-toggler-icon {
-    margin-right: 40px;
-  }
-  .header-top-wrapper .header-imgs img {
-    width: 55px;
-  }
-  .proven-expert-Image {
-    width: 66px !important;
-  }
-  .select-line {
-    position: absolute;
-    right: 13%;
-  }
-  .lbl {
-    width: 65px !important;
-    margin-right: 5px !important;
-  }
-  .value-calculate input {
-    width: 180px;
-  }
-  .value-calculate select {
-    width: 300px;
-  }
-  .value-calculate button {
-    width: 210px;
-  }
-  .header-top-wrapper {
-    padding-right: 25px;
-  }
-  .customer_review2_column1 {
-    padding-left: 10px !important;
-    width: 41.66666667% !important;
-  }
-  .customer_review2_column2 {
-    width: 58.33333333% !important;
-    padding-right: 15px !important;
-  }
-}
 @media screen and (max-width: 992px) {
   .slide1-h2,
   .slide1-Warum {
@@ -2514,7 +2484,8 @@ span.navbar-toggler-icon img {
   }
   .slider1-garanty {
     height: auto;
-    width: 100%;
+    width: 85%;
+    margin-right: 0px;
   }
   .slide1-text p {
     font-size: 16px;
@@ -2778,6 +2749,7 @@ span.navbar-toggler-icon img {
     background-size: cover;
   }
 }
+
 @media screen and (min-width: 901px) and (max-width: 992px) {
   .pwered_by img {
     width: 111px;
@@ -2792,6 +2764,44 @@ span.navbar-toggler-icon img {
     margin-top: 20px;
   }
 }
+
+@media screen and (min-width: 801px) and (max-width: 992px) {
+  .header-top-wrapper {
+    padding-right: 0px !important;
+  }
+  .header-top-wrapper .navbar-brand img {
+    width: 200px;
+  }
+  .header-top-wrapper .header-imgs img {
+    width: 55px;
+  }
+  .proven-expert-Image {
+    width: 66px !important;
+  }
+  span.navbar-toggler-icon {
+    margin-right: 40px;
+  }
+
+  .select-line {
+    right: 13%;
+  }
+  .lbl {
+    width: 70px !important;
+    margin-right: 5px !important;
+  }
+  .value-calculate input {
+    width: 200px;
+  }
+  .value-calculate select {
+    width: 260px;
+  }
+  .value-calculate .btn-calculate {
+    width: 220px;
+  }
+  .header-top-wrapper {
+    padding-right: 25px;
+  }
+}
 @media screen and (min-width: 800px) and (max-width: 900px) {
   .pwered_by img {
     width: 92px;
@@ -2800,7 +2810,51 @@ span.navbar-toggler-icon img {
     margin-top: 20px;
   }
 }
-
+@media screen and (min-width: 768px) and (max-width: 800px) {
+  .header-top-wrapper {
+    padding-right: 0px !important;
+  }
+  .header-top-wrapper .navbar-brand img {
+    width: 200px;
+  }
+  span.navbar-toggler-icon {
+    margin-right: 40px;
+  }
+  .header-top-wrapper .header-imgs img {
+    width: 55px;
+  }
+  .proven-expert-Image {
+    width: 66px !important;
+  }
+  .select-line {
+    position: absolute;
+    right: 13%;
+  }
+  .lbl {
+    width: 65px !important;
+    margin-right: 5px !important;
+  }
+  .value-calculate input {
+    width: 180px;
+  }
+  .value-calculate select {
+    width: 300px;
+  }
+  .value-calculate button {
+    width: 210px;
+  }
+  .header-top-wrapper {
+    padding-right: 25px;
+  }
+  .customer_review2_column1 {
+    padding-left: 10px !important;
+    width: 41.66666667% !important;
+  }
+  .customer_review2_column2 {
+    width: 58.33333333% !important;
+    padding-right: 15px !important;
+  }
+}
 @media screen and (max-width: 767px) {
   .video-row .col-6:last-child {
     display: none;
@@ -2815,6 +2869,26 @@ span.navbar-toggler-icon img {
   .hero-ntv {
     margin-left: 0px;
   }
+  .hero-ntv img {
+    width: 125px;
+    height: 125px;
+  }
+  .slide1-Verkaufen {
+    font-size: 20px;
+  }
+  .slide1-Edelmetalle {
+    font-size: 42px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+  .hero-arrowimg {
+    right: 80px;
+  }
+  .hero-arrowimg img {
+    width: 80px;
+    height: 30px;
+  }
+
   .slider1-garanty p {
     font-size: 18px;
     width: auto;
@@ -2826,18 +2900,32 @@ span.navbar-toggler-icon img {
     flex: 1;
   }
   .garanty-img img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
   .hero-proven {
-    width: 60px !important;
-    height: 60px !important;
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .herobg1 .slider1-left {
+    margin-top: 0px;
+  }
+  .slide1-h2 {
+    margin-bottom: 8px;
+  }
+  .slide1-Warum {
+    margin-bottom: 5px;
+  }
+  .slide1-text p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 1px;
   }
   .herobg1,
   .herobg2,
   .herobg3,
   .herobg4 {
-    height: 550px !important;
+    height: 490px !important;
   }
   .review_heading2_line,
   .review2_heading2_line {
@@ -2858,6 +2946,10 @@ span.navbar-toggler-icon img {
     background-repeat: repeat;
     background-position: inherit;
     background-size: contain;
+    padding-top: 1px;
+  }
+  .golden_fauf_wrapper_pricing {
+    margin-top: 5px;
   }
   .uber_section_wrapper {
     background-image: url(/assets/img/homepage/uber_mobile_bg.png);
@@ -2869,8 +2961,13 @@ span.navbar-toggler-icon img {
     padding-top: 10px;
   }
   .golden-fauf h2 {
-    font-size: 30px;
+    font-size: 26px;
     line-height: 30px;
+    width: 260px;
+    margin-bottom: 10px;
+  }
+  .golden-fauf .para {
+    font-size: 16px;
   }
   .golden-kauf-img img {
     width: 160px;
@@ -2878,6 +2975,65 @@ span.navbar-toggler-icon img {
   }
   .kostenlos {
     border: 1px solid #fff7da;
+  }
+
+  .goldenfauf_wrapper {
+    padding-top: 15px;
+    margin-bottom: 25px;
+  }
+  .GoldankaufKotenloser-heading {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .GoldankaufKotenloser-heading2 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+  }
+  .GoldankaufKotenloser-heading2-mobile {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .Goldankauf_para1_ {
+    margin-top: 5px;
+    font-size: 15px;
+  }
+  .Goldankauf_para2_ {
+    margin-top: 0px;
+    font-size: 15px;
+  }
+  .Kitco_gold_tab_wrapper .headline {
+    font-size: 21px;
+    color: #000000;
+  }
+  .Kitco_gold_tab_wrapper .paragraph {
+    font-size: 14px;
+    color: #000000;
+  }
+  .Kitco_gold_tab_wrapper .para2 {
+    font-size: 15px;
+  }
+  .tabpanel_lastdiv .para3 {
+    font-size: 16px;
+  }
+  .tabpanel_lastdiv .para4 {
+    font-size: 22px;
+  }
+  .customer_review_section_wrapper {
+    padding-top: 18px;
+  }
+  .customer_review_section_wrapper h2 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 10px;
   }
   .melting-facilities-img img {
     width: 185px;
@@ -2897,7 +3053,7 @@ span.navbar-toggler-icon img {
     width: 80px;
   }
   .video-btn {
-    border-radius: 10px !important;
+    border-radius: 5px !important;
     font-size: 18px;
     height: 30px;
   }
@@ -3012,7 +3168,7 @@ span.navbar-toggler-icon img {
   }
   .review_slider_column .swiper-button-next,
   .review_slider2_column .swiper-button-next {
-    right: "-2px";
+    right: -2px;
   }
   .review_slider_col {
     padding-right: 0px !important;
@@ -3094,8 +3250,10 @@ span.navbar-toggler-icon img {
     font-size: 18px;
   }
   .customer_review_section2_wrapper h2 {
-    line-height: 40px;
+    line-height: 34px;
     text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
   }
   .tab_pill0,
   .tab_pill1,
@@ -3120,14 +3278,16 @@ span.navbar-toggler-icon img {
     margin-top: 20px;
   }
   .hero_slide2 .card_img img {
-    width: 175px;
+    width: 140px;
+    height: 100px;
   }
   .hero_slide2 .slide2_ankauf {
     text-align: center;
-    font-size: 75px;
+    font-size: 52px;
   }
   .hero_slide2 .slide2_h2_mehr {
     text-align: center;
+    font-size: 24px;
   }
   .slide3_ankauf {
     font-size: 75px;
@@ -3161,24 +3321,27 @@ span.navbar-toggler-icon img {
     height: 170px;
   }
   .wir_ankaufun_card {
-    width: 185px;
-    height: 230px;
+    width: auto;
+    height: auto;
     border-radius: 10px;
   }
   .wir_verkaufer_name {
     font-size: 16px;
-    line-height: 16.53px;
+    line-height: 16px;
+  }
+  .wir_verkaufer_text {
+    font-size: 15px;
   }
   .wir_ankaufun_card:hover .text_list_container {
-    padding-left: 30px;
+    padding-left: 25px;
   }
   .text_list_container li {
     font-size: 13px;
     margin-bottom: 0px;
   }
   .wir_verkaufer_btn {
-    width: 35px;
-    height: 35px;
+    width: 37px;
+    height: 37px;
   }
   .wir_ankaufun_wrapper .wir_ankaufun_h3 {
     font-size: 18px;
@@ -3187,17 +3350,23 @@ span.navbar-toggler-icon img {
     padding: 10px;
   }
   .GoldankaufKotenloser-img img {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
   }
-}
-@media screen and (min-width: 400px) and (max-width: 767px) {
+
+  .review i {
+    font-size: 24px !important;
+  }
+  .review i {
+    width: 35px;
+    height: 25px;
+  }
   .customer_review2_trusted_shops .trusted_img {
     left: 0px;
     width: 90px;
     height: 90px;
   }
   .ekomi_trusted_shops {
-    width: 387.01px;
+    width: 380px;
     height: 80.02px;
     margin-left: 15px;
   }
@@ -3286,7 +3455,137 @@ span.navbar-toggler-icon img {
   .Kitco_gold_tab_wrapper {
     width: auto;
   }
+  .review_card .Bewertung p {
+    margin-left: 12px;
+  }
+  .wir_ankaufun_wrapper .wir_ankaufun_h2 {
+    font-size: 24px;
+  }
+  .wir_ankaufun_wrapper .wir_ankaufun_h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .wir_ankaufun_wrapper .wir_ankaufun_card_column:nth-child(2n) {
+    padding-left: 5px !important;
+  }
+  .wir_ankaufun_wrapper .wir_ankaufun_card_column:nth-child(2n + 1) {
+    padding-right: 5px !important;
+  }
+  .wir_ankaufun_wrapper {
+    padding-top: 20px;
+    padding-bottom: 35px;
+  }
+  .wir_ankaufun_card {
+    margin-bottom: 0px;
+  }
+  .goldankauf-onine-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .goldankauf-onine {
+    padding: 15px;
+  }
+  .goldankauf-onine h2 {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+
+  .goldankauf-onine p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 15px;
+  }
+  .video_section_wrapper {
+    background-image: url(/assets/img/homepage/video_section_bg_mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  .video_section_wrapper h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 22px;
+    max-width: max-content;
+    color: #222222;
+  }
+  .video-row {
+    height: 147px;
+  }
+  .video-row .col-6:first-child {
+    padding: 0px 2.5px 0px 0px;
+  }
+  .video-row .col-6:nth-child(2) {
+    padding: 0px 0px 0px 2.5px;
+  }
+  .customer_review_section2_wrapper {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  .mob-navigation {
+    background-color: #3b3b3d;
+    margin-top: 0px;
+  }
+  .unsere_section_wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .review2_slider2_row {
+    align-items: flex-end;
+  }
+  .uber_section_wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .sinceInception {
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+  }
+  .paidOut {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .professional_section_wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .professional_section p:last-child {
+    display: none;
+  }
+  .professional_section_wrapper h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .professional_section p:first-child {
+    margin-bottom: 20px;
+  }
+  .site_home_page .pricing {
+    padding: 20px 0px 0px 0px;
+  }
+  .site_home_page .pricing h3 {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 10px !important;
+  }
+  .site_home_page .pricing-btn {
+    margin-top: -10px;
+  }
+  .versandarten_wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .versandarten_h2 h2 {
+    font-size: 24px;
+  }
+  .melting-facilities-wrapper h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
 }
+
 @media screen and (min-width: 280px) and (max-width: 399px) {
   .slide4_h2_mehr {
     font-size: 45px;
@@ -3296,19 +3595,50 @@ span.navbar-toggler-icon img {
     margin-right: 20px;
   }
   .hero-arrowimg {
-    right: 96px;
+    right: 80px;
   }
   .Kitco_gold_tab_wrapper .tab_pill {
     font-size: 13px;
   }
+  .customer_review_ekomi_powered_by img {
+    width: 83px;
+    height: 83px;
+  }
   .review_card {
-    padding: 5px;
+    padding: 6px;
+  }
+  .review_card .review_percentage {
+    font-size: 10px;
+    margin-left: 2px;
+  }
+  .review_card .positive {
+    font-size: 10px;
+  }
+  .review_slider_column .swiper-button-next {
+    right: -9px;
+  }
+  .review_slider_column .swiper-button-prev {
+    left: -9px !important;
+  }
+  .positive_icon {
+    margin-right: 3px;
   }
   .review_slider_column .review_heading2 p {
     font-size: 14px;
   }
+  .review_slider_card {
+    padding: 20px 10px;
+    height: 165px;
+  }
+  .reviewDate {
+    font-size: 9px;
+  }
+  .reviewNum {
+    font-size: 10px;
+  }
+
   .ekomi_powered_by ul li {
-    font-size: 12px;
+    font-size: 11px;
   }
   .review2_card {
     width: 160px;
@@ -3320,16 +3650,23 @@ span.navbar-toggler-icon img {
     font-size: 22px;
   }
   .review2_slider2_card {
-    width: 166px;
-    height: 213px;
+    width: 174px;
+    height: 203px;
+  }
+  .review2_slider2_slides {
+    border-top: none;
+    padding-top: 10px !important;
   }
   .review_slider2_column .review2_heading2 p {
-    font-size: 13px;
-  }
-  .slider1-garanty {
-    width: 350px;
+    font-size: 14px;
   }
 
+  .slider1-garanty {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-top: 25px;
+  }
   .pwered_by img {
     width: 50px;
     height: auto;
@@ -3341,6 +3678,12 @@ span.navbar-toggler-icon img {
   .review_slider_slides {
     padding-top: 5px !important;
   }
+  .customer_review_section2_wrapper h2 {
+    margin-bottom: 10px;
+  }
+  .customer_review2_text p {
+    font-size: 16px;
+  }
   .review_slider2_column .swiper-button-next {
     right: 50px !important;
   }
@@ -3348,76 +3691,94 @@ span.navbar-toggler-icon img {
     left: -5px !important;
   }
   .ekomi_trusted_shops {
-    width: 324px;
+    width: 315px;
+    height: 70px;
+    flex: 1;
+    padding: 15px;
+  }
+  .review2_card .Bewertung2 {
+    align-items: flex-start !important;
+    margin-bottom: 0px;
   }
   .review2_trusted_shops .trusted_img_logo {
     width: 70px;
   }
-  .ekomi_trusted_shops ul li {
-    font-size: 10px;
-  }
   .customer_review2_trusted_shops .trusted_img {
     left: -5px;
+    width: 80px;
+    height: 80px;
+    margin-left: 4px;
+  }
+  .ekomi_trusted_shops ul {
+    margin-left: 52px;
   }
   .review_slider2_column .review2_heading2 {
     justify-content: flex-start;
+  }
+  .review2_slider_col {
+    width: 66.66666667% !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .review2_card_column {
+    width: 33.33333333% !important;
+    display: flex;
+    padding-right: 0px !important;
+  }
+  .review2_slider2_row {
+    align-items: flex-end;
+  }
+  .uber_section_wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .sinceInception {
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+  }
+  .paidOut {
+    font-size: 17px;
+    line-height: 22px;
   }
   .unsere_section_wrapper h2 {
     font-size: 18px;
     line-height: 22px;
   }
-  .pricing h3 {
-    font-size: 18px;
-    line-height: 20px;
+  .uber_section_wrapper h2 {
+    font-size: 21px;
+    line-height: 19px;
   }
-  .wir_ankaufun_card {
-    width: 160px;
-  }
+
   .wir_ankaufun_card_img img {
     width: 150px;
     height: 160px;
   }
+  .melting-facilities-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .melting-facilities-wrapper h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  .melting-facilities-img img {
+    width: 170px;
+    height: 120px;
+  }
 }
-.review_slider_column .swiper-button-next:after,
-.review_slider2_column .swiper-button-next:after {
-  width: 0;
-  height: 0;
-  border-top: 7px solid transparent;
-  border-bottom: 7px solid transparent;
-  border-left: 7px solid #3a3a3c;
-}
-.review_slider_column .swiper-button-prev:after,
-.review_slider2_column .swiper-button-prev:after {
-  width: 0;
-  height: 0;
-  border-top: 7px solid transparent;
-  border-bottom: 7px solid transparent;
-  border-right: 7px solid #3a3a3c;
-  color: transparent !important;
-}
-.review_slider_column .swiper-button-prev,
-.review_slider2_column .swiper-button-prev {
-  left: 1px;
-}
-.review_slider_column .swiper-button-next {
-  right: 1px;
-}
-.review_slider2_column .swiper-button-next {
-  right: 5px;
-}
-.review_slider_column .swiper-button-prev,
-.review_slider2_column .swiper-button-prev,
-.review_slider_column .swiper-button-next,
-.review_slider2_column .swiper-button-next {
-  color: transparent !important;
-  background-color: transparent !important;
-  top: 50%;
-}
-.unsere_section_wrapper .swiper-button-next {
-  right: -2px;
-}
-.unsere_section_wrapper .swiper-button-prev {
-  left: -2px;
+@media screen and (min-width: 370px) and (max-width: 415px) {
+  .review2_slider2_card {
+    width: 195px;
+    height: 203px;
+  }
+  .review2_card_column {
+    padding-right: 0px !important;
+  }
+  .review2_slider_col {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
 }
 
 /* Home Page Css ends here */
@@ -3748,4 +4109,181 @@ span.navbar-toggler-icon img {
   border: 1px solid #a39f90 !important;
   background-color: #fff7da !important;
   height: 36.29px;
+}
+
+/* abgeschlossen_wertsendung page starts from here */
+
+.abgeschlossen_wertsendung_box_card {
+  border: 1px solid #d9c26c;
+  border-radius: 15px;
+  background-color: #fff7da;
+  padding-left: 20px;
+  margin-bottom: 48px;
+  height: 180px;
+  display: flex;
+}
+.abgeschlossen_wertsendung_box_card3 {
+  border: 1px solid #d9c26c;
+  border-radius: 15px;
+  background-color: #fff7da;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  height: 180px;
+  display: flex;
+}
+.abgeschlossen_wertsendung_box_card_black {
+  position: relative;
+  background-color: #3a3a3c;
+  width: 194px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 18px;
+}
+.abgeschlossen_wertsendung_box_card_black_triangle_down {
+  margin-top: -49px;
+  margin-bottom: 10px;
+  margin-left: 60px;
+  width: 0;
+  height: 0;
+  border-left: 54px solid transparent;
+  border-right: 54px solid transparent;
+  border-top: 45px solid #3a3a3c;
+}
+.abgeschlossen_wertsendung_box_card_black_heading {
+  font-size: 24px;
+  line-height: 27px;
+  color: #d9c26c;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+.abgeschlossen_wertsendung_box_card_black_rightside {
+  padding-top: 24px;
+  padding-left: 15px;
+  flex: 3;
+}
+.abgeschlossen_wertsendung_box_card_black_heading2 {
+  font-size: 24px;
+  line-height: 27px;
+  color: #3a3a3c;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.abgeschlossen_wertsendung_box_card_black_para1 {
+  font-size: 18px;
+  line-height: 27px;
+  color: #2180d1;
+}
+.abgeschlossen_wertsendung_box_card_black_para2 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1d;
+  margin-top: 10px;
+  width: 420px;
+  margin-bottom: 30px;
+}
+.abgeschlossen_wertsendung_box_card3_black_para2 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1d;
+  margin-top: 10px;
+}
+.gold_card2 {
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(153, 137, 74, 1) 13%,
+    rgba(254, 230, 130, 1) 43%,
+    rgba(135, 119, 47, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(153, 137, 74, 1) 13%,
+    rgba(254, 230, 130, 1) 43%,
+    rgba(135, 119, 47, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(153, 137, 74, 1) 13%,
+    rgba(254, 230, 130, 1) 43%,
+    rgba(135, 119, 47, 1) 100%
+  );
+  width: 350px;
+  height: 350px;
+  padding-top: 26px;
+  padding-bottom: 34px;
+}
+.gold_card2_para {
+  font-size: 15.28px;
+  font-weight: bold;
+  line-height: 18.3px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  width: 297px;
+}
+.abgeschlossen_wertsendung_goldcard .gold_card {
+  width: 350px;
+  height: 350px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 767px) and (max-width: 992px) {
+}
+@media screen and (max-width: 767px) {
+  .abgeschlossen_wertsendung_box_card_black {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .abgeschlossen_wertsendung_rightside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .abgeschlossen_wertsendung_box_card,
+  .abgeschlossen_wertsendung_box_card3 {
+    height: auto;
+  }
+  .abgeschlossen_wertsendung_box_card_black_heading2,
+  .abgeschlossen_wertsendung_box_card_black_heading {
+    font-size: 20px;
+  }
+
+  .abgeschlossen_wertsendung_box_card_black_para1 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .abgeschlossen_wertsendung_box_card_black_para2 {
+    width: auto;
+  }
+  .abgeschlossen_wertsendung_box_card3_black_para2 {
+    padding-bottom: 10px;
+  }
+  .abgeschlossen_wertsendung_box_card_black_triangle_down {
+    margin-left: 30px;
+    border-left: 42px solid transparent;
+    border-right: 42px solid transparent;
+    border-top: 35px solid #3a3a3c;
+  }
+  .gold_card2 {
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px !important;
+  }
+  .gold_card2_para {
+    font-size: 18.53px;
+    line-height: 22.2px;
+    width: auto;
+  }
+  .gold_card {
+    width: auto !important;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .gold_card_img_heading2 {
+    max-width: max-content;
+  }
 }
