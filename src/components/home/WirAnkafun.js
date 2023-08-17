@@ -5,8 +5,10 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import BtnArrow from "./BtnArrow";
+import BtnArrowMobile from "./BtnArrowMobile";
 
 const WirAnkafun = () => {
+  const mobileWidth = window.innerWidth;
   return (
     <Swiper
       className="wir_ankaufun_swiper_wrapper"
@@ -71,7 +73,13 @@ const WirAnkafun = () => {
                           <p className="wir_verkaufer_text">{item.text}</p>
                         </div>
                         <div className="wir_verkaufer_btn">
-                          <BtnArrow />
+                          <div className="wir_verkaufer_btn_arrow">
+                            {mobileWidth < 768 ? (
+                              <BtnArrowMobile />
+                            ) : (
+                              <BtnArrow />
+                            )}
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -119,7 +127,13 @@ const WirAnkafun = () => {
                           <p className="wir_verkaufer_text">{item.text}</p>
                         </div>
                         <div className="wir_verkaufer_btn">
-                          <BtnArrow />
+                          <div className="wir_verkaufer_btn_arrow">
+                            {mobileWidth < 768 ? (
+                              <BtnArrowMobile />
+                            ) : (
+                              <BtnArrow />
+                            )}
+                          </div>
                         </div>
                       </div>
                     </div>
