@@ -32,6 +32,22 @@ export const homePageVideoArray = [
     title: "10 PROVOKING Thoughts How AI TRANSFORMS Industries",
   },
 ];
+export const gold_zuruck_garantieVideoArray = [
+  {
+    width: "100%",
+    height: "210",
+    src: "https://www.youtube.com/embed/ZSiXZxVpVhs",
+    title: "TOP 7 Technology Trends in 2023",
+    text: "Johannes lobt die seriöse Abwicklung",
+  },
+  {
+    width: "100%",
+    height: "210",
+    src: "https://www.youtube.com/embed/BqaU9-k_py0",
+    title: "10 PROVOKING Thoughts How AI TRANSFORMS Industries",
+    text: "Michele bewertet moneyGold",
+  },
+];
 export const UberSectionArray = [
   {
     src: UberPayment,

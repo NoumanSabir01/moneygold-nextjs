@@ -60,7 +60,7 @@ h2 {
   font-size: 30px;
   line-height: 38px;
   font-family: "Open Sans", sans-serif;
-  font-weight: 700;
+  font-weight: bold;
 }
 @media screen and (max-width: 767px) {
   .container {
@@ -4330,6 +4330,126 @@ span.navbar-toggler-icon img {
 .goldrechner_clock_analog_mobile {
   display: none;
 }
+
+/* gold_zuruck_garantie starts from here*/
+
+.gold_zuruck_garantie_wrapper_heading1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.gold_zuruck_garantie_unverbindlich {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.gold_zuruck_garantie_unverbindlich p {
+  font-size: 18px;
+  line-height: 26px;
+}
+.gold_zuruck_garantie_unverbindlich_paras {
+  margin-left: 10px;
+}
+.gold_zuruck_garantie_unverbindlich_para1 {
+  margin-bottom: 10px;
+}
+.gold_zuruck_garantie_row2_col1 {
+  background-color: #fff7da;
+  padding: 15px 10px 20px 10px;
+  margin-top: 15px;
+}
+.gold_zuruck_garantie_row2_col1_heading {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 32.87px;
+  margin-bottom: 10px;
+}
+.gold_zuruck_garantie_row2_col1_item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.gold_zuruck_garantie_row2_col1_icon {
+  width: 35px;
+  height: 28px;
+  background-color: #3a3a3c;
+  color: #ffffff;
+  flex: 1;
+  text-align: center;
+  font-weight: lighter;
+}
+.gold_zuruck_garantie_row2_col1_icon i {
+  font-weight: lighter;
+  font-size: 18px;
+}
+.gold_zuruck_garantie_row2_col1_li_para {
+  height: 28px;
+  background-color: #d9c26c;
+  color: #ffffff;
+  flex: 20;
+  padding-left: 10px;
+}
+.gold_zuruck_garantie_row2_col1_para2 {
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 15px;
+  padding: 0px 10px;
+}
+.gold_zuruck_garantie_row2_col1_para3 {
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+.gold_zuruck_garantie_row2_col1_heading2 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 32.87px;
+  margin: 20px 0px;
+}
+.gold_zuruck_garantie_vedio_card0 iframe,
+.gold_zuruck_garantie_vedio_card1 iframe {
+  border-radius: 10px;
+}
+.gold_zuruck_garantie_vedio_card0,
+.gold_zuruck_garantie_vedio_card1 {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #d9c26c;
+}
+.gold_zuruck_garantie_vedio_card0 p,
+.gold_zuruck_garantie_vedio_card1 p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+.gold_zuruck_garantie_vedio_para1 {
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.gold_zuruck_garantie_vedio_para2 {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+.gold_zuruck_garantie_kitco_gold_tab .Kitco_gold_tab_wrapper {
+  width: 350px;
+}
+.gold_zuruck_garantie_kitco_gold_tab .tab_pill0 {
+  flex-basis: 70px !important;
+}
+.gold_zuruck_garantie_kitco_gold_tab .tab_pill1 {
+  flex-basis: 100px !important;
+}
+.gold_zuruck_garantie_kitco_gold_tab .tab_pill2 {
+  flex-basis: 70px !important;
+}
+.gold_zuruck_garantie_kitco_gold_tab .tab_pill3 {
+  flex-basis: 106px !important;
+}
+
 @media screen and (min-width: 2000px) and (max-width: 2600px) {
   .goldrechner_clock_analog {
     position: absolute;
@@ -4423,6 +4543,25 @@ span.navbar-toggler-icon img {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  /* gold_zuruck_garantie starts here */
+
+  .gold_zuruck_garantie_wrapper_heading1 {
+    margin-top: 15px;
+  }
+
+  .gold_zuruck_garantie_pricing {
+    display: flex;
+    justify-content: center;
+  }
+  .gold_zuruck_garantie_right_side {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gold_zuruck_garantie_kitco_gold_tab .Kitco_gold_tab_wrapper {
+    margin-top: 5px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -4551,6 +4690,40 @@ span.navbar-toggler-icon img {
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+  /* gold zuruck garantie starts here */
+  .gold_zuruck_garantie_pricing {
+    display: flex;
+    justify-content: center;
+  }
+  .gold_zuruck_garantie_vedio_card1 {
+    display: none;
+  }
+  .gold_zuruck_garantie_unverbindlich_btn {
+    width: 100% !important;
+  }
+  .gold_zuruck_garantie_row2_col1_heading {
+    font-size: 22px;
+  }
+  .gold_zuruck_garantie_pricing .kostenlos {
+    max-width: max-content;
+    width: auto;
+  }
+  .gold_zuruck_garantie_kitco_gold_tab .Kitco_gold_tab_wrapper {
+    width: auto;
+    margin-top: 10px;
+  }
+  .gold_zuruck_garantie_kitco_gold_tab .tab_pill0 {
+    flex-basis: 80px !important;
+  }
+  .gold_zuruck_garantie_kitco_gold_tab .tab_pill1 {
+    flex-basis: 110px !important;
+  }
+  .gold_zuruck_garantie_kitco_gold_tab .tab_pill2 {
+    flex-basis: 80px !important;
+  }
+  .gold_zuruck_garantie_kitco_gold_tab .tab_pill3 {
+    flex-basis: 116px !important;
   }
 }
 @media screen and (min-width: 280px) and (max-width: 399px) {

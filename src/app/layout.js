@@ -14,11 +14,10 @@ const metadata = {
 
 export default function RootLayout({ children }) {
   useEffect(() => {
-    // typeof document !== undefined
-    //   ? require("bootstrap/dist/js/bootstrap.min.js")
-    //   : null;
+    typeof document !== undefined
+      ? require("bootstrap/dist/js/bootstrap.min.js")
+      : null;
   }, []);
-
   return (
     <html lang="en">
       <head>
