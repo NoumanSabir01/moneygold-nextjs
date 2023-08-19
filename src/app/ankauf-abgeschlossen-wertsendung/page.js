@@ -11,7 +11,9 @@ const page = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-12 col-lg-8">
-            <h2 className="sind_unterwegs_heading">Nur noch wenige Schritte</h2>
+            <h2 className="sind_unterwegs_heading">
+              Ankauf abgeschlossen eigenes Versandmaterial
+            </h2>
             <div className="abgeschlossen_wertsendung_box">
               <div className="abgeschlossen_wertsendung_box_card">
                 <div className="abgeschlossen_wertsendung_box_card_black">
@@ -28,9 +30,9 @@ const page = () => {
                     Hier finden Sie das Begleitschreiben
                   </p>
                   <p className="abgeschlossen_wertsendung_box_card_black_para2">
-                    Hier finden Sie das Begleitschreiben. Drucken Sie das
-                    Begleitschreiben bitte aus und legen es ausgefüllt in den
-                    Karton bzw. Luftpolstertasche.
+                    Drucken Sie das Begleitschreiben bitte aus und legen es
+                    ausgefüllt in den Karton. Sie erhalten dieses auch an Ihre
+                    E-Mail zugeschickt.
                   </p>
                 </div>
               </div>
@@ -51,8 +53,7 @@ const page = () => {
 
                   <p className="abgeschlossen_wertsendung_box_card_black_para2">
                     Verpacken Sie die Edelmetalle sicher und legen Sie diese zum
-                    Begleitschreiben in den Karton bzw. in die
-                    Luftpolstertasche.
+                    Begleitschreiben in den Karton.
                   </p>
                 </div>
               </div>
@@ -68,14 +69,16 @@ const page = () => {
                 </div>
                 <div className="abgeschlossen_wertsendung_box_card_black_rightside">
                   <h2 className="abgeschlossen_wertsendung_box_card_black_heading2">
-                    Wertabholung
+                    Paketschein ausdrucken
                   </h2>
-
+                  <p className="abgeschlossen_wertsendung_box_card_black_para1">
+                    Hier finden Sie den DHL Paketschein
+                  </p>
                   <p className="abgeschlossen_wertsendung_box_card3_black_para2">
-                    Halten Sie die verschlossene Sendung bereit. Unser
-                    Sicherheitskurier holt die Sendung am gewünschten Tag bei
-                    der angegeben Adresse ab. Die Zustellung in unsere
-                    Geschäftsräume erfolgt in der Regel am nächsten Werktag.
+                    Den Paketschein ausdrucken und auf Ihr Paket kleben und
+                    dieses einfach bei der Deutschen Post kostenlos abgeben. Sie
+                    erhalten ebenfalls per E-Mail den Link zum Paketschein
+                    zugeschickt.
                   </p>
                 </div>
               </div>

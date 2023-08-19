@@ -4114,6 +4114,10 @@ span.navbar-toggler-icon img {
 
 /* abgeschlossen_wertsendung page starts from here */
 
+.abgeschlossen_wertsendung_wrapper .row {
+  padding-bottom: 20px;
+}
+
 .abgeschlossen_wertsendung_box_card {
   border: 1px solid #d9c26c;
   border-radius: 15px;
@@ -4182,7 +4186,7 @@ span.navbar-toggler-icon img {
   font-size: 16px;
   line-height: 24px;
   color: #1d1d1d;
-  margin-top: 10px;
+  margin-top: 3px;
   width: 420px;
   margin-bottom: 30px;
 }
@@ -4190,7 +4194,7 @@ span.navbar-toggler-icon img {
   font-size: 16px;
   line-height: 24px;
   color: #1d1d1d;
-  margin-top: 10px;
+  margin-top: 3px;
 }
 .gold_card2 {
   background: -moz-linear-gradient(
@@ -4212,9 +4216,8 @@ span.navbar-toggler-icon img {
     rgba(135, 119, 47, 1) 100%
   );
   width: 350px;
-  height: 350px;
   padding-top: 26px;
-  padding-bottom: 34px;
+  padding-bottom: 30px;
 }
 .gold_card2_para {
   font-size: 15.28px;
@@ -4227,10 +4230,200 @@ span.navbar-toggler-icon img {
 }
 .abgeschlossen_wertsendung_goldcard .gold_card {
   width: 350px;
-  height: 350px;
   margin-bottom: 20px;
 }
+
+/* Gold Rechner starts here*/
+.goldrechner_clock {
+  position: relative;
+  margin-top: 30px;
+}
+.goldrechner_clock_analog {
+  position: absolute;
+  left: 35%;
+  top: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.goldrechner_clock_analog p {
+  margin-left: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 28.26px;
+}
+.goldrechner_clock_analog .clock-container {
+  margin-left: 20px;
+}
+.goldrechner_clock_analog_clock {
+  background-color: #39393b;
+  width: 145px;
+  height: 145px;
+  border: 2px solid #49494d;
+}
+.goldrechner_clock_upper_div {
+  background-color: #d9c26c;
+  padding: 10px 0px;
+}
+.goldrechner_clock_upper_div_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.goldrechner_clock_lower_div {
+  background-color: #fff7da;
+  padding: 10px 0px;
+}
+.goldrechner_clock_lower_div_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.goldrechner_heading_paras h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.goldrechner_heading_paras .goldrechner_heading_para1 {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+.goldrechner_heading_paras .goldrechner_heading_para2 {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 35px;
+}
+.goldrechner_heading_paras .goldrechner_heading_para3 {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+.goldrechner_heading_paras_link {
+  color: #0087f6;
+  font-size: 18px;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  margin-top: 8px;
+}
+.goldrechner_last_para {
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+.goldrechner_wrapper .pricing {
+  padding: 20px 0px 30px 0px;
+}
+.goldrechner_pricing_para {
+  font-size: 18px;
+  line-height: 26px;
+}
+.goldrechner_wrapper .current-value {
+  margin-bottom: 20px;
+}
+.goldrechner_heading_paras_row {
+  padding-bottom: 20px;
+}
+.goldrechner_clock_analog_mobile {
+  display: none;
+}
+@media screen and (min-width: 2000px) and (max-width: 2600px) {
+  .goldrechner_clock_analog {
+    position: absolute;
+    left: 40%;
+    top: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1801px) and (max-width: 2000px) {
+  .goldrechner_clock_analog {
+    position: absolute;
+    left: 36%;
+    top: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1701px) and (max-width: 1800px) {
+  .goldrechner_clock_analog {
+    position: absolute;
+    left: 35%;
+    top: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 1700px) {
+  .goldrechner_clock_analog {
+    position: absolute;
+    left: 34%;
+    top: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1301px) and (max-width: 1440px) {
+  .goldrechner_clock_analog {
+    position: absolute;
+    left: 32%;
+    top: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1101px) and (max-width: 1300px) {
+  .goldrechner_clock_analog {
+    position: absolute;
+    left: 29%;
+    top: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1100px) {
+  .goldrechner_clock_analog {
+    position: absolute;
+    left: 27%;
+    top: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 767px) and (max-width: 992px) {
+  .gold_and_etrustedshpw_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .gold_and_etrustedshpw_wrapper .gold_card {
+    margin-top: 0px;
+  }
+  .abgeschlossen_wertsendung_rightside .gold_card2 {
+    margin-top: 10px !important;
+  }
+
+  /* goldrechner css starts here */
+
+  .goldrechner_clock_analog {
+    position: absolute;
+    left: 25%;
+    top: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 767px) {
   .abgeschlossen_wertsendung_box_card_black {
@@ -4286,5 +4479,201 @@ span.navbar-toggler-icon img {
   }
   .gold_card_img_heading2 {
     max-width: max-content;
+  }
+
+  /*  goldrechner css starts here*/
+
+  .goldrechner_clock_upper_div_wrap,
+  .goldrechner_clock_lower_div_wrap {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .goldrechner_wrapper .pricing {
+    padding: 10px 0px 0px 0px;
+  }
+  .goldrechner_wrapper .pricing h3 {
+    text-align: center !important;
+  }
+  .goldrechner_pricing_para {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .goldrechner_heading_paras h2 {
+    font-size: 28px;
+  }
+  .goldrechner_heading_paras .goldrechner_heading_para1 {
+    margin-bottom: 10px;
+  }
+  .goldrechner_heading_paras_link {
+    margin-bottom: 15px;
+  }
+  .goldrechner_wrapper .kostenlos {
+    max-width: inherit;
+    width: auto;
+  }
+  .goldrechner_heading_paras .goldrechner_heading_para2 {
+    margin-bottom: 15px;
+  }
+  .e_trusted_shops_card,
+  .e_trusted_shops_card_subcard,
+  .e_trusted_shops_card_subcard_innercard {
+    width: 100%;
+  }
+  .e_trusted_shops_card_list {
+    flex-basis: 100%;
+  }
+  .goldrechner_clock_analog {
+    display: none;
+  }
+  .goldrechner_clock_analog_mobile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -80px;
+    margin-bottom: -80px;
+  }
+  .goldrechner_clock_analog_mobile .clock-container {
+    margin-right: 10px;
+  }
+  .goldrechner_clock_analog_mobile div:last-child .clock-container {
+    margin-right: 0px;
+  }
+  .goldrechner_clock_upper_div {
+    padding: 10px 0px 90px 0px;
+  }
+  .goldrechner_clock_lower_div {
+    padding: 80px 0px 10px 0px;
+  }
+  .goldrechner_clock_analog_mobile p {
+    font-size: 15.91px;
+    line-height: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 399px) {
+  .e_trusted_shops_card_list ul li {
+    font-size: 14px;
+  }
+}
+
+/* Clock Css starts here */
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+.clock-container {
+  position: relative;
+  width: 140px;
+  overflow: hidden;
+  background: #39393b;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.clock-container:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.clock-container.styling {
+  box-shadow: 0px 0px 10px #888888;
+  border-radius: 100%;
+  min-width: 100px;
+  margin-top: 1%;
+}
+
+.clock-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clock-content .background-numbers {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  top: 5%;
+  left: 5%;
+  z-index: 1;
+}
+.clock-content .background-numbers .numbers {
+  fill: #ffffff;
+}
+
+.indicator {
+  border-radius: 10px;
+  transform-origin: bottom;
+  outline: 1px solid transparent;
+  position: absolute;
+  bottom: 50%;
+}
+.indicator.seconds-indicator {
+  width: 0.5%;
+  height: 37.5%;
+  z-index: 2;
+  background-color: #ffffff;
+}
+
+.indicator.minutes-indicator {
+  width: 1%;
+  height: 30%;
+  z-index: 3;
+  background-color: #ffffff;
+}
+
+.indicator.hours-indicator {
+  width: 1.5%;
+  height: 22.5%;
+  z-index: 4;
+  background-color: #ffffff;
+}
+
+.indicator-cover {
+  position: absolute;
+  bottom: 48.5%; /*(50% - (3% /2)) */
+  border-radius: 50%;
+  width: 3%;
+  height: 3%;
+  background-color: #ffffff;
+  z-index: 5;
+}
+
+.digital {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  .clock-container {
+    width: 115px;
+  }
+  .clock-content .background-numbers {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .clock-container {
+    width: 100px;
+  }
+  .clock-content .background-numbers {
+    width: 90px;
+    height: 90px;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 399px) {
+  .clock-container {
+    width: 80px;
+    min-width: auto !important;
+  }
+  .clock-content .background-numbers {
+    width: 70px;
+    height: 70px;
   }
 }

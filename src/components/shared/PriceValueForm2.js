@@ -4,6 +4,7 @@ import TrustedShops from "/public/assets/img/trusted-shops.png";
 
 export const PriceValueForm2 = ({
   bestellen = false,
+  abThousand = false,
   topHeading = "DHL Paketschein anfordern",
 }) => {
   return (
@@ -72,12 +73,13 @@ export const PriceValueForm2 = ({
               id="E-Mail"
               placeholder="E-Mail*"
             />
-            {bestellen && (
+            {(abThousand || bestellen) && (
               <select
                 className="bestellen_select form-select  my-3"
                 aria-label="Default select"
+                defaultValue={"Versandtaschen"}
               >
-                <option selected>1 Versandtaschen</option>
+                <option>Versandtaschen</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>
@@ -86,11 +88,35 @@ export const PriceValueForm2 = ({
           </form>
         </div>
         <div className="col-12 col-md-6 col-lg-6">
+          {abThousand && (
+            <div>
+              <select
+                className="bestellen_select form-select "
+                aria-label="Default select"
+                defaultValue={"Versandtaschen"}
+              >
+                <option>Abholdatum</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select
+                className="bestellen_select form-select  my-3"
+                aria-label="Default select"
+                defaultValue={"Versandtaschen"}
+              >
+                <option>Versandtaschen</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          )}
           <div className="price_value2_textarea">
             <textarea
               className="form-control "
               id="comment"
-              rows="6"
+              rows={abThousand ? "5" : "6"}
               placeholder="Wenn Sie mögen können Sie hier Ihre zu verkaufende Schmuckstücke oder den Wert Ihrer Edelmetalle auflisten."
             ></textarea>
           </div>

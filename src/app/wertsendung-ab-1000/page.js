@@ -1,4 +1,3 @@
-"use client";
 import EtrusredShop from "@/components/shared/EtrusredShop";
 import GoldCard from "@/components/shared/GoldCard";
 import { PriceValueForm2 } from "@/components/shared/PriceValueForm2";
@@ -10,11 +9,11 @@ const page = () => {
         <div className="row">
           <div className="col-12 col-md-12 col-lg-8">
             <h2 className="eigenes_versandmaterial_heading">
-              Versandtasche bestellen
+              Wertsendung ab 1000Euro
             </h2>
             <p className="eigenes_versandmaterial_para">
-              Lassen Sie sich jetzt kostenlos Ihre persönliche Versandtasche mit
-              allen Unterlagen innerhalb von 2 Tagen unverbindlich zusenden.
+              Bitte füllen Sie das Formular aus und wählen Sie die
+              Versicherungssumme sowie den Abholtag aus.
             </p>
             <div className="eigenes_versandmaterial_service">
               <h3 className="eigenes_versandmaterial_h3">
@@ -22,21 +21,17 @@ const page = () => {
               </h3>
               <ul>
                 <li>
-                  <strong>kostenloser Rückversand ohne Risiko:</strong> Wenn
-                  Ihnen unser Angebot nicht zusagt, bekommen Sie kostenlos ihre
-                  Edelmetalle zurückgeschickt.
+                  kostenloser Rückversand ohne Risiko: Wenn Ihnen unser Angebot
+                  nicht zusagt, bekommen Sie kostenlos ihre Edelmetalle
+                  zurückgeschickt.
                 </li>
                 <li>keine versteckten Gebühren oder Abzüge</li>
-                <li>
-                  Die Versandtasche ist automatisch bis zu 1000€ versichert!
-                </li>
+                <li>Transparente und schnelle Abwicklung</li>
+                <li>Hohe Ankaufspreise durch börsenaktuelle Kurse</li>
               </ul>
             </div>
             <div>
-              <PriceValueForm2
-                topHeading="Versandtasche anfordern"
-                bestellen={true}
-              />
+              <PriceValueForm2 abThousand={true} topHeading="Abholung buchen" />
               <p className="eigenes_versandmaterial_note">
                 * Um den Ankauf abzuschliessen benötigen wir eine gültige
                 E-Mail-Adresse oder Telefonnummer, sodass wir Sie kontaktieren
@@ -55,4 +50,5 @@ const page = () => {
     </section>
   );
 };
+
 export default page;

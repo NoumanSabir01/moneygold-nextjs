@@ -39,7 +39,7 @@ const page = () => {
               <Image src={MainImage} alt="" width={703} height={713} />
             </div>
           </div>
-          <div className="col-12 col-md-12 col-lg-4">
+          <div className="col-12 col-md-12 col-lg-4 gold_and_etrustedshpw_wrapper">
             <GoldCard />
             <EtrusredShop />
           </div>

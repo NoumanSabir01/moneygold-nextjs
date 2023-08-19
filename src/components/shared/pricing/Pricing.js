@@ -1,10 +1,30 @@
-const Pricing = () => {
+const Pricing = ({
+  priceHeading = "Berechnen Sie den börsenaktuellen Wert Ihrer Edelmetalle",
+  textAlign = "center",
+  paragraph = "",
+  goldrechner,
+}) => {
   return (
     <div className="container">
-      <h3 className="text-center mb-4">
-        Berechnen Sie den börsenaktuellen Wert Ihrer Edelmetalle
+      <h3
+        className={goldrechner ? "mb-1" : "mb-4"}
+        style={{ textAlign: textAlign }}
+      >
+        {priceHeading}
       </h3>
-      <div className="row row-cols-1 row-cols-md-3 mt-3">
+      {goldrechner && (
+        <p
+          dangerouslySetInnerHTML={{ __html: paragraph }}
+          className="goldrechner_pricing_para"
+        />
+      )}
+      <div
+        className={
+          goldrechner
+            ? "row row-cols-1 row-cols-md-3 mt-2"
+            : "row row-cols-1 row-cols-md-3 mt-3"
+        }
+      >
         <div className="col-6 col-md-6 col-lg-3 mb-2 mt-2 gold-wrapper">
           <div className="silver gold-border border-radius">
             <div className="py-3 text-black gold-gradiant">
