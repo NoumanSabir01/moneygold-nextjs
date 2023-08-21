@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import PhoneSvg from "./PhoneSvg";
 import BurgerIcon from "/public/assets/img/burger-icon.png";
@@ -18,43 +17,46 @@ const Header = () => {
   const [isDropdown2Open, setIsDropdown2Open] = useState(false);
   const [activeDropdownItem, setActiveDropdownItem] = useState("");
   const [activeDropdown2Item, setActiveDropdown2Item] = useState("");
-  const router = useRouter();
+  const [currentPath, setCurrentPath] = useState("");
+
   useEffect(() => {
-    const currentPath = router.pathname;
-    if (currentPath === "/") {
-      setSelectedNavItem("home");
-    } else if (currentPath === "/calculator") {
-      setSelectedNavItem("calculator");
-    } else if (currentPath === "/wir-kaufen") {
-      setSelectedNavItem("wir-kaufen");
-    } else if (currentPath === "/dropdown") {
-      setSelectedNavItem("dropdown");
-      if (currentPath === "/eigenes-versandmaterial") {
-        setSelectedNavItem("eigenes-versandmaterial");
-        setActiveDropdownItem("eigenes-versandmaterial");
-      } else if (currentPath === "/sind-unterwegs") {
-        setSelectedNavItem("sind-unterwegs");
-        setActiveDropdownItem("sind-unterwegs");
-      } else if (currentPath === "/versandtasche-bestellen") {
-        setSelectedNavItem("versandtasche-bestellen");
-        setActiveDropdownItem("versandtasche-bestellen");
+    if (window?.location?.pathname !== undefined) {
+      setCurrentPath(window?.location?.pathname);
+      if (window?.location?.pathname === "/") {
+        setSelectedNavItem("home");
+      } else if (window?.location?.pathname === "/calculator") {
+        setSelectedNavItem("calculator");
+      } else if (window?.location?.pathname === "/wir-kaufen") {
+        setSelectedNavItem("wir-kaufen");
+      } else if (window?.location?.pathname === "/dropdown") {
+        setSelectedNavItem("dropdown");
+        if (window?.location?.pathname === "/eigenes-versandmaterial") {
+          setSelectedNavItem("eigenes-versandmaterial");
+          setActiveDropdownItem("eigenes-versandmaterial");
+        } else if (window?.location?.pathname === "/sind-unterwegs") {
+          setSelectedNavItem("sind-unterwegs");
+          setActiveDropdownItem("sind-unterwegs");
+        } else if (window?.location?.pathname === "/versandtasche-bestellen") {
+          setSelectedNavItem("versandtasche-bestellen");
+          setActiveDropdownItem("versandtasche-bestellen");
+        }
+      } else if (window?.location?.pathname === "/dropdown2") {
+        setSelectedNavItem("dropdow2");
+        if (window?.location?.pathname === "/submenu1") {
+          setSelectedNavItem("submenu1");
+          setActiveDropdownItem("submenu1l");
+        } else if (window?.location?.pathname === "/submenu2") {
+          setSelectedNavItem("submenu2");
+          setActiveDropdownItem("submenu2");
+        } else if (window?.location?.pathname === "/submenu3") {
+          setSelectedNavItem("submenu3");
+          setActiveDropdownItem("submenu3");
+        }
+      } else {
+        setSelectedNavItem("");
       }
-    } else if (currentPath === "/dropdown2") {
-      setSelectedNavItem("dropdow2");
-      if (currentPath === "/submenu1") {
-        setSelectedNavItem("submenu1");
-        setActiveDropdownItem("submenu1l");
-      } else if (currentPath === "/submenu2") {
-        setSelectedNavItem("submenu2");
-        setActiveDropdownItem("submenu2");
-      } else if (currentPath === "/submenu3") {
-        setSelectedNavItem("submenu3");
-        setActiveDropdownItem("submenu3");
-      }
-    } else {
-      setSelectedNavItem("");
     }
-  }, [router.pathname]);
+  }, [currentPath]);
 
   useEffect(() => {
     const handleClickOutside = (event) => {

@@ -35,7 +35,7 @@ const Herosection = () => {
       slidesPerView={1}
       pagination={{ clickable: true }}
       onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
+      onSwiper={(swiper) => console.log("")}
     >
       <SwiperSlide>
         <div className="herobg1">
