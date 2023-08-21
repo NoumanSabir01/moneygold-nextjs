@@ -10,6 +10,49 @@ import LuxuryWir from "/public/assets/img/homepage/wir_ankaufen_luxusuhren_mg.pn
 import Tafelsilber from "/public/assets/img/homepage/wir_ankaufen_tafelsilber.png";
 import Silber from "/public/assets/img/homepage/wir_ankaufun_silber.png";
 import Zahngold from "/public/assets/img/homepage/wir_ankaufun_zahngold.png";
+import StepCardPreisermittlung from "/public/assets/img/step_card_preisermittlung2.png";
+import StepCardVersand from "/public/assets/img/step_card_versand3.png";
+import StepCardZahlung from "/public/assets/img/step_card_zahlung4.png";
+import StepCardformular from "/public/assets/img/step_cardformular1.png";
+
+export const navItemsArray = [
+  {
+    path: "/",
+    name: "Home",
+  },
+  {
+    path: "/calculator",
+    name: "calculator",
+  },
+  {
+    path: "/wir-kaufen",
+    name: "Home",
+  },
+  {
+    path: "/dropdown",
+    name: "Home",
+  },
+  {
+    path: "/wir-kaufen",
+    name: "Home",
+  },
+  {
+    path: "/wir-kaufen",
+    name: "Home",
+  },
+  {
+    path: "/wir-kaufen",
+    name: "Home",
+  },
+  {
+    path: "/wir-kaufen",
+    name: "Home",
+  },
+  {
+    path: "/wir-kaufen",
+    name: "Home",
+  },
+];
 
 export const homePageVideoArray = [
   {
@@ -36,15 +79,15 @@ export const gold_zuruck_garantieVideoArray = [
   {
     width: "100%",
     height: "210",
-    src: "https://www.youtube.com/embed/ZSiXZxVpVhs",
-    title: "TOP 7 Technology Trends in 2023",
+    src: "https://www.youtube.com/embed/4g6quICEix0",
+    title: "Zufriedener moneyGold Kunde",
     text: "Johannes lobt die seriöse Abwicklung",
   },
   {
     width: "100%",
     height: "210",
-    src: "https://www.youtube.com/embed/BqaU9-k_py0",
-    title: "10 PROVOKING Thoughts How AI TRANSFORMS Industries",
+    src: "https://www.youtube.com/embed/rLf71D7kBD8",
+    title: "Kundenbewertung Frank E. zu moneyGold.de",
     text: "Michele bewertet moneyGold",
   },
 ];
@@ -466,5 +509,27 @@ export const WirAnkafunArray = [
     src: LuxuryWir,
     name: "Luxusuhren",
     text: "verkaufen",
+  },
+];
+export const stepCardArray = [
+  {
+    src: StepCardformular,
+    heading: "Formular ausfüllen",
+    para: "Fur eine schnelle und seriöse Bewertung füllen Sie bitte das Formular aus.",
+  },
+  {
+    src: StepCardPreisermittlung,
+    heading: "Preisermittlung",
+    para: "Unkompliziert und fair ermitteln wir den aktuellen Wert lhrer Armbanduhr.",
+  },
+  {
+    src: StepCardVersand,
+    heading: "Versand",
+    para: "Der Versand erfolgt kostenlos und versichert mit unserem Versandpartner.",
+  },
+  {
+    src: StepCardZahlung,
+    heading: "Zahlung",
+    para: "Nach Bestätigung unseres Angebots erfolgt die Auszahlung auf lhr Bankkonto.",
   },
 ];

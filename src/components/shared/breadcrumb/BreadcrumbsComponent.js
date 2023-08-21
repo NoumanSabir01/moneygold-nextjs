@@ -1,28 +1,49 @@
 "use client";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Breadcrumbs, BreadcrumbsProvider } from "react-breadcrumbs";
+import { useEffect, useState } from "react";
 
-const BreadcrumbsComponent = () => {
+const Breadcrumbs = () => {
+  const [breadcrumbItems, setBreadcrumbItems] = useState([]);
   const router = useRouter();
 
-  const pathSegments = router.asPath
-    .split("/")
-    .filter((segment) => segment !== "");
+  useEffect(() => {
+    const currentPath = router.pathname;
+
+    if (currentPath) {
+      const pathSegments = currentPath
+        .split("/")
+        .filter((segment) => segment !== "");
+      const newBreadcrumbItems = pathSegments.map((segment, index) => {
+        // Customize breadcrumb labels based on your route paths
+        return {
+          label: segment,
+          path: pathSegments.slice(0, index + 1).join("/"),
+        };
+      });
+
+      setBreadcrumbItems(newBreadcrumbItems);
+    }
+  }, [router.pathname]);
 
   return (
-    <BreadcrumbsProvider>
-      <Breadcrumbs separator=" / ">
-        {pathSegments.map((segment, index) => (
-          <Breadcrumbs.Item
-            key={index}
-            to={"/" + pathSegments.slice(0, index + 1).join("/")}
-          >
-            {segment}
-          </Breadcrumbs.Item>
+    <nav aria-label="breadcrumb">
+      <ol className="breadcrumb">
+        <li className="breadcrumb-item">
+          <Link href="/" passHref>
+            Home
+          </Link>
+        </li>
+        {breadcrumbItems.map((item, index) => (
+          <li className="breadcrumb-item" key={index}>
+            <Link href={item.path} passHref>
+              {item.label}
+            </Link>
+          </li>
         ))}
-      </Breadcrumbs>
-    </BreadcrumbsProvider>
+      </ol>
+    </nav>
   );
 };
 
-export default BreadcrumbsComponent;
+export default Breadcrumbs;

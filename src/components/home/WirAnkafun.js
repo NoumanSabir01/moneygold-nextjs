@@ -1,7 +1,6 @@
 "use client";
 import { WirAnkafunArray } from "@/public/static/HomepageStatic";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
@@ -10,23 +9,6 @@ import BtnArrow from "./BtnArrow";
 import BtnArrowMobile from "./BtnArrowMobile";
 
 const WirAnkafun = () => {
-  const [windowWidth, setWindowWidth] = useState("");
-  useEffect(() => {
-    const updateWindowDimensions = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    // Initial setup
-    updateWindowDimensions();
-
-    // Attach event listener to update on window resize
-    window.addEventListener("resize", updateWindowDimensions);
-
-    // Clean up the event listener on component unmount
-    return () => {
-      window.removeEventListener("resize", updateWindowDimensions);
-    };
-  }, []);
   return (
     <Swiper
       className="wir_ankaufun_swiper_wrapper"
@@ -92,11 +74,8 @@ const WirAnkafun = () => {
                         </div>
                         <div className="wir_verkaufer_btn">
                           <div className="wir_verkaufer_btn_arrow">
-                            {windowWidth < 768 ? (
-                              <BtnArrowMobile />
-                            ) : (
-                              <BtnArrow />
-                            )}
+                            <BtnArrowMobile />
+                            <BtnArrow />
                           </div>
                         </div>
                       </div>
@@ -146,11 +125,8 @@ const WirAnkafun = () => {
                         </div>
                         <div className="wir_verkaufer_btn">
                           <div className="wir_verkaufer_btn_arrow">
-                            {windowWidth < 768 ? (
-                              <BtnArrowMobile />
-                            ) : (
-                              <BtnArrow />
-                            )}
+                            <BtnArrowMobile />
+                            <BtnArrow />
                           </div>
                         </div>
                       </div>

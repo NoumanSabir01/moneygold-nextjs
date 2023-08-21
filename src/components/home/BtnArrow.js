@@ -1,6 +1,11 @@
 const BtnArrow = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="29px" height="22px">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="29px"
+      height="22px"
+      className="desktop_arrow"
+    >
       <path
         fillRule="evenodd"
         fill="rgb(255, 255, 255)"

@@ -194,9 +194,11 @@ const Header = () => {
               <li className="nav-item">
                 <Link
                   className={`nav-link ${
-                    selectedNavItem === "home" ? "active" : ""
+                    selectedNavItem === "home" ? "active" : "inactive"
                   }`}
-                  onClick={() => setSelectedNavItem("home")}
+                  onClick={() => {
+                    setSelectedNavItem("home");
+                  }}
                   href="/"
                   passHref
                 >
@@ -206,9 +208,12 @@ const Header = () => {
               <li className="nav-item">
                 <Link
                   className={`nav-link ${
-                    selectedNavItem === "calculator" ? "active" : ""
+                    selectedNavItem === "calculator" ? "active" : "inactive"
                   }`}
-                  onClick={() => setSelectedNavItem("calculator")}
+                  onClick={() => {
+                    setSelectedNavItem("calculator");
+                  }}
+                  data-active={"active"}
                   href="/calculator"
                   passHref
                 >
@@ -218,7 +223,7 @@ const Header = () => {
               <li className="nav-item">
                 <Link
                   className={`nav-link ${
-                    selectedNavItem === "wir-kaufen" ? "active" : ""
+                    selectedNavItem === "wir-kaufen" ? "active" : "inactive"
                   }`}
                   onClick={() => setSelectedNavItem("wir-kaufen")}
                   href="/wir-kaufen"
@@ -231,7 +236,7 @@ const Header = () => {
               <li className="nav-item dropdown">
                 <Link
                   className={`nav-link dropdown-toggle ${
-                    selectedNavItem === "dropdown" ? "active" : ""
+                    selectedNavItem === "dropdown" ? "active" : "inactive"
                   }`}
                   href="#"
                   role="button"
@@ -253,7 +258,7 @@ const Header = () => {
                       className={`nav-link dropdown-item ${
                         activeDropdownItem === "versandtasche-bestellen"
                           ? "active"
-                          : ""
+                          : "inactive"
                       }`}
                       onClick={() => {
                         setActiveDropdownItem("versandtasche-bestellen");
@@ -271,7 +276,7 @@ const Header = () => {
                       className={`nav-link dropdown-item ${
                         activeDropdownItem === "eigenes-versandmaterial"
                           ? "active"
-                          : ""
+                          : "inactive"
                       }`}
                       onClick={() => {
                         setActiveDropdownItem("eigenes-versandmaterial");
@@ -287,7 +292,9 @@ const Header = () => {
                   <li>
                     <Link
                       className={`nav-link dropdown-item ${
-                        activeDropdownItem === "sind-unterwegs" ? "active" : ""
+                        activeDropdownItem === "sind-unterwegs"
+                          ? "active"
+                          : "inactive"
                       }`}
                       onClick={() => {
                         setActiveDropdownItem("sind-unterwegs");
@@ -305,7 +312,7 @@ const Header = () => {
               <li className="nav-item dropdown drodown2">
                 <Link
                   className={`nav-link dropdown-toggle ${
-                    selectedNavItem === "dropdown2" ? "active" : ""
+                    selectedNavItem === "dropdown2" ? "active" : "inactive"
                   }`}
                   href="#"
                   role="button"
@@ -325,7 +332,9 @@ const Header = () => {
                   <li>
                     <Link
                       className={`dropdown-item ${
-                        setSelectedNavItem === "submenu1" ? "active" : ""
+                        setSelectedNavItem === "submenu1"
+                          ? "active"
+                          : "inactive"
                       }`}
                       href="#"
                       passHref
@@ -341,7 +350,9 @@ const Header = () => {
                   <li>
                     <Link
                       className={`dropdown-item ${
-                        setSelectedNavItem === "submenu2" ? "active" : ""
+                        setSelectedNavItem === "submenu2"
+                          ? "active"
+                          : "inactive"
                       }`}
                       href="#"
                       passHref

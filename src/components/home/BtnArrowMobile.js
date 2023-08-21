@@ -1,6 +1,11 @@
 const BtnArrowMobile = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="15px">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="17px"
+      height="15px"
+      className="mobile_arrow"
+    >
       <path
         fillRule="evenodd"
         fill="rgb(255, 255, 255)"
