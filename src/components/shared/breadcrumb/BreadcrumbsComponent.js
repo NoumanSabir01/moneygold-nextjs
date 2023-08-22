@@ -6,25 +6,29 @@ import { useEffect, useState } from "react";
 const Breadcrumbs = () => {
   const [breadcrumbItems, setBreadcrumbItems] = useState([]);
   const router = useRouter();
+  const [currentPath, setCurrentPath] = useState("");
+
+  const pathUrlArray = [];
 
   useEffect(() => {
-    const currentPath = router.pathname;
+    if (window?.location?.pathname !== undefined) {
+      setCurrentPath(window?.location?.pathname);
+      if (currentPath) {
+        const pathSegments = currentPath
+          .split("/")
+          .filter((segment) => segment !== "");
+        const newBreadcrumbItems = pathSegments.map((segment, index) => {
+          // Customize breadcrumb labels based on your route paths
+          return {
+            label: segment,
+            path: pathSegments.slice(0, index + 1).join("/"),
+          };
+        });
 
-    if (currentPath) {
-      const pathSegments = currentPath
-        .split("/")
-        .filter((segment) => segment !== "");
-      const newBreadcrumbItems = pathSegments.map((segment, index) => {
-        // Customize breadcrumb labels based on your route paths
-        return {
-          label: segment,
-          path: pathSegments.slice(0, index + 1).join("/"),
-        };
-      });
-
-      setBreadcrumbItems(newBreadcrumbItems);
+        setBreadcrumbItems(newBreadcrumbItems);
+      }
     }
-  }, [router.pathname]);
+  }, [currentPath]);
 
   return (
     <nav aria-label="breadcrumb">
