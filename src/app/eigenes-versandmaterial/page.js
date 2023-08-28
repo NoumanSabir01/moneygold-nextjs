@@ -1,12 +1,14 @@
 import EtrusredShop from "@/components/shared/EtrusredShop";
 import GoldCard from "@/components/shared/GoldCard";
 import { PriceValueForm2 } from "@/components/shared/PriceValueForm2";
+import Breadcrumbs from "@/components/shared/breadcrumb/BreadcrumbsComponent";
 
 const page = () => {
   return (
     <>
       <section className="eigenes_versandmaterial_wrapper">
         <div className="container">
+          <Breadcrumbs />
           <div className="row">
             <div className="col-12 col-md-12 col-lg-8">
               <h2 className="eigenes_versandmaterial_heading">

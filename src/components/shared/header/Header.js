@@ -22,7 +22,7 @@ const Header = () => {
   useEffect(() => {
     if (window?.location?.pathname !== undefined) {
       setCurrentPath(window?.location?.pathname);
-      if (window?.location?.pathname === "/") {
+      if (window?.location?.pathname === "/so-funktionierts") {
         setSelectedNavItem("home");
       } else if (window?.location?.pathname === "/calculator") {
         setSelectedNavItem("calculator");
@@ -201,7 +201,7 @@ const Header = () => {
                   onClick={() => {
                     setSelectedNavItem("home");
                   }}
-                  href="/"
+                  href="/so-funktionierts"
                   passHref
                 >
                   SO FUNKTIONIERT´S

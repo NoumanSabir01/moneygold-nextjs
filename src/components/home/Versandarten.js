@@ -3,12 +3,12 @@ import Button from "../shared/button/Button";
 import VersandDelivery from "/public/assets/img/homepage/versand_delivery_img.png";
 import VersandDeliveryRecieved from "/public/assets/img/homepage/versand_delivery_recieved_img.png";
 import VersandMoneyGold from "/public/assets/img/homepage/versand_money_gold_img.png";
-const Versandarten = () => {
+const Versandarten = ({ heading }) => {
   return (
     <section className="versandarten_wrapper">
       <div className="container">
         <div className="d-flex justify-content-center align-items-center versandarten_h2">
-          <h2>Unsere Versandarten</h2>
+          <h2>{heading}</h2>
         </div>
         <div className="row align-items-end mt-md-5">
           <div className="col-12 col-md-6 col-lg-4">

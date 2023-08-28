@@ -9,6 +9,7 @@ const StepCard = ({
   marginBottom = "",
   border = "1px solid #3a3a3c",
   borderRadius = "10px",
+  height = "100%",
 }) => {
   return (
     <div
@@ -18,6 +19,7 @@ const StepCard = ({
         border: border,
         borderRadius: borderRadius,
         marginBottom: marginBottom,
+        height: height,
       }}
     >
       <div className="step_card_header">

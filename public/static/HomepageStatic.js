@@ -533,3 +533,41 @@ export const stepCardArray = [
     para: "Nach Bestätigung unseres Angebots erfolgt die Auszahlung auf lhr Bankkonto.",
   },
 ];
+export const stepCardDiamantenArray = [
+  {
+    src: StepCardformular,
+    heading: "Formular ausfüllen",
+    para: "Fur eine schnelle und seriöse Bewertung füllen Sie bitte das Formular aus.",
+  },
+  {
+    src: StepCardPreisermittlung,
+    heading: "Preisermittlung",
+    para: "Unkompliziert und fair ermitteln wir den aktuellen Wert lhrer Armbanduhr.",
+  },
+  {
+    src: StepCardVersand,
+    heading: "Versand",
+    para: "Der Versand erfolgt kostenlos und versichert mit unserem Versandpartner.",
+  },
+  {
+    src: StepCardZahlung,
+    heading: "Zahlung",
+    para: "Nach Bestätigung unseres Angebots erfolgt die Auszahlung auf lhr Bankkonto.",
+  },
+];
+
+export const DiamantenUberBlickArray = [
+  {
+    tickIcon: <i class="fa fa-check" aria-hidden="true"></i>,
+    listText: "Diamanten zu attraktiven Konditionen verkaufen",
+  },
+  {
+    tickIcon: <i class="fa fa-check" aria-hidden="true"></i>,
+    listText:
+      "qualifizierte Gutachter ermitteln den Wert Ihres Diamantschmucks",
+  },
+  {
+    tickIcon: <i class="fa fa-check" aria-hidden="true"></i>,
+    listText: "kostenloser Versand",
+  },
+];

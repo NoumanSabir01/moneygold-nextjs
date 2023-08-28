@@ -1,8 +1,8 @@
 const Button = ({
   btnText = "",
   height = "40px",
-  width = "150px",
-  borderRadius = "",
+  width = "256px",
+  borderRadius = "10px",
   backgroundColor = "#2080D1",
   boxShadow = "",
   color = "#ffffff",

@@ -1,3 +1,4 @@
+"use client";
 import {
   review2CardArray,
   review2StarArray,

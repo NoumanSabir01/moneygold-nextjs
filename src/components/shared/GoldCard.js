@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Ntv from "/public/assets/img/homepage/hero-ntv.png";
 const GoldCard = ({
-  marginTop = "20px",
+  marginTop = "",
   borderRadius = "10px",
   border = "1px solid #665832",
 }) => {

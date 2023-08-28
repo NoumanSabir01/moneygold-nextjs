@@ -60,7 +60,7 @@ h2 {
   font-size: 30px;
   line-height: 38px;
   font-family: "Open Sans", sans-serif;
-  font-weight: bold;
+  font-weight: bold !important;
 }
 @media screen and (max-width: 767px) {
   .container {
@@ -94,7 +94,7 @@ h2 {
 
 .call-btn {
   background: #2a83d1;
-  padding: 5px 15px;
+  padding: 2px 16px;
   text-decoration: none;
   border-radius: 45px;
   font-weight: bold;
@@ -104,7 +104,7 @@ h2 {
 }
 .call-btn svg {
   margin-bottom: 2px;
-  margin-right: 11px;
+  margin-right: 14px;
 }
 .line {
   width: 2px;
@@ -1745,6 +1745,7 @@ span.navbar-toggler-icon img {
 .review_heading2_line {
   width: 100%;
   border: 2px solid #ffffff;
+  height: 2px;
 }
 .review_slider_column .review_heading2 p {
   color: #ffffff;
@@ -2307,7 +2308,8 @@ span.navbar-toggler-icon img {
 }
 .versandarten_card_body_para1 {
   font-size: 16px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  min-height: 130px;
 }
 .versandarten_card_body_para2 {
   font-size: 16px;
@@ -2315,7 +2317,8 @@ span.navbar-toggler-icon img {
 }
 .versandarten_card2_body_para1 {
   font-size: 16px;
-  margin-bottom: 22px;
+  margin-bottom: 15px;
+  min-height: 130px;
 }
 .versandarten_card2_body_para2 {
   font-size: 16px;
@@ -2323,7 +2326,8 @@ span.navbar-toggler-icon img {
 }
 .versandarten_card3_body_para1 {
   font-size: 16px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  min-height: 130px;
 }
 .versandarten_card3_body_para2 {
   font-size: 15px;
@@ -3803,7 +3807,6 @@ span.navbar-toggler-icon img {
   line-height: 32.87px;
   margin-bottom: 10px;
   color: #000000;
-  margin-top: 25px;
 }
 .eigenes_versandmaterial_para {
   font-size: 18px;
@@ -4018,7 +4021,7 @@ span.navbar-toggler-icon img {
   margin-top: 10px;
   padding: 10px;
   border-radius: 10px;
-  width: 325px;
+  width: auto;
   height: 250px;
 }
 .e_trusted_shops_card_subcard_innercard {
@@ -4580,7 +4583,19 @@ span.navbar-toggler-icon img {
   font-weight: bold;
   text-decoration: underline;
 }
-
+.stepcard_wrapper_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stepcard_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.step_card {
+  width: 255px;
+}
 .step_card_header {
   background-color: #3a3a3c;
   padding: 15px 0px;
@@ -4609,35 +4624,493 @@ span.navbar-toggler-icon img {
 .step_card_body p {
   margin-bottom: 14px;
 }
+.stepcard_wrapper:last-child .luxushrn_right_trianle {
+  display: none;
+}
+.luxushrn_right_trianle {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-left: 25px solid #eecd56;
+  border-bottom: 25px solid transparent;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: block;
+}
+.luxushrn_down_trianle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 25px solid #eecd56;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: none;
+}
 .bieten_sie_form {
-  border-width: 1px;
-  border-color: rgb(201, 180, 102);
-  border-style: solid;
+  border: 1px solid #c9b466;
   border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: -moz-linear-gradient(
-    90deg,
+    177deg,
     rgb(255, 247, 218) 0%,
     rgb(255, 255, 255) 100%
   );
   background-image: -webkit-linear-gradient(
-    90deg,
+    177deg,
     rgb(255, 247, 218) 0%,
     rgb(255, 255, 255) 100%
   );
   background-image: -ms-linear-gradient(
-    90deg,
+    177deg,
     rgb(255, 247, 218) 0%,
     rgb(255, 255, 255) 100%
   );
   background-image: linear-gradient(
-    90deg,
+    177deg,
     rgb(255, 247, 218) 0%,
     rgb(255, 255, 255) 100%
   );
 }
+.bieten_sie_form .bieten_sie_form_kostenlos {
+  color: #fff;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: inherit;
+  background-color: #2a83d1;
+  padding: unset;
+  font-size: 26.89px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  width: 300px;
+  -webkit-transform: rotate(48deg);
+  transform: rotate(48deg);
+  position: absolute;
+  right: -76px;
+  top: 60px;
+  text-transform: uppercase;
+}
+.bieten_sie_form_heading1 {
+  margin-bottom: 25px;
+}
+.bieten_sie_form_label_input {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.bieten_sie_form_label_input label {
+  margin-right: 12px;
+  max-width: 145px;
+  width: 145px;
+  text-align: right;
+}
+.bieten_sie_form_label_input input,
+.bieten_sie_form_bilder_input input {
+  width: 256px;
+  height: 33px;
+  border: 1px solid #3a3a3c;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  padding: 0px 15px;
+  box-shadow: -0.035px 2px 3px 0px rgba(6, 0, 14, 0.2);
+}
+
+.bieten_sie_form input:focus {
+  border: 1px solid #3a3a3c;
+}
+.bieten_sie_form_label_input select {
+  width: 256px;
+  height: 33px;
+  border: 1px solid #3a3a3c;
+  border-radius: 10px;
+  box-shadow: -0.035px 2px 3px 0px rgba(6, 0, 14, 0.2);
+}
 .bieten_sie_form h2 {
   text-align: center;
 }
+
+.bieten_sie_form_heading2 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 32.87px;
+  margin-bottom: 15px;
+}
+.bieten_sie_form_bilder {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bieten_sie_form_heading3 {
+  font-size: 26px;
+  line-height: 32.87px;
+  font-weight: 500;
+  margin-bottom: 18px;
+  margin-top: 20px;
+}
+.bieten_sie_form_bilder_input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-left: 31%;
+}
+.bieten_sie_form_bilder_input input {
+  flex-basis: 640px;
+  box-shadow: -0.035px 2px 3px 0px rgba(6, 0, 14, 0.2);
+  margin-bottom: 10px;
+}
+.bieten_sie_form_bilder_input button {
+  flex-basis: 161px;
+  box-shadow: -0.035px 2px 3px 0px rgba(6, 0, 14, 0.2);
+}
+.bieten_sie_form_heading4 {
+  font-size: 26px;
+  line-height: 32.87px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-left: 125px;
+}
+.bieten_sie_form_heading5 {
+  font-size: 26px;
+  line-height: 32.87px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.bieten_sie_form_label_input textarea {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: -0.035px 2px 3px 0px rgba(6, 0, 14, 0.2);
+}
+.bieten_sie_form_checkbox_col {
+  padding-left: 0px !important;
+  margin-left: -5px;
+}
+.bieten_sie_form_checkbox_diamanten {
+  display: flex;
+}
+.bieten_sie_form_checkbox_diamanten input,
+.bieten_sie_form_checkbox_luxusuhren input {
+  border-radius: 1px !important;
+}
+.bieten_sie_form_checkbox_diamanten input {
+  width: 30px;
+  height: 17px;
+}
+.bieten_sie_form_checkbox_diamanten label,
+.bieten_sie_form_checkbox_luxusuhren label {
+  margin-left: 5px;
+}
+.diamanten_expert_heading {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 32.87px;
+  margin-top: 25px;
+}
+.diamanten_expert_heading1 {
+  margin-top: 18px;
+}
+.diamanten_middle_section_para1 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 26px;
+}
+.diamanten_expert_para {
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 10px;
+}
+.diamanten_expert_para:last-child {
+  margin-bottom: 20px;
+}
+.diamanten_uberblick {
+  background-color: #fff7da;
+  padding: 20px 0px;
+}
+.diamanten_uberblick_heading {
+  margin-bottom: 18px;
+}
+.diamanten_uberblick .gold_zuruck_garantie_row2_col1_li_para {
+  font-size: 18px;
+  font-weight: 500;
+}
+.diamanten_type {
+  padding: 20px 0px;
+}
+.diamanten_type_asscher {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 255px;
+  background-color: #fff7da;
+  border-radius: 10px;
+  height: 169px;
+}
+.diamanten_type_asscher p {
+  margin-top: 27px;
+  font-weight: bold;
+  font-size: 22px;
+}
+.ablauf_info h2 {
+  margin-top: 22px;
+}
+.ablauf_info p {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 26px;
+}
+.ablauf_info_list li {
+  border-radius: 30px;
+  background-color: #d9c26c;
+  height: 25px;
+  color: #ffffff;
+  font-size: 15px;
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+
+.rolex_section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.rolex_section_heading1 {
+  margin-bottom: 10px;
+}
+.rolex_section_para1 {
+  font-size: 18px;
+  line-height: 26px;
+}
+.luxusehrun_watch_name {
+  font-size: 15px;
+  font-weight: bold;
+}
+.luxury_watch_img {
+  margin-top: 15px;
+}
+.luxury_watch_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.rolex_section_heading_paras h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.rolex_section_heading_paras p {
+  font-size: 18px;
+  line-height: 26px;
+}
+.rolex_section_para3,
+.rolex_section_para4,
+.rolex_section_para6 {
+  margin-bottom: 10px;
+}
+
+.versandarten_wrapper_main .versandarten_wrapper {
+  background-color: #ffffff;
+  padding-top: 0px;
+}
+.versandarten_wrapper_main_para1 {
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 10px;
+}
+
+.funktionierts_wrapper .kostenlos {
+  margin-top: 0px;
+  width: auto;
+  max-width: inherit;
+}
+.funktionierts_wrapper_heading1 {
+  font-size: 30px;
+  line-height: 32.87px;
+  font-weight: bold;
+}
+.funktionierts_wrapper_para1 {
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+.e_trusted_shops_card_heading1 {
+  font-size: 18px;
+  line-height: 22.62px;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+}
+.etrustedshop2_text p {
+  font-size: 16px;
+  color: #000000;
+  margin-left: 10px;
+}
+.e_trusted_shops_card.e_trusted_shops_card2 {
+  height: auto;
+}
+.e_trusted_shops2_main_heading {
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+.e_trusted_shops_card2 .e_trusted_shop_value {
+  line-height: inherit;
+}
+.etrustedlogo2 {
+  margin-top: 12px;
+}
+.etrusted_shop2_heading2 {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+}
+.etrusted_shop2_heading2 p {
+  color: #ffffff;
+  margin: 0px 5px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.e_trusted_shops_card_subcard.e_trusted_shops2_card_subcard {
+  height: auto;
+}
+.e_trusted_shops2_card_subcard .e_trusted_shops_card_subcard_innercard {
+  width: auto;
+  height: auto;
+}
+.etrusted_heading2_line {
+  width: 100%;
+  border: 1px solid #ffffff;
+  height: 1px;
+}
+.etrusted_shop2_percentages .positive {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.5px;
+  color: #ffffff;
+}
+.etrusted_shop2_percentages .review2_percentage {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.5px;
+  color: #ffffff;
+}
+.etrusted_shop2_percentages .percentage2-bar {
+  margin-right: 10px;
+}
+.e_trusted_shops2_card_subcard
+  .e_trusted_shops_card_subcard_innercard_star2
+  i:first-child {
+  margin-left: 0px;
+}
+.etrusted_shop2_right_heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-align: center;
+}
+.e_trusted_shops2_card_subcard .e_trusted_shop_date {
+  margin-top: 10px;
+}
+.funktionierts_wrapper_form .value-calculate {
+  border-radius: 20px;
+}
+.funktionierts_wrapper_auswahlen {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.funktionierts_wrapper_auswahlen1,
+.funktionierts_wrapper_auswahlen2,
+.funktionierts_wrapper_auswahlen3 {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+.funktionierts_wrapper_auswahlen2 {
+  margin-top: 40px;
+}
+.funktionierts_wrapper_auswahlen1 .auswahlen_img2 {
+  position: absolute;
+}
+.auswahlen_line1 {
+  width: 1px;
+  border: 1px solid #d9c26c;
+  height: 285px;
+  position: absolute;
+  top: 44%;
+  left: 80px;
+}
+.auswahlen_line2 {
+  width: 1px;
+  border: 1px solid #d9c26c;
+  height: 60px;
+  position: absolute;
+  top: 90%;
+  left: 80px;
+}
+.auswahlen_line3 {
+  width: 1px;
+  border: 1px solid #d9c26c;
+  height: 37px;
+  position: absolute;
+  top: 100%;
+  left: 80px;
+}
+
+.funktionierts_wrapper_auswahlen1_heading_paras,
+.funktionierts_wrapper_auswahlen2_heading_paras {
+  margin-left: 30px;
+}
+.funktionierts_wrapper_auswahlen_heading1,
+.funktionierts_wrapper_auswahlen2_heading1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.funktionierts_wrapper_auswahlen1_heading_paras p,
+.funktionierts_wrapper_auswahlen2_para1,
+.funktionierts_wrapper_auswahlen2_para2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 26px;
+}
+.funktionierts_wrapper_auswahlen_para2,
+.funktionierts_wrapper_auswahlen_para3,
+.funktionierts_wrapper_auswahlen_para4 {
+  margin-top: 10px;
+}
+.versandtasche_link,
+.versandtasche_link2,
+.versandtasche_link3 {
+  text-decoration: underline;
+}
+.funktionierts_wrapper_wir_ankaufen_heading1 {
+  font-size: 30px;
+  line-height: 32.87px;
+  margin-top: 22px;
+}
+.funktionierts_wrapper_wir_ankaufen_para1 {
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 @media screen and (min-width: 2000px) and (max-width: 2600px) {
   .goldrechner_clock_analog {
     position: absolute;
@@ -4698,6 +5171,12 @@ span.navbar-toggler-icon img {
     justify-content: center;
   }
 }
+@media screen and (min-width: 1101px) and (max-width: 1200px) {
+  .stepcard_wrapper_main {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 993px) and (max-width: 1100px) {
   .goldrechner_clock_analog {
     position: absolute;
@@ -4705,6 +5184,10 @@ span.navbar-toggler-icon img {
     top: -30px;
     display: flex;
     align-items: center;
+    justify-content: center;
+  }
+  .stepcard_wrapper_main {
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
@@ -4754,6 +5237,64 @@ span.navbar-toggler-icon img {
   /* Contact css starts from here */
   .contact_wrapper {
     padding: 15px;
+  }
+  /* Sie form component css starts here */
+  .bieten_sie_form_bilder_input {
+    margin-left: unset;
+  }
+  .bieten_sie_form_bilder_input input {
+    flex-basis: 80%;
+  }
+  .bieten_sie_form .bieten_sie_form_kostenlos {
+    font-size: 20px;
+    width: 370px;
+    transform: rotate(36deg);
+    right: -123px;
+    top: 32px;
+  }
+  .bieten_sie_form_heading4 {
+    margin-left: 0px;
+  }
+  .stepcard_wrapper_main {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .stepcard_wrapper:nth-child(2) .luxushrn_right_trianle {
+    display: none;
+  }
+  .diamanten_expert_images img {
+    width: 100%;
+    height: 100%;
+  }
+  .diamanten_type_asscher {
+    width: auto;
+    margin-top: 15px;
+  }
+  .diamanten_type {
+    padding: 10px 0px;
+  }
+  .luxusuhren_wrapper_main_img {
+    margin-top: 15px;
+    width: 100%;
+  }
+  .funktionierts_wrapper .wir_ankaufun_card {
+    height: auto;
+  }
+  .funktionierts_wrapper .wir_ankaufun_card_img img {
+    width: 200px;
+    height: 200px;
+  }
+  .funktionierts_price_form {
+    display: flex;
+    justify-content: center;
+  }
+  .funktionierts_wrapper_video iframe {
+    width: 100%;
+  }
+  .etrusted2_mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (max-width: 767px) {
@@ -4938,6 +5479,173 @@ span.navbar-toggler-icon img {
   .contact_wrapper_card {
     margin-top: 20px;
   }
+
+  /* diamanten css starts here */
+  .luxusuhren_wrapper_main_img {
+    width: 100%;
+    margin-top: 10px;
+    object-fit: cover !important;
+  }
+  .luxusuhren_wrapper_heading1 {
+    font-size: 26px;
+  }
+  .diamanten_type {
+    padding: 10px 0px;
+  }
+  .diamanten_type_asscher {
+    width: auto;
+    margin-top: 15px;
+  }
+  .stepcard_wrapper {
+    flex-direction: column;
+  }
+  .step_card {
+    width: auto;
+    margin-top: 15px !important;
+  }
+
+  .stepcard_wrapper_main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .stepcard_wrapper:last-child .luxushrn_down_trianle {
+    display: none;
+  }
+  .luxushrn_down_trianle {
+    display: block;
+    margin-top: 15px;
+  }
+  .luxushrn_right_trianle {
+    display: none;
+  }
+  .bieten_sie_form {
+    margin-top: 30px;
+    padding: 20px 15px;
+  }
+  .bieten_sie_form .bieten_sie_form_kostenlos {
+    font-size: 16px;
+    width: 300px;
+    transform: rotate(46deg);
+    right: -110px;
+    top: 32px;
+  }
+  .bieten_sie_form_bilder_input {
+    margin-left: 0px;
+    width: auto;
+  }
+  .bieten_sie_form_label_input select {
+    width: auto;
+  }
+  .bieten_sie_form_heading3 {
+    text-align: center;
+  }
+  .bieten_sie_form_label_input input,
+  .bieten_sie_form_bilder_input input {
+    width: auto;
+  }
+  .bieten_sie_form_bilder_input input {
+    flex-basis: auto;
+  }
+  .bieten_sie_form_bilder_input button {
+    width: auto !important;
+    flex-basis: auto;
+  }
+  .bieten_sie_form_heading4 {
+    margin-left: unset;
+  }
+  .bieten_sie_form_heading5 {
+    text-align: center;
+  }
+  .bieten_sie_form_label_input textarea {
+    width: 100%;
+  }
+  .bieten_sie_form_checkbox_diamanten input {
+    width: 55px;
+    height: 15px;
+  }
+  .bieten_sie_form_checkbox_col {
+    padding-left: 15px !important;
+    margin-left: 0px;
+  }
+  .bieten_sie_form_checkbox_diamanten label,
+  .bieten_sie_form_checkbox_luxusuhren label {
+    font-size: 14px;
+  }
+  .diamanten_expert_images img {
+    width: 100%;
+    height: 100%;
+  }
+  .diamanten_uberblick_heading {
+    margin-bottom: 10px;
+  }
+  .diamanten_uberblick .gold_zuruck_garantie_row2_col1_li_para {
+    font-size: 16px;
+  }
+  .ablauf_info_list {
+    margin-bottom: 15px;
+  }
+  .ablauf_info h2 {
+    margin-top: 0px;
+  }
+  .funktionierts_wrapper_video iframe {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .funktionierts_wrapper_heading1 {
+    font-size: 24px;
+  }
+  .funktionierts_wrapper_para1 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .funktionierts_wrapper_form .value-calculate {
+    border-radius: 10px;
+  }
+  .funktionierts_wrapper_wir_ankaufen {
+    margin-top: 15px;
+  }
+  .funktionierts_wrapper_auswahlen1 img,
+  .funktionierts_wrapper_auswahlen2 img {
+    width: auto;
+    height: auto;
+  }
+  .funktionierts_wrapper_auswahlen_heading1,
+  .funktionierts_wrapper_auswahlen2_heading1 {
+    font-size: 20px;
+  }
+  .funktionierts_wrapper_auswahlen1_heading_paras,
+  .funktionierts_wrapper_auswahlen2_heading_paras {
+    margin-left: 10px;
+  }
+  .funktionierts_wrapper_auswahlen2_heading_paras button {
+    width: 100% !important;
+  }
+  .auswahlen_line1 {
+    height: 59vh;
+    top: 16.5%;
+    left: 40px;
+  }
+  .auswahlen_line2 {
+    height: 22vh;
+    top: 38%;
+    left: 40px;
+  }
+  .auswahlen_line3 {
+    height: 18.5vh;
+    top: 44%;
+    left: 40px;
+  }
+  .funktionierts_wrapper_auswahlen1_heading_paras p,
+  .funktionierts_wrapper_auswahlen2_para1,
+  .funktionierts_wrapper_auswahlen2_para2 {
+    font-size: 16px;
+  }
+  .funktionierts_wrapper_wir_ankaufen_heading1 {
+    font-size: 24px;
+    line-height: 32.87px;
+    margin-top: 0px;
+  }
 }
 @media screen and (min-width: 280px) and (max-width: 399px) {
   .gold_zuruck_garantie_row2_col1_heading2 {
@@ -4951,6 +5659,32 @@ span.navbar-toggler-icon img {
   }
   .contact_wrapper_heading1 {
     font-size: 26px;
+  }
+  .bieten_sie_form_label_input label {
+    max-width: max-content;
+    width: auto;
+  }
+  .bieten_sie_form_bilder_input button {
+    font-size: 12px;
+  }
+  .bieten_sie_form_checkbox_diamanten label,
+  .bieten_sie_form_checkbox_luxusuhren label {
+    font-size: 13px;
+  }
+  .auswahlen_line1 {
+    height: 98vh;
+    top: 13%;
+    left: 40px;
+  }
+  .auswahlen_line2 {
+    height: 43vh;
+    top: 28%;
+    left: 40px;
+  }
+  .auswahlen_line3 {
+    height: 35vh;
+    top: 34%;
+    left: 40px;
   }
 }
 
@@ -5071,4 +5805,17 @@ span.navbar-toggler-icon img {
     width: 70px;
     height: 70px;
   }
+}
+/* BreadCrumb css starts here */
+.breadcrumb {
+  margin-top: 10px;
+}
+.breadcrumb-item_home {
+  color: #dec97e;
+}
+.breadcrumb-item {
+  cursor: pointer;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "" !important;
 }

@@ -39,7 +39,7 @@ const MainPage = () => {
           </button>
         </div>
       </section>
-      <Versandarten />
+      <Versandarten heading="Unsere Versandarten" />
       <MeltingFacilities />
     </div>
   );

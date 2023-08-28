@@ -1,6 +1,6 @@
-const Arrow2Svg = () => {
+const Arrow2Svg = ({ width = "22px", height = "18px" }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="18px">
+    <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height}>
       <path
         fillRule="evenodd"
         fill="rgb(0, 0, 0)"
